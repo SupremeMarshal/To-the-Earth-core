@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " B ",
+        " B ",
+        "BAB"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:amazonite_block"
+        },
+        "B":
+        {
+            "item": "totheearthcore:demon_star_charged"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:demon_sword",
+        "count": 1
+    }
+}

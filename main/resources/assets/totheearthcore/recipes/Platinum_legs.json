@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "A A",
+        "A A"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:platinum_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:platinum_leggings",
+        "count": 1
+    }
+}

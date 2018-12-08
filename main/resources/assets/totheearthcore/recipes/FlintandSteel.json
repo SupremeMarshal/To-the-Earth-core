@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AB"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:steel_ingot"
+        },
+        "B":
+        {
+            "item": "minecraft:flint"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:flint_and_steel",
+        "count": 1
+    }
+}

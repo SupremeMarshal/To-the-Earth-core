@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "totheearthcore:saphir_block"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:saphir",
+        "count": 9
+    }
+}

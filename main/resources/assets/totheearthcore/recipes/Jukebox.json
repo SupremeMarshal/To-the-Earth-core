@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:planks",
+            "data": 0
+        },
+        "B":
+        {
+            "item": "totheearthcore:saphir"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:jukebox",
+        "count": 1
+    }
+}

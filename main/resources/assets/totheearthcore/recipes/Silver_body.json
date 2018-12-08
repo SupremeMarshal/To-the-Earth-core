@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "A A",
+        "AAA",
+        "AAA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:silver_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:silver_chestplate",
+        "count": 1
+    }
+}

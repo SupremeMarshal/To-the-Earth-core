@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "totheearthcore:platinum_block"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:platinum_ingot",
+        "count": 9
+    }
+}

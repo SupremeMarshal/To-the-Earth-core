@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+       "layer0": "totheearthcore:items/platinum_chestplate"
+   }
+}

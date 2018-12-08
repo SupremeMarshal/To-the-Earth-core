@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BAB",
+        "BBB",
+        " B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:iron_ingot"
+        },
+        "B":
+        {
+            "item": "minecraft:planks",
+            "data":0
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:shield",
+        "count": 1
+    }
+}

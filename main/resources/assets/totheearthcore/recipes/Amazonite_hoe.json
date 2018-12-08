@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AA",
+        " B",
+        " B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:amazonite"
+        },
+        "B":
+        {
+            "item": "totheearthcore:amazonite_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:amazonite_hoe",
+        "count": 1
+    }
+}

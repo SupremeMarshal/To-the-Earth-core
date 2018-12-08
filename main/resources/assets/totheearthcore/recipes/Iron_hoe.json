@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AA",
+        " B",
+        " B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:iron_ingot"
+        },
+        "B":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:iron_hoe",
+        "count": 1
+    }
+}

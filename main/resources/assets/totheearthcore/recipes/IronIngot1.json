@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "totheearthcore:iron_block"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:iron_ingot",
+        "count": 9
+    }
+}

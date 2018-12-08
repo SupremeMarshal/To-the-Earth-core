@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "totheearthcore:silver_ingot"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:silver_nugget",
+        "count": 9
+    }
+}

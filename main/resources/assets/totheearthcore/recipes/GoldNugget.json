@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "totheearthcore:gold_ingot"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:gold_nugget",
+        "count": 9
+    }
+}

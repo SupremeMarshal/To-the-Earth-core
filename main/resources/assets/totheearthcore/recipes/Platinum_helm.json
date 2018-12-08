@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "A A"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:platinum_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:platinum_helmet",
+        "count": 1
+    }
+}

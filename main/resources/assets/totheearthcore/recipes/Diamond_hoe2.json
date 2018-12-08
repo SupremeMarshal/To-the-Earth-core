@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AA",
+        " B",
+        " B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:diamond"
+        },
+        "B":
+        {
+            "item": "totheearthcore:diamond_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:diamond_hoe",
+        "count": 1
+    }
+}

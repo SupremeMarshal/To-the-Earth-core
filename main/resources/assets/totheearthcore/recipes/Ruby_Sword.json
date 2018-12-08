@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "A",
+        "A",
+        "B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:ruby"
+        },
+        "B":
+        {
+            "item": "totheearthcore:ruby_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:ruby_sword",
+        "count": 1
+    }
+}

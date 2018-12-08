@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:saphir"
+        },
+        "B":
+        {
+            "item": "totheearthcore:saphir_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:saphir_shovel",
+        "count": 1
+    }
+}

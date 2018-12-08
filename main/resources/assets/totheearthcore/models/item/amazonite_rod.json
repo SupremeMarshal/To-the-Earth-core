@@ -1,0 +1,6 @@
+{
+   "parent": "item/handheld",
+   "textures": {
+        "layer0": "totheearthcore:items/amazonite_rod"
+    }
+}
