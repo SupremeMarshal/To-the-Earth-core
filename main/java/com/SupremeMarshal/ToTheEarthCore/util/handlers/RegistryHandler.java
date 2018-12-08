@@ -51,19 +51,15 @@ public class RegistryHandler {
 				((IHasModel)block).registerModels();
 			}
 		}
-		
+		RenderHandler.registerEntityRenders();
+		RenderHandler.registerCustomMeshesAndStates();
 	}
 	
 	public static void preInitRegistries(FMLPreInitializationEvent event)
 	{
 		ModFluids.registerFluids();
 		EntityInit.registerEntities();
-		RenderHandler.registerEntityRenders();
-		RenderHandler.registerCustomMeshesAndStates();
 		ModConfiguration.registerConfig(event);
-		
-		
-		
 	}
 
 	public static void initRegistries(FMLInitializationEvent event) {
