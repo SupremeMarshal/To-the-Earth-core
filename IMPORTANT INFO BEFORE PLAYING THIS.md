@@ -10,4 +10,6 @@ For now, the preset is NOT going to the Earth core. I am planning to create many
 The one right now is more for a cool gaming experience. 
 I will eventually create a more extreme version that allow you to dig up to 100,000 cubes deep, and another version that is Realistic.
 
-This mod NEED to use the preset for it to work.
+NOTE: You recommand to download Vertical Spawn Control mod [by Foghrye4]. Then you can take the vertical_spawn_control.json I have and place it in the data folder of your world, create a new folder named vertical_spawn_control folder and place the json there.
+
+NOTE: My mod replace all vanilla tools and armor from the game so to avoid any mobs or chest from giving vanilla tools and armor, place my loot_tables folder inside the data folder of your world.
