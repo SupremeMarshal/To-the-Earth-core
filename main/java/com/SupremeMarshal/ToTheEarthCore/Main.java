@@ -2,16 +2,12 @@ package com.SupremeMarshal.ToTheEarthCore;
 
 import java.io.File;
 
-import com.SupremeMarshal.ToTheEarthCore.init.EntityInit;
-import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
+
 import com.SupremeMarshal.ToTheEarthCore.init.ModSmelting;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.ArmorBase;
 import com.SupremeMarshal.ToTheEarthCore.proxy.CommonProxy;
 import com.SupremeMarshal.ToTheEarthCore.util.Reference;
 import com.SupremeMarshal.ToTheEarthCore.util.handlers.RegistryHandler;
-import com.SupremeMarshal.ToTheEarthCore.util.handlers.RenderHandler;
 
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;

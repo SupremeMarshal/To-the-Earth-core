@@ -1,27 +1,20 @@
 package com.SupremeMarshal.ToTheEarthCore.util.handlers;
 
-import java.util.List;
-
-import com.SupremeMarshal.ToTheEarthCore.entity.model.ModelDemon;
 import com.SupremeMarshal.ToTheEarthCore.init.EntityInit;
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import com.SupremeMarshal.ToTheEarthCore.init.ModFluids;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
 import com.SupremeMarshal.ToTheEarthCore.util.IHasModel;
 import com.SupremeMarshal.ToTheEarthCore.util.ModConfiguration;
-import com.SupremeMarshal.ToTheEarthCore.util.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 @EventBusSubscriber
 public class RegistryHandler {
