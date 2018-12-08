@@ -1,6 +1,8 @@
 # To-the-Earth-core
 A modpack for Minecraft that work with Cubic Chunk. You can dig down all the way to the Earth core!
 First, you need to install Cubic Chunk 904 and Cubic World Gen 34. 
+here the link: https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/wip-mods/2792887-cubic-chunks-mod-almost-infinite-world-height-and
+You also need the dependencies for Cubic Chunk.
 Second, copy my preset "ToTheEarthCore". When you create a new world, go to more world options, change world type: Default to: Custom Cubic.
 Then click customize, then click preset. Delete everything and copy paste my preset in the big box. Click done, and done again. Then you can create the world.
 
