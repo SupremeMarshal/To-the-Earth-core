@@ -1,0 +1,13 @@
+# To-the-Earth-core
+A modpack for Minecraft that work with Cubic Chunk. You can dig down all the way to the Earth core!
+First, you need to install Cubic Chunk 904 and Cubic World Gen 34. 
+Second, copy my preset "ToTheEarthCore". When you create a new world, go to more world options, change world type: Default to: Custom Cubic.
+Then click customize, then click preset. Delete everything and copy paste my preset in the big box. Click done, and done again. Then you can create the world.
+
+THIS MOD NEED THE PRESET FOR IT TO GENERATE THE ORES AND BLOCKS FROM THIS MOD.
+
+For now, the preset is NOT going to the Earth core. I am planning to create many preset version. 
+The one right now is more for a cool gaming experience. 
+I will eventually create a more extreme version that allow you to dig up to 100,000 cubes deep, and another version that is Realistic.
+
+This mod NEED to use the preset for it to work.
