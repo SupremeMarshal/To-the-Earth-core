@@ -4,7 +4,7 @@ First, you need to install Cubic Chunk 904 and Cubic World Gen 34.
 Second, copy my preset "ToTheEarthCore". When you create a new world, go to more world options, change world type: Default to: Custom Cubic.
 Then click customize, then click preset. Delete everything and copy paste my preset in the big box. Click done, and done again. Then you can create the world.
 
-THIS MOD NEED THE PRESET FOR IT TO GENERATE THE ORES AND BLOCKS FROM THIS MOD.
+IMPORTANT: This mod need the preset, else you will just play in a normal vanilla game. My ores only generate using the preset.
 
 For now, the preset is NOT going to the Earth core. I am planning to create many preset version. 
 The one right now is more for a cool gaming experience. 
