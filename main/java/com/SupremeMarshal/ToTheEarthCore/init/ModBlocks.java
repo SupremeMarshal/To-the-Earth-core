@@ -3,10 +3,7 @@ package com.SupremeMarshal.ToTheEarthCore.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.SupremeMarshal.ToTheEarthCore.blocks.BlockBase;
-import com.SupremeMarshal.ToTheEarthCore.blocks.GasBase;
-import com.SupremeMarshal.ToTheEarthCore.blocks.GemBase;
-import com.SupremeMarshal.ToTheEarthCore.blocks.RockBase;
+import com.SupremeMarshal.ToTheEarthCore.blocks.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -27,15 +24,15 @@ public class ModBlocks {
 	public static final Block SILVER_ORE = new GemBase("silver_ore", Material.ROCK);
 	public static final Block IRON_ORE = new GemBase("iron_ore", Material.ROCK);
 	
-	public static final Block AMAZONITE_BLOCK = new BlockBase("amazonite_block", Material.ROCK);
-	public static final Block DIAMOND_BLOCK = new BlockBase("diamond_block", Material.ROCK);
-	public static final Block RUBY_BLOCK = new BlockBase("ruby_block", Material.ROCK);
-	public static final Block SAPHIR_BLOCK = new BlockBase("saphir_block", Material.ROCK);
-	public static final Block PLATINUM_BLOCK = new BlockBase("platinum_block", Material.ROCK);
-	public static final Block GOLD_BLOCK = new BlockBase("gold_block", Material.ROCK);
-	public static final Block SILVER_BLOCK = new BlockBase("silver_block", Material.ROCK);
-	public static final Block STEEL_BLOCK = new BlockBase("steel_block", Material.ROCK);
-	public static final Block IRON_BLOCK = new BlockBase("iron_block", Material.ROCK);
+	public static final Block AMAZONITE_BLOCK = new RockBase("amazonite_block", Material.ROCK);
+	public static final Block DIAMOND_BLOCK = new RockBase("diamond_block", Material.ROCK);
+	public static final Block RUBY_BLOCK = new RockBase("ruby_block", Material.ROCK);
+	public static final Block SAPHIR_BLOCK = new RockBase("saphir_block", Material.ROCK);
+	public static final Block PLATINUM_BLOCK = new RockBase("platinum_block", Material.ROCK);
+	public static final Block GOLD_BLOCK = new RockBase("gold_block", Material.ROCK);
+	public static final Block SILVER_BLOCK = new RockBase("silver_block", Material.ROCK);
+	public static final Block STEEL_BLOCK = new RockBase("steel_block", Material.ROCK);
+	public static final Block IRON_BLOCK = new RockBase("iron_block", Material.ROCK);
 	
 	public static final Block HARDROCK_AMAZONITE = new GemBase("hardrock_amazonite", Material.ROCK);
 	public static final Block HARDROCK_DIAMOND = new GemBase("hardrock_diamond", Material.ROCK);
@@ -48,7 +45,7 @@ public class ModBlocks {
 	public static final Block HARDROCK_IRON = new RockBase("hardrock_iron", Material.ROCK);
 	public static final Block HARDROCK_COAL = new GemBase("hardrock_coal", Material.ROCK);
 	public static final Block HARDROCK_REDSTONE = new GemBase("hardrock_redstone", Material.ROCK);
-	public static final Block HARDROCK_LAPIS = new GemBase("hardrock_lapis", Material.ROCK);
+	public static final Block HARDROCK_LAPIS = new LapisBase("hardrock_lapis", Material.ROCK);
 	
 	public static final Block REDROCK_AMAZONITE = new GemBase("redrock_amazonite", Material.ROCK);
 	public static final Block REDROCK_DIAMOND = new GemBase("redrock_diamond", Material.ROCK);
@@ -62,7 +59,7 @@ public class ModBlocks {
 	public static final Block REDROCK_COAL = new GemBase("redrock_coal", Material.ROCK);
 	public static final Block REDROCK_GAS = new RockBase("redrock_gas", Material.ROCK);
 	public static final Block REDROCK_REDSTONE = new GemBase("redrock_redstone", Material.ROCK);
-	public static final Block REDROCK_LAPIS = new GemBase("redrock_lapis", Material.ROCK);
+	public static final Block REDROCK_LAPIS = new LapisBase("redrock_lapis", Material.ROCK);
 	
 	public static final Block MANTLEROCK_AMAZONITE = new GemBase("mantlerock_amazonite", Material.ROCK);
 	public static final Block MANTLEROCK_DIAMOND = new GemBase("mantlerock_diamond", Material.ROCK);
@@ -76,7 +73,7 @@ public class ModBlocks {
 	public static final Block MANTLEROCK_COAL = new GemBase("mantlerock_coal", Material.ROCK);
 	public static final Block MANTLEROCK_GAS = new RockBase("mantlerock_gas", Material.ROCK);
 	public static final Block MANTLEROCK_REDSTONE = new GemBase("mantlerock_redstone", Material.ROCK);
-	public static final Block MANTLEROCK_LAPIS = new GemBase("mantlerock_lapis", Material.ROCK);
+	public static final Block MANTLEROCK_LAPIS = new LapisBase("mantlerock_lapis", Material.ROCK);
 	
 	
 	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);

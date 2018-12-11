@@ -29,7 +29,7 @@ public class RockBase extends BlockBase
 		super(name, material);
 		
 		setSoundType(SoundType.STONE);
-		setHardness(-1.0F);
+		setHardness(10.0F);
 		setResistance(10.0F);
 		setHarvestLevel("pickaxe", 2);
 		

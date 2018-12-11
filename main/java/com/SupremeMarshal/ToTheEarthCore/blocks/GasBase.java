@@ -9,6 +9,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
 import java.util.Random;
 
 public class GasBase extends BlockBase 
@@ -36,11 +37,13 @@ public class GasBase extends BlockBase
 		int y = pos.getY();
 		int z = pos.getZ();
 		Block block = this;
+
 		if (block == ModBlocks.MANTLEGAS && !world.isRemote)
 		{
 			world.createExplosion(null, (int)x, (int)y, (int)z, 4, true);
 			
 		}
+
 		return super.removedByPlayer(state, world, pos, entity, willHarvest);	
 	}
 }

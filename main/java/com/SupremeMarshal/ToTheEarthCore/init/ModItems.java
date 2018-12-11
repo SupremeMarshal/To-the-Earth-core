@@ -245,6 +245,8 @@ public class ModItems {
 	public static final Item SILVER_INGOT = new ItemBase("silver_ingot");
 	public static final Item GOLD_INGOT = new ItemBase("gold_ingot");
 	public static final Item PLATINUM_INGOT = new ItemBase("platinum_ingot");
+
+	public static final Item IRON_COAL = new ItemBase("iron_coal");
 	
 	public static final Item IRON_NUGGET = new ItemBase("iron_nugget");
 	public static final Item STEEL_NUGGET = new ItemBase("steel_nugget");

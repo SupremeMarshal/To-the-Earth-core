@@ -8,13 +8,16 @@ import com.SupremeMarshal.ToTheEarthCore.util.IHasModel;
 import com.SupremeMarshal.ToTheEarthCore.util.ModConfiguration;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -23,6 +26,7 @@ public class RegistryHandler {
 	public static void onItemRegister(RegistryEvent.Register<Item> event)
 	{
 		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
+
 		
 	}
 	
@@ -60,6 +64,7 @@ public class RegistryHandler {
 		ModFluids.registerFluids();
 		EntityInit.registerEntities();
 		ModConfiguration.registerConfig(event);
+		OreDictionary.registerOre("itemCoal", new ItemStack(Items.COAL, 1, OreDictionary.WILDCARD_VALUE));
 	}
 
 	public static void initRegistries(FMLInitializationEvent event) {

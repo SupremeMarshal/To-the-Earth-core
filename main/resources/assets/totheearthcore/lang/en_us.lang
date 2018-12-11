@@ -185,6 +185,8 @@ item.diamond_rod.name=Diamond rod
 item.ruby_rod.name=Ruby rod
 item.saphir_rod.name=Sapphir rod
 
+item.iron_coal.name=Iron and coal
+
 item.demon_star.name=Demon star
 item.demon_star_charged.name=Demon star charged
 item.demon_sword.name=Demon sword
