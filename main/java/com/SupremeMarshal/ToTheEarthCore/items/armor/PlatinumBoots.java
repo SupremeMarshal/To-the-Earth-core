@@ -1,16 +1,15 @@
 package com.SupremeMarshal.ToTheEarthCore.items.armor;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
 import com.google.common.collect.Multimap;
-
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class PlatinumBoots extends ArmorBase 
 
@@ -45,7 +44,7 @@ public class PlatinumBoots extends ArmorBase
     		String maxhealth = SharedMonsterAttributes.MAX_HEALTH.getName();
     		String knockback = SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName();
 
-    		mods.put(maxhealth, new AttributeModifier (MAX_HEALTH_PLATINUMBOOTS_UUID, "KNOCKBACK_RESISTANCE_PLATINUMBOOTS_UUID", 2, 0));
+    		mods.put(maxhealth, new AttributeModifier (MAX_HEALTH_PLATINUMBOOTS_UUID, "MAX_HEALTH_PLATINUMBOOTS_UUID", 2, 0));
     		mods.put(knockback, new AttributeModifier (KNOCKBACK_RESISTANCE_PLATINUMBOOTS_UUID, "KNOCKBACK_RESISTANCE_PLATINUMBOOTS_UUID", 2, 0));
     	}
     	return mods;

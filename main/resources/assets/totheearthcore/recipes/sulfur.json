@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients":
+    [
+
+        {
+            "item": "totheearthcore:sulfur_block"
+        }
+
+    ],
+
+    "result":
+    {
+        "item": "totheearthcore:sulfur",
+        "count": 9
+    }
+}

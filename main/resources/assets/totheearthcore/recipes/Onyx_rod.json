@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "A",
+        "A"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:onyx"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:onyx_rod",
+        "count": 1
+    }
+}

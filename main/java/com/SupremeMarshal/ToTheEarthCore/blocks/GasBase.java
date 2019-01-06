@@ -24,13 +24,13 @@ public class GasBase extends BlockBase
 		setHarvestLevel("pickaxe", 2);
 		
 		}
-	
+
 	@Override
-	public Item getItemDropped(IBlockState state, Random random, int l) 
+	public Item getItemDropped(IBlockState state, Random random, int l)
 	{
-	return null; 
+	return null;
 	}
-	
+
 	@Override
 	public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer entity, boolean willHarvest) {
 		int x = pos.getX();
@@ -40,12 +40,12 @@ public class GasBase extends BlockBase
 
 		if (block == ModBlocks.MANTLEGAS && !world.isRemote)
 		{
-			world.createExplosion(null, (int)x, (int)y, (int)z, 4, true);
-			
+			world.createExplosion(null, (int)x, (int)y, (int)z, 5, true);
 		}
 
-		return super.removedByPlayer(state, world, pos, entity, willHarvest);	
+		return super.removedByPlayer(state, world, pos, entity, willHarvest);
 	}
+
 }
 	
 

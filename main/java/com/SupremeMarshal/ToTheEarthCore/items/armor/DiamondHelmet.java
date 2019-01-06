@@ -1,16 +1,18 @@
 package com.SupremeMarshal.ToTheEarthCore.items.armor;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
+import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
 import com.google.common.collect.Multimap;
-
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class DiamondHelmet extends ArmorBase 
 
@@ -29,8 +31,8 @@ public class DiamondHelmet extends ArmorBase
     
     static {
 
-		modMap.put(SharedMonsterAttributes.MAX_HEALTH, new AttributeModifier(MAX_HEALTH_DIAMONDHELM_UUID, "MAX_HEALTH_DIAMONDHELM_UUID", 8, 0));
-		modMap.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE, new AttributeModifier(KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID, "KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID", 8, 0));
+		modMap.put(SharedMonsterAttributes.MAX_HEALTH, new AttributeModifier(MAX_HEALTH_DIAMONDHELM_UUID, "MAX_HEALTH_DIAMONDHELM_UUID", 5, 0));
+		modMap.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE, new AttributeModifier(KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID, "KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID", 5, 0));
 
 	}
    
@@ -47,10 +49,22 @@ public class DiamondHelmet extends ArmorBase
     		String maxhealthplatinumhelm = SharedMonsterAttributes.MAX_HEALTH.getName();
     		String knockbackplatinumhelm = SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName();
 
-    		mods.put(maxhealthplatinumhelm, new AttributeModifier (MAX_HEALTH_DIAMONDHELM_UUID, "KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID", 8, 0));
-    		mods.put(knockbackplatinumhelm, new AttributeModifier (KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID, "KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID", 8, 0));
+    		mods.put(maxhealthplatinumhelm, new AttributeModifier (MAX_HEALTH_DIAMONDHELM_UUID, "MAX_HEALTH_DIAMONDHELM_UUID", 5, 0));
+    		mods.put(knockbackplatinumhelm, new AttributeModifier (KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID, "KNOCKBACK_RESISTANCE_DIAMONDHELM_UUID", 5, 0));
     	}
     	return mods;
     }
 
+	@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack)
+	{
+		if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == ModItems.DIAMOND_HELMET)
+		{
+			if (world.getTotalWorldTime() % 150 != 1)
+			{
+				return;
+			}
+			player.heal(0.15F);
+		}
+	}
 }

@@ -73,6 +73,7 @@ public class RenderHandler
 			public ModelResourceLocation getModelLocation(ItemStack stack) {
 				
 				return new ModelResourceLocation("totheearthcore:hot_lava", "fluid");
+
 			}
 		});
 		
@@ -84,5 +85,26 @@ public class RenderHandler
 				return new ModelResourceLocation("totheearthcore:hot_lava", "fluid");
 			}
 		});
+
+		ModelLoader.setCustomMeshDefinition(Item.getItemFromBlock(ModBlocks.CORE_LAVA_BLOCK), new ItemMeshDefinition() {
+
+			@Override
+			public ModelResourceLocation getModelLocation(ItemStack stack) {
+
+				return new ModelResourceLocation("totheearthcore:core_lava", "fluid");
+
+			}
+		});
+
+		ModelLoader.setCustomStateMapper(ModBlocks.CORE_LAVA_BLOCK, new StateMapperBase() {
+
+			@Override
+			protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
+
+				return new ModelResourceLocation("totheearthcore:core_lava", "fluid");
+			}
+		});
 	}
+
+
 }

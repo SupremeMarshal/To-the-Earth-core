@@ -2,14 +2,12 @@ package com.SupremeMarshal.ToTheEarthCore.blocks;
 import com.SupremeMarshal.ToTheEarthCore.HardnessHandler;
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -26,8 +24,8 @@ public class GemBase extends BlockBase
 		
 		setSoundType(SoundType.STONE);
 		setHardness(1.0F);
-		setResistance(10.0F);
-		setHarvestLevel("pickaxe", 2);
+		setResistance(50.0F);
+		setHarvestLevel("pickaxe", 1);
 
 		
 
@@ -53,13 +51,47 @@ public class GemBase extends BlockBase
 	{return new ItemStack(Items.EMERALD, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE)
 	{return new ItemStack(Items.REDSTONE, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.HARDROCK_LAPIS || block == ModBlocks.REDROCK_LAPIS || block == ModBlocks.MANTLEROCK_LAPIS)
-	{return new ItemStack(Items.DYE, 1,4).getItem();}
+	else if (block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR || block == ModBlocks.SULFUR_ORE)
+	{return new ItemStack(ModItems.SULFUR, 1,0).getItem();}
 	else
 	{return new ItemStack(block, (int) (1), 0).getItem();}
 	}
 
+	@Override
+	public int quantityDropped(Random random) {
+		Block block = this;
 
+		if (block == ModBlocks.HARDROCK_REDSTONE)
+		{
+			return 6 + random.nextInt(4);
+		}
+
+		else if (block == ModBlocks.REDROCK_REDSTONE)
+		{
+			return 8 + random.nextInt(6);
+		}
+		else if (block == ModBlocks.MANTLEROCK_REDSTONE)
+		{
+			return 10 + random.nextInt(8);
+		}
+		else if (block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDROCK_SULFUR)
+		{
+			return 2;
+		}
+		else if (block == ModBlocks.REDROCK_COAL || block == ModBlocks.REDROCK_SULFUR)
+		{
+			return 3;
+		}
+		else if (block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.MANTLEROCK_SULFUR)
+		{
+			return 4;
+		}
+		else
+		{
+			return 1;
+		}
+
+	}
 
 	public void onBlockClicked(World world, BlockPos pos, EntityPlayer entity) {
 		Block block = this;
@@ -78,15 +110,11 @@ public class GemBase extends BlockBase
 		int z = pos.getZ();
 		Block block = this;
 		if (!world.isRemote) {
-		if (block == ModBlocks.HOTROCK)
-		{
-			world.setBlockState(new BlockPos( x, y, z), Blocks.LAVA.getDefaultState(), 3);
-		}
-		else if (block == ModBlocks.HARDROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.HARDROCK_REDSTONE ||
+			if (block == ModBlocks.HARDROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.HARDROCK_REDSTONE ||
 				block == ModBlocks.REDROCK_REDSTONE ||block == ModBlocks.MANTLEROCK_REDSTONE  ||
-				block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD)
+				block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.SULFUR_ORE
+				|| block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 
 		}

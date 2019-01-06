@@ -1,67 +1,42 @@
 package com.SupremeMarshal.ToTheEarthCore.init;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 import com.SupremeMarshal.ToTheEarthCore.items.Gems;
 import com.SupremeMarshal.ToTheEarthCore.items.ItemBase;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.AmazoniteBody;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.AmazoniteBoots;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.AmazoniteHelmet;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.AmazoniteLegs;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.ArmorBase;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.DiamondBody;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.DiamondBoots;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.DiamondHelmet;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.DiamondLegs;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.PlatinumBody;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.PlatinumBoots;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.PlatinumHelmet;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.PlatinumLegs;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.RubyBody;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.RubyBoots;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.RubyHelmet;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.RubyLegs;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.SapphirBody;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.SapphirBoots;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.SapphirHelmet;
-import com.SupremeMarshal.ToTheEarthCore.items.armor.SapphirLegs;
-import com.SupremeMarshal.ToTheEarthCore.items.tools.ToolAxe;
-import com.SupremeMarshal.ToTheEarthCore.items.tools.ToolHoe;
-import com.SupremeMarshal.ToTheEarthCore.items.tools.ToolPickaxe;
-import com.SupremeMarshal.ToTheEarthCore.items.tools.ToolSpade;
-import com.SupremeMarshal.ToTheEarthCore.items.tools.ToolSword;
+import com.SupremeMarshal.ToTheEarthCore.items.armor.*;
+import com.SupremeMarshal.ToTheEarthCore.items.food.EnchantedFoodEffectBase;
+import com.SupremeMarshal.ToTheEarthCore.items.food.FoodEffectBase;
+import com.SupremeMarshal.ToTheEarthCore.items.tools.*;
 import com.SupremeMarshal.ToTheEarthCore.util.Reference;
-
+import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.item.ItemAxe;
-import net.minecraft.item.ItemHoe;
-import net.minecraft.item.ItemPickaxe;
-import net.minecraft.item.ItemSpade;
-import net.minecraft.item.ItemSword;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModItems {
 	
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//TOOLS MATERIAL	(NAME, HARVEST LVL, MAX USE, EFFICIENCY, DAMAGE, ENCHANTABILITY)
-	public static final ToolMaterial MATERIAL_IRON = EnumHelper.addToolMaterial("material_iron", 2, 200, 3.0F, 2.0F, 20);
+	public static final ToolMaterial MATERIAL_IRON = EnumHelper.addToolMaterial("material_iron", 2, 250, 3.0F, 2.0F, 20);
 	public static final ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 2, 500, 4.0F, 2.5F, 18);
-	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 3, 100, 5.0F, 3.0F, 16);
-	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 4, 600, 10.0F, 4F, 14);
-	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 5, 900, 10.0F, 5F, 12);
-	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1250, 16.0F, 6.0F, 10);
-	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 1500, 21.0F, 8F, 8);
-	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 3000, 30.0F, 12.0F, 6);
-	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 9, 6000, 60.0F, 16F, 5);
-	public static final ToolMaterial MATERIAL_DEMON = EnumHelper.addToolMaterial("material_demon", 9, 1000, 50.0F, 24F, 5);
-	public static final ToolMaterial MATERIAL_CORE = EnumHelper.addToolMaterial("material_core", 10, 10000, 120.0F, 32F, 5);
+	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 3, 200, 6.0F, 3.0F, 16);
+	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 4, 750, 8.5F, 3.5F, 14);
+	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 5, 900, 11.0F, 4.0F, 12);
+	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 500, 14.0F, 5.0F, 8);
+	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1500, 15.0F, 5.0F, 10);
+	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 2000, 20.0F, 6.0F, 8);
+	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 3000, 25.0F, 7.5F, 6);
+	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 9, 4000, 30.0F, 10.0F, 5);
+	public static final ToolMaterial MATERIAL_DEMON = EnumHelper.addToolMaterial("material_demon", 9, 1000, 25.0F, 20F, 5);
+	public static final ToolMaterial MATERIAL_CORE = EnumHelper.addToolMaterial("material_core", 10, 2500, 30.0F, 24F, 5);
+	public static final ToolMaterial MATERIAL_ONYX = EnumHelper.addToolMaterial("material_onyx", 10, 5000, 35.0F, 15.0F, 4);
 	
 	
 	//ARMOR MATERIAL (name, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness)
@@ -72,25 +47,31 @@ public class ModItems {
 			new int[] {2, 4, 3, 2}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	
 	public static final ArmorMaterial ARMOR_MATERIAL_SILVER = EnumHelper.addArmorMaterial("armor_material_silver", Reference.MOD_ID + ":silver", 6, 
-			new int[] {2, 5, 4, 2}, 16, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F);
+			new int[] {2, 5, 4, 2}, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_GOLD = EnumHelper.addArmorMaterial("armor_material_gold", Reference.MOD_ID + ":gold", 14, 
+	public static final ArmorMaterial ARMOR_MATERIAL_GOLD = EnumHelper.addArmorMaterial("armor_material_gold", Reference.MOD_ID + ":gold", 20,
 			new int[] {2, 6, 5, 2}, 14, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.5F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_PLATINUM = EnumHelper.addArmorMaterial("armor_material_platinum", Reference.MOD_ID + ":platinum", 20, 
+	public static final ArmorMaterial ARMOR_MATERIAL_PLATINUM = EnumHelper.addArmorMaterial("armor_material_platinum", Reference.MOD_ID + ":platinum", 25,
 			new int[] {3, 7, 6, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0F);
-	
-	public static final ArmorMaterial ARMOR_MATERIAL_SAPHIR = EnumHelper.addArmorMaterial("armor_material_saphir", Reference.MOD_ID + ":saphir", 16, 
+
+	public static final ArmorMaterial ARMOR_MATERIAL_EMERALD = EnumHelper.addArmorMaterial("armor_material_emerald", Reference.MOD_ID + ":emerald", 10,
+			new int[] {3, 8, 6, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
+
+	public static final ArmorMaterial ARMOR_MATERIAL_SAPHIR = EnumHelper.addArmorMaterial("armor_material_saphir", Reference.MOD_ID + ":saphir", 30,
 			new int[] {3, 8, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_material_ruby", Reference.MOD_ID + ":ruby", 22, 
+	public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_material_ruby", Reference.MOD_ID + ":ruby", 45,
 			new int[] {4, 9, 7, 4}, 8, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_DIAMOND = EnumHelper.addArmorMaterial("armor_material_diamond", Reference.MOD_ID + ":diamond", 36, 
-			new int[] {5, 10, 8, 5}, 7, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F);
+	public static final ArmorMaterial ARMOR_MATERIAL_DIAMOND = EnumHelper.addArmorMaterial("armor_material_diamond", Reference.MOD_ID + ":diamond", 60,
+			new int[] {5, 10, 8, 5}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_AMAZONITE = EnumHelper.addArmorMaterial("armor_material_amazonite", Reference.MOD_ID + ":amazonite", 50, 
-			new int[] {5, 11, 8, 5}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.0F);
+	public static final ArmorMaterial ARMOR_MATERIAL_AMAZONITE = EnumHelper.addArmorMaterial("armor_material_amazonite", Reference.MOD_ID + ":amazonite", 75,
+			new int[] {6, 12, 9, 6}, 5, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.0F);
+
+	public static final ArmorMaterial ARMOR_MATERIAL_ONYX = EnumHelper.addArmorMaterial("armor_material_onyx", Reference.MOD_ID + ":onyx", 100,
+			new int[] {7, 14, 10, 7}, 4, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F);
 	
 	
 	
@@ -145,10 +126,10 @@ public class ModItems {
 	public static final ItemAxe GOLD_AXE = new ToolAxe("gold_axe", MATERIAL_GOLD);
 	public static final ItemHoe GOLD_HOE = new ToolHoe("gold_hoe", MATERIAL_GOLD);
 	
-	public static final Item GOLD_HELMET = new ArmorBase("gold_helmet", ARMOR_MATERIAL_GOLD, 1, EntityEquipmentSlot.HEAD);
-	public static final Item GOLD_CHESTPLATE = new ArmorBase("gold_chestplate", ARMOR_MATERIAL_GOLD, 1, EntityEquipmentSlot.CHEST);
-	public static final Item GOLD_LEGGINGS = new ArmorBase("gold_leggings", ARMOR_MATERIAL_GOLD, 2, EntityEquipmentSlot.LEGS);
-	public static final Item GOLD_BOOTS = new ArmorBase("gold_boots", ARMOR_MATERIAL_GOLD, 1, EntityEquipmentSlot.FEET);
+	public static final Item GOLD_HELMET = new GoldHelmet("gold_helmet", ARMOR_MATERIAL_GOLD, 1, EntityEquipmentSlot.HEAD);
+	public static final Item GOLD_CHESTPLATE = new GoldBody("gold_chestplate", ARMOR_MATERIAL_GOLD, 1, EntityEquipmentSlot.CHEST);
+	public static final Item GOLD_LEGGINGS = new GoldLegs("gold_leggings", ARMOR_MATERIAL_GOLD, 2, EntityEquipmentSlot.LEGS);
+	public static final Item GOLD_BOOTS = new GoldBoots("gold_boots", ARMOR_MATERIAL_GOLD, 1, EntityEquipmentSlot.FEET);
 	
 	//PLATINUM//
 
@@ -164,20 +145,34 @@ public class ModItems {
 	public static final Item PLATINUM_LEGGINGS = new PlatinumLegs("platinum_leggings", ARMOR_MATERIAL_PLATINUM, 2, EntityEquipmentSlot.LEGS);
 	public static final Item PLATINUM_BOOTS = new PlatinumBoots("platinum_boots", ARMOR_MATERIAL_PLATINUM, 1, EntityEquipmentSlot.FEET);
 	
-	//SAPHIR//
+	//EMERALD//
 
 	
+	public static final ItemSword EMERALD_SWORD = new ToolSword("emerald_sword", MATERIAL_EMERALD);
+	public static final ItemSpade EMERALD_SHOVEL = new ToolSpade("emerald_shovel", MATERIAL_EMERALD);
+	public static final ItemPickaxe EMERALD_PICKAXE = new ToolPickaxe("emerald_pickaxe", MATERIAL_EMERALD);
+	public static final ItemAxe EMERALD_AXE = new ToolAxe("emerald_axe", MATERIAL_EMERALD);
+	public static final ItemHoe EMERALD_HOE = new ToolHoe("emerald_hoe", MATERIAL_EMERALD);
+	
+	public static final Item EMERALD_HELMET = new EmeraldHelmet("emerald_helmet", ARMOR_MATERIAL_EMERALD, 1, EntityEquipmentSlot.HEAD);
+	public static final Item EMERALD_CHESTPLATE = new EmeraldBody("emerald_chestplate", ARMOR_MATERIAL_EMERALD, 1, EntityEquipmentSlot.CHEST);
+	public static final Item EMERALD_LEGGINGS = new EmeraldLegs("emerald_leggings", ARMOR_MATERIAL_EMERALD, 2, EntityEquipmentSlot.LEGS);
+	public static final Item EMERALD_BOOTS = new EmeraldBoots("emerald_boots", ARMOR_MATERIAL_EMERALD, 1, EntityEquipmentSlot.FEET);
+
+	//SAPHIR//
+
+
 	public static final ItemSword SAPHIR_SWORD = new ToolSword("saphir_sword", MATERIAL_SAPHIR);
 	public static final ItemSpade SAPHIR_SHOVEL = new ToolSpade("saphir_shovel", MATERIAL_SAPHIR);
 	public static final ItemPickaxe SAPHIR_PICKAXE = new ToolPickaxe("saphir_pickaxe", MATERIAL_SAPHIR);
 	public static final ItemAxe SAPHIR_AXE = new ToolAxe("saphir_axe", MATERIAL_SAPHIR);
 	public static final ItemHoe SAPHIR_HOE = new ToolHoe("saphir_hoe", MATERIAL_SAPHIR);
-	
+
 	public static final Item SAPHIR_HELMET = new SapphirHelmet("saphir_helmet", ARMOR_MATERIAL_SAPHIR, 1, EntityEquipmentSlot.HEAD);
 	public static final Item SAPHIR_CHESTPLATE = new SapphirBody("saphir_chestplate", ARMOR_MATERIAL_SAPHIR, 1, EntityEquipmentSlot.CHEST);
 	public static final Item SAPHIR_LEGGINGS = new SapphirLegs("saphir_leggings", ARMOR_MATERIAL_SAPHIR, 2, EntityEquipmentSlot.LEGS);
 	public static final Item SAPHIR_BOOTS = new SapphirBoots("saphir_boots", ARMOR_MATERIAL_SAPHIR, 1, EntityEquipmentSlot.FEET);
-	
+
 	//RUBY//
 
 	
@@ -219,7 +214,20 @@ public class ModItems {
 	public static final Item AMAZONITE_CHESTPLATE = new AmazoniteBody("amazonite_chestplate", ARMOR_MATERIAL_AMAZONITE, 1, EntityEquipmentSlot.CHEST);
 	public static final Item AMAZONITE_LEGGINGS = new AmazoniteLegs("amazonite_leggings", ARMOR_MATERIAL_AMAZONITE, 2, EntityEquipmentSlot.LEGS);
 	public static final Item AMAZONITE_BOOTS = new AmazoniteBoots("amazonite_boots", ARMOR_MATERIAL_AMAZONITE, 1, EntityEquipmentSlot.FEET);
-	
+
+
+	//ONYX//
+
+	public static final ItemSword ONYX_SWORD = new ToolSword("onyx_sword", MATERIAL_ONYX);
+	public static final ItemSpade ONYX_SHOVEL = new ToolSpade("onyx_shovel", MATERIAL_ONYX);
+	public static final ItemPickaxe ONYX_PICKAXE = new ToolPickaxe("onyx_pickaxe", MATERIAL_ONYX);
+	public static final ItemAxe ONYX_AXE = new ToolAxe("onyx_axe", MATERIAL_ONYX);
+
+	public static final Item ONYX_HELMET = new OnyxHelmet("onyx_helmet", ARMOR_MATERIAL_ONYX, 1, EntityEquipmentSlot.HEAD);
+	public static final Item ONYX_CHESTPLATE = new OnyxBody("onyx_chestplate", ARMOR_MATERIAL_ONYX, 1, EntityEquipmentSlot.CHEST);
+	public static final Item ONYX_LEGGINGS = new OnyxLegs("onyx_leggings", ARMOR_MATERIAL_ONYX, 2, EntityEquipmentSlot.LEGS);
+	public static final Item ONYX_BOOTS = new OnyxBoots("onyx_boots", ARMOR_MATERIAL_ONYX, 1, EntityEquipmentSlot.FEET);
+
 	//DEMON//CORE//
 	
 	public static final ItemSword DEMON_SWORD = new ToolSword("demon_sword", MATERIAL_DEMON);
@@ -232,12 +240,15 @@ public class ModItems {
 	public static final Item RUBY = new ItemBase("ruby");
 	public static final Item DIAMOND = new ItemBase("diamond");
 	public static final Item AMAZONITE = new Gems("amazonite");
+	public static final Item ONYX = new Gems("onyx");
 	
 	//ROD//
+	public static final Item EMERALD_ROD = new ItemBase("emerald_rod");
 	public static final Item SAPHIR_ROD = new ItemBase("saphir_rod");
 	public static final Item RUBY_ROD = new ItemBase("ruby_rod");
 	public static final Item DIAMOND_ROD = new ItemBase("diamond_rod");
 	public static final Item AMAZONITE_ROD = new Gems("amazonite_rod");
+	public static final Item ONYX_ROD = new Gems("onyx_rod");
 	
 	//Ingot//
 	public static final Item IRON_INGOT = new ItemBase("iron_ingot");
@@ -247,6 +258,7 @@ public class ModItems {
 	public static final Item PLATINUM_INGOT = new ItemBase("platinum_ingot");
 
 	public static final Item IRON_COAL = new ItemBase("iron_coal");
+	public static final Item SULFUR = new ItemBase("sulfur");
 	
 	public static final Item IRON_NUGGET = new ItemBase("iron_nugget");
 	public static final Item STEEL_NUGGET = new ItemBase("steel_nugget");
@@ -257,4 +269,19 @@ public class ModItems {
 	public static final Item DEMON_STAR = new ItemBase("demon_star");
 	public static final Item DEMON_STAR_CHARGED = new Gems("demon_star_charged");
 	public static final Item CORE_STAR = new ItemBase("core_star");
+
+	public static final Item PLATINUM_APPLE = new FoodEffectBase("platinum_apple", 10, 3.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 6000,4, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 400,2, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 3000,0, false, false));
+
+	public static final Item ENCHANTED_PLATINUM_APPLE = new EnchantedFoodEffectBase("enchanted_platinum_apple", 10, 3.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 6000,4, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 800,2, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 3000,1, false, false),
+			new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000,1, false, false),
+			new PotionEffect(MobEffects.RESISTANCE, 6000,1, false, false),
+			new PotionEffect(MobEffects.GLOWING, 3000,0, false, false));
+
+
 }

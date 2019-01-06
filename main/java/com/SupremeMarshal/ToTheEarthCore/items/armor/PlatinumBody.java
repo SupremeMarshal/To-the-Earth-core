@@ -1,16 +1,15 @@
 package com.SupremeMarshal.ToTheEarthCore.items.armor;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
 import com.google.common.collect.Multimap;
-
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class PlatinumBody extends ArmorBase 
 
@@ -29,8 +28,8 @@ public class PlatinumBody extends ArmorBase
     
     static {
 
-		modMap.put(SharedMonsterAttributes.MAX_HEALTH, new AttributeModifier(MAX_HEALTH_PLATINUMBODY_UUID, "MAX_HEALTH_PLATINUMBODY_UUID", 2, 0));
-		modMap.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE, new AttributeModifier(KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID, "KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID", 2, 0));
+		modMap.put(SharedMonsterAttributes.MAX_HEALTH, new AttributeModifier(MAX_HEALTH_PLATINUMBODY_UUID, "MAX_HEALTH_PLATINUMBODY_UUID", 4, 0));
+		modMap.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE, new AttributeModifier(KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID, "KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID", 4, 0));
 	}
    
     public Multimap<String, AttributeModifier> getAttributeModifiers(EntityEquipmentSlot slot,
@@ -45,8 +44,8 @@ public class PlatinumBody extends ArmorBase
     		String maxhealthplatinumbody = SharedMonsterAttributes.MAX_HEALTH.getName();
     		String knockbackplatinumbody = SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName();
 
-    		mods.put(maxhealthplatinumbody, new AttributeModifier (MAX_HEALTH_PLATINUMBODY_UUID, "KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID", 2, 0));
-    		mods.put(knockbackplatinumbody, new AttributeModifier (KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID, "KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID", 2, 0));
+    		mods.put(maxhealthplatinumbody, new AttributeModifier (MAX_HEALTH_PLATINUMBODY_UUID, "MAX_HEALTH_PLATINUMBODY_UUID", 4, 0));
+    		mods.put(knockbackplatinumbody, new AttributeModifier (KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID, "KNOCKBACK_RESISTANCE_PLATINUMBODY_UUID", 4, 0));
     	}
     	return mods;
     }

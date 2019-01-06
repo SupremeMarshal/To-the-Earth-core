@@ -1,16 +1,18 @@
 package com.SupremeMarshal.ToTheEarthCore.items.armor;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
+import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
 import com.google.common.collect.Multimap;
-
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class RubyLegs extends ArmorBase 
 
@@ -45,10 +47,21 @@ public class RubyLegs extends ArmorBase
     		String maxhealth = SharedMonsterAttributes.MAX_HEALTH.getName();
     		String knockback = SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName();
 
-    		mods.put(maxhealth, new AttributeModifier (MAX_HEALTH_RUBYLEGS_UUID, "KNOCKBACK_RESISTANCE_RUBYLEGS_UUID", 6, 0));
+    		mods.put(maxhealth, new AttributeModifier (MAX_HEALTH_RUBYLEGS_UUID, "MAX_HEALTH_RUBYLEGS_UUID", 6, 0));
     		mods.put(knockback, new AttributeModifier (KNOCKBACK_RESISTANCE_RUBYLEGS_UUID, "KNOCKBACK_RESISTANCE_RUBYLEGS_UUID", 6, 0));
     	}
     	return mods;
     }
-
+	@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack)
+	{
+		if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == ModItems.RUBY_LEGGINGS)
+		{
+			if (world.getTotalWorldTime() % 200 != 1)
+			{
+				return;
+			}
+			player.heal(0.3F);
+		}
+	}
 }

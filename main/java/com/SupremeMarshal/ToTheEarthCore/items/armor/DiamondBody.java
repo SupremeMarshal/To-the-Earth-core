@@ -1,16 +1,18 @@
 package com.SupremeMarshal.ToTheEarthCore.items.armor;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
+import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
 import com.google.common.collect.Multimap;
-
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class DiamondBody extends ArmorBase 
 
@@ -29,8 +31,8 @@ public class DiamondBody extends ArmorBase
     
     static {
 
-		modMap.put(SharedMonsterAttributes.MAX_HEALTH, new AttributeModifier(MAX_HEALTH_DIAMONDBODY_UUID, "MAX_HEALTH_DIAMONDBODY_UUID", 8, 0));
-		modMap.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE, new AttributeModifier(KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID, "KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID", 8, 0));
+		modMap.put(SharedMonsterAttributes.MAX_HEALTH, new AttributeModifier(MAX_HEALTH_DIAMONDBODY_UUID, "MAX_HEALTH_DIAMONDBODY_UUID", 10, 0));
+		modMap.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE, new AttributeModifier(KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID, "KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID", 10, 0));
 	}
    
     public Multimap<String, AttributeModifier> getAttributeModifiers(EntityEquipmentSlot slot,
@@ -45,10 +47,22 @@ public class DiamondBody extends ArmorBase
     		String maxhealthplatinumbody = SharedMonsterAttributes.MAX_HEALTH.getName();
     		String knockbackplatinumbody = SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName();
 
-    		mods.put(maxhealthplatinumbody, new AttributeModifier (MAX_HEALTH_DIAMONDBODY_UUID, "KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID", 8, 0));
-    		mods.put(knockbackplatinumbody, new AttributeModifier (KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID, "KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID", 8, 0));
+    		mods.put(maxhealthplatinumbody, new AttributeModifier (MAX_HEALTH_DIAMONDBODY_UUID, "MAX_HEALTH_DIAMONDBODY_UUID", 10, 0));
+    		mods.put(knockbackplatinumbody, new AttributeModifier (KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID, "KNOCKBACK_RESISTANCE_DIAMONDBODY_UUID", 10, 0));
     	}
     	return mods;
     }
 
+	@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack)
+	{
+		if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == ModItems.DIAMOND_CHESTPLATE)
+		{
+			if (world.getTotalWorldTime() % 150 != 1)
+			{
+				return;
+			}
+			player.heal(0.4F);
+		}
+	}
 }

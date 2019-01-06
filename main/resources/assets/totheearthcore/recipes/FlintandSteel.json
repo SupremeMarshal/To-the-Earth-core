@@ -1,22 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    
-    "pattern":
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients":
     [
-        "AB"
-    ],
-    
-    "key":
-    {
-        "A":
+
         {
             "item": "totheearthcore:steel_ingot"
         },
-        "B":
         {
             "item": "minecraft:flint"
         }
-    },
+    ],
     
     "result":
     {

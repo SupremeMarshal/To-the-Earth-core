@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AA",
+        "AB",
+        " B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:emerald"
+        },
+        "B":
+        {
+            "item": "totheearthcore:emerald_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:emerald_axe",
+        "count": 1
+    }
+}

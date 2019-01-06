@@ -6,12 +6,13 @@ import com.SupremeMarshal.ToTheEarthCore.init.ModFluids;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
 import com.SupremeMarshal.ToTheEarthCore.util.IHasModel;
 import com.SupremeMarshal.ToTheEarthCore.util.ModConfiguration;
-
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -58,17 +59,20 @@ public class RegistryHandler {
 		RenderHandler.registerEntityRenders();
 		RenderHandler.registerCustomMeshesAndStates();
 	}
-	
+
 	public static void preInitRegistries(FMLPreInitializationEvent event)
 	{
 		ModFluids.registerFluids();
 		EntityInit.registerEntities();
 		ModConfiguration.registerConfig(event);
 		OreDictionary.registerOre("itemCoal", new ItemStack(Items.COAL, 1, OreDictionary.WILDCARD_VALUE));
+		OreDictionary.registerOre("itemPlank", new ItemStack(Blocks.PLANKS, 1, OreDictionary.WILDCARD_VALUE));
+		MinecraftForge.EVENT_BUS.register(new FogHandler());
+
 	}
 
 	public static void initRegistries(FMLInitializationEvent event) {
-		
+
 	}
 
 	
