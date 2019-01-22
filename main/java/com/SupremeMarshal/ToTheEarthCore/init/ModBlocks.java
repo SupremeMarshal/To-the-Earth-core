@@ -78,6 +78,14 @@ public class ModBlocks {
 	public static final Block MANTLEROCK_REDSTONE = new GemBase("mantlerock_redstone", Material.ROCK);
 	public static final Block MANTLEROCK_LAPIS = new LapisBase("mantlerock_lapis", Material.ROCK);
 	public static final Block MANTLEROCK_SULFUR = new GemBase("mantlerock_sulfur", Material.ROCK);
+	
+	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);
+	public static final Block REDROCK = new RockBase("redrock", Material.ROCK);
+	public static final Block MANTLEROCK = new RockBase("mantlerock", Material.ROCK);
+	public static final Block COREROCK = new Corerock("corerock", Material.ROCK);
+	public static final Block INNERCOREROCK = new Corerock("innercorerock", Material.ROCK);
+	public static final Block MANTLEGAS = new GasBase("mantlegas", Material.ROCK);
+	public static final Block HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock", Material.ROCK);
 
 	public static final Block COREROCK_ONYX = new Corerock("corerock_onyx", Material.ROCK);
 	public static final Block COREROCK_AMAZONITE = new Corerock("corerock_amazonite", Material.ROCK);
@@ -108,14 +116,6 @@ public class ModBlocks {
 	public static final Block INNERCOREROCK_IRON = new Corerock("innercorerock_iron", Material.ROCK);
 	public static final Block INNERCOREROCK_COAL = new Corerock("innercorerock_coal", Material.ROCK);
 	public static final Block INNERCOREROCK_SULFUR = new Corerock("innercorerock_sulfur", Material.ROCK);
-	
-	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);
-	public static final Block REDROCK = new RockBase("redrock", Material.ROCK);
-	public static final Block MANTLEROCK = new RockBase("mantlerock", Material.ROCK);
-	public static final Block COREROCK = new Corerock("corerock", Material.ROCK);
-	public static final Block INNERCOREROCK = new Corerock("innercorerock", Material.ROCK);
-	public static final Block MANTLEGAS = new GasBase("mantlegas", Material.ROCK);
-	public static final Block HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock", Material.ROCK);
 	
 	public static final Block HOTROCK = new BlockBase("hotrock", Material.ROCK);
 	

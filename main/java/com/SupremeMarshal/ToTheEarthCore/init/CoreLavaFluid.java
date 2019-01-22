@@ -20,12 +20,13 @@ public class CoreLavaFluid extends BlockFluidClassic {
 		super(fluid, material);
 		setTranslationKey(name);
 		setRegistryName(name);
-		
+
 		setLightLevel(1);
 		setDensity(400);
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(name));
 	}
+
 
 
 

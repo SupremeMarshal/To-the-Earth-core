@@ -8,6 +8,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -20,7 +21,7 @@ public class GasBase extends BlockBase
 		
 		setSoundType(SoundType.STONE);
 		setHardness(1.0F);
-		setResistance(15.0F);
+		setResistance(10.0F);
 		setHarvestLevel("pickaxe", 2);
 		
 		}
@@ -44,6 +45,18 @@ public class GasBase extends BlockBase
 		}
 
 		return super.removedByPlayer(state, world, pos, entity, willHarvest);
+	}
+
+	public void onExplosionDestroy(World worldIn, BlockPos pos, Explosion explosionIn)
+	{
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		Block block = this;
+		if (block == ModBlocks.MANTLEGAS && !worldIn.isRemote)
+		{
+			worldIn.createExplosion(null, (int)x, (int)y, (int)z, 3, true);
+		}
 	}
 
 }

@@ -20,9 +20,7 @@ public class Main {
 
 	@Instance
 	public static Main instance;
-	
-	
-	
+
 	
 	@SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.SERVER)
 	public static CommonProxy proxy;
@@ -41,14 +39,14 @@ public class Main {
     public static void init(FMLInitializationEvent event) {
 		ModSmelting.init();
 		RegistryHandler.initRegistries(event);
-    }
 
+    }
 
 
 	@EventHandler
 	public static void PostInit(FMLPostInitializationEvent event)
 	{
-
+		RegistryHandler.posInitRegistries(event);
 	}
 	
 	

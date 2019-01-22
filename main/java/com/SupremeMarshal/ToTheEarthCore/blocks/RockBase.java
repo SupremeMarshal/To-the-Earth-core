@@ -1,6 +1,6 @@
 package com.SupremeMarshal.ToTheEarthCore.blocks;
 
-import com.SupremeMarshal.ToTheEarthCore.HardnessHandler;
+import com.SupremeMarshal.ToTheEarthCore.util.handlers.HardnessHandler;
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

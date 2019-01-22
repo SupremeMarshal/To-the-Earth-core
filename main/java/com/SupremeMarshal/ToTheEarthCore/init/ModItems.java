@@ -5,6 +5,7 @@ import com.SupremeMarshal.ToTheEarthCore.items.ItemBase;
 import com.SupremeMarshal.ToTheEarthCore.items.armor.*;
 import com.SupremeMarshal.ToTheEarthCore.items.food.EnchantedFoodEffectBase;
 import com.SupremeMarshal.ToTheEarthCore.items.food.FoodEffectBase;
+import com.SupremeMarshal.ToTheEarthCore.items.shields.*;
 import com.SupremeMarshal.ToTheEarthCore.items.tools.*;
 import com.SupremeMarshal.ToTheEarthCore.util.Reference;
 import net.minecraft.init.MobEffects;
@@ -29,7 +30,7 @@ public class ModItems {
 	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 3, 200, 6.0F, 3.0F, 16);
 	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 4, 750, 8.5F, 3.5F, 14);
 	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 5, 900, 11.0F, 4.0F, 12);
-	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 500, 14.0F, 5.0F, 8);
+	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 250, 14.0F, 5.0F, 8);
 	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1500, 15.0F, 5.0F, 10);
 	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 2000, 20.0F, 6.0F, 8);
 	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 3000, 25.0F, 7.5F, 6);
@@ -40,37 +41,37 @@ public class ModItems {
 	
 	
 	//ARMOR MATERIAL (name, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness)
-	public static final ArmorMaterial ARMOR_MATERIAL_IRON = EnumHelper.addArmorMaterial("armor_material_iron", Reference.MOD_ID + ":iron", 8, 
-			new int[] {2, 4, 3, 2}, 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_MATERIAL_IRON = EnumHelper.addArmorMaterial("armor_material_iron", Reference.MOD_ID + ":iron", 15,
+			new int[] {2, 5, 4, 2}, 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_STEEL = EnumHelper.addArmorMaterial("armor_material_steel", Reference.MOD_ID + ":steel", 16, 
-			new int[] {2, 4, 3, 2}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+	public static final ArmorMaterial ARMOR_MATERIAL_STEEL = EnumHelper.addArmorMaterial("armor_material_steel", Reference.MOD_ID + ":steel", 30,
+			new int[] {2, 5, 4, 2}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_SILVER = EnumHelper.addArmorMaterial("armor_material_silver", Reference.MOD_ID + ":silver", 6, 
-			new int[] {2, 5, 4, 2}, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F);
+	public static final ArmorMaterial ARMOR_MATERIAL_SILVER = EnumHelper.addArmorMaterial("armor_material_silver", Reference.MOD_ID + ":silver", 12,
+			new int[] {2, 6, 5, 2}, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.5F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_GOLD = EnumHelper.addArmorMaterial("armor_material_gold", Reference.MOD_ID + ":gold", 20,
+	public static final ArmorMaterial ARMOR_MATERIAL_GOLD = EnumHelper.addArmorMaterial("armor_material_gold", Reference.MOD_ID + ":gold", 45,
 			new int[] {2, 6, 5, 2}, 14, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.5F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_PLATINUM = EnumHelper.addArmorMaterial("armor_material_platinum", Reference.MOD_ID + ":platinum", 25,
+	public static final ArmorMaterial ARMOR_MATERIAL_PLATINUM = EnumHelper.addArmorMaterial("armor_material_platinum", Reference.MOD_ID + ":platinum", 56,
 			new int[] {3, 7, 6, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0F);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_EMERALD = EnumHelper.addArmorMaterial("armor_material_emerald", Reference.MOD_ID + ":emerald", 10,
+	public static final ArmorMaterial ARMOR_MATERIAL_EMERALD = EnumHelper.addArmorMaterial("armor_material_emerald", Reference.MOD_ID + ":emerald", 15,
 			new int[] {3, 8, 6, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_SAPHIR = EnumHelper.addArmorMaterial("armor_material_saphir", Reference.MOD_ID + ":saphir", 30,
+	public static final ArmorMaterial ARMOR_MATERIAL_SAPHIR = EnumHelper.addArmorMaterial("armor_material_saphir", Reference.MOD_ID + ":saphir", 93,
 			new int[] {3, 8, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_material_ruby", Reference.MOD_ID + ":ruby", 45,
+	public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_material_ruby", Reference.MOD_ID + ":ruby", 125,
 			new int[] {4, 9, 7, 4}, 8, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_DIAMOND = EnumHelper.addArmorMaterial("armor_material_diamond", Reference.MOD_ID + ":diamond", 60,
+	public static final ArmorMaterial ARMOR_MATERIAL_DIAMOND = EnumHelper.addArmorMaterial("armor_material_diamond", Reference.MOD_ID + ":diamond", 187,
 			new int[] {5, 10, 8, 5}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_AMAZONITE = EnumHelper.addArmorMaterial("armor_material_amazonite", Reference.MOD_ID + ":amazonite", 75,
+	public static final ArmorMaterial ARMOR_MATERIAL_AMAZONITE = EnumHelper.addArmorMaterial("armor_material_amazonite", Reference.MOD_ID + ":amazonite", 250,
 			new int[] {6, 12, 9, 6}, 5, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.0F);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_ONYX = EnumHelper.addArmorMaterial("armor_material_onyx", Reference.MOD_ID + ":onyx", 100,
+	public static final ArmorMaterial ARMOR_MATERIAL_ONYX = EnumHelper.addArmorMaterial("armor_material_onyx", Reference.MOD_ID + ":onyx", 312,
 			new int[] {7, 14, 10, 7}, 4, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F);
 	
 	
@@ -112,10 +113,10 @@ public class ModItems {
 	public static final ItemAxe SILVER_AXE = new ToolAxe("silver_axe", MATERIAL_SILVER);
 	public static final ItemHoe SILVER_HOE = new ToolHoe("silver_hoe", MATERIAL_SILVER);
 	
-	public static final Item SILVER_HELMET = new ArmorBase("silver_helmet", ARMOR_MATERIAL_SILVER, 1, EntityEquipmentSlot.HEAD);
-	public static final Item SILVER_CHESTPLATE = new ArmorBase("silver_chestplate", ARMOR_MATERIAL_SILVER, 1, EntityEquipmentSlot.CHEST);
-	public static final Item SILVER_LEGGINGS = new ArmorBase("silver_leggings", ARMOR_MATERIAL_SILVER, 2, EntityEquipmentSlot.LEGS);
-	public static final Item SILVER_BOOTS = new ArmorBase("silver_boots", ARMOR_MATERIAL_SILVER, 1, EntityEquipmentSlot.FEET);
+	public static final Item SILVER_HELMET = new SilverHelmet("silver_helmet", ARMOR_MATERIAL_SILVER, 1, EntityEquipmentSlot.HEAD);
+	public static final Item SILVER_CHESTPLATE = new SilverBody("silver_chestplate", ARMOR_MATERIAL_SILVER, 1, EntityEquipmentSlot.CHEST);
+	public static final Item SILVER_LEGGINGS = new SilverLegs("silver_leggings", ARMOR_MATERIAL_SILVER, 2, EntityEquipmentSlot.LEGS);
+	public static final Item SILVER_BOOTS = new SilverBoots("silver_boots", ARMOR_MATERIAL_SILVER, 1, EntityEquipmentSlot.FEET);
 	
 	//GOLD//
 
@@ -282,6 +283,19 @@ public class ModItems {
 			new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000,1, false, false),
 			new PotionEffect(MobEffects.RESISTANCE, 6000,1, false, false),
 			new PotionEffect(MobEffects.GLOWING, 3000,0, false, false));
+
+//SHIELDS
+	public static final Item IRON_SHIELD = new IronShield("iron_shield");
+	public static final Item STEEL_SHIELD = new SteelShield("steel_shield");
+	public static final Item SILVER_SHIELD = new SilverShield("silver_shield");
+	public static final Item GOLD_SHIELD = new GoldShield("gold_shield");
+//	public static final Item PLATINUM_SHIELD = new PlatinumShield("platinum_shield");
+//	public static final Item SAPPHIRE_SHIELD = new SapphireShield("sapphire_shield");
+//	public static final Item RUBY_SHIELD = new RubyShield("ruby_shield");
+//	public static final Item DIAMOND_SHIELD = new DiamondShield("diamond_shield");
+//	public static final Item AMAZONITE_SHIELD = new AmazoniteShield("amazonite_shield");
+//	public static final Item ONYX_SHIELD = new OnyxShield("onyx_shield");
+
 
 
 }

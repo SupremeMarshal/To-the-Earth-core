@@ -1,5 +1,6 @@
 package com.SupremeMarshal.ToTheEarthCore.blocks;
-import com.SupremeMarshal.ToTheEarthCore.HardnessHandler;
+
+import com.SupremeMarshal.ToTheEarthCore.util.handlers.HardnessHandler;
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
 import net.minecraft.block.Block;
@@ -12,6 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -24,7 +26,7 @@ public class GemBase extends BlockBase
 		
 		setSoundType(SoundType.STONE);
 		setHardness(1.0F);
-		setResistance(50.0F);
+		setResistance(15.0F);
 		setHarvestLevel("pickaxe", 1);
 
 		
@@ -101,6 +103,12 @@ public class GemBase extends BlockBase
 			$_dependencies.put("entity", entity);
 			HardnessHandler.executeProcedure($_dependencies);
 		}
+	}
+
+	@Override
+	public boolean canDropFromExplosion(Explosion explosionIn)
+	{
+		return false;
 	}
 
 	@Override
