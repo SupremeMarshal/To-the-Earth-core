@@ -15,6 +15,7 @@ public class ModBlocks {
 	public static final Block HOT_LAVA_BLOCK = new HotLavaFluid("hot_lava", ModFluids.HOT_LAVA_FLUID, Material.LAVA);
 	public static final Block CORE_LAVA_BLOCK = new CoreLavaFluid("core_lava", ModFluids.CORE_LAVA_FLUID, Material.LAVA);
 	
+	public static final Block ONYX_ORE = new GemBase("onyx_ore", Material.ROCK);
 	public static final Block AMAZONITE_ORE = new GemBase("amazonite_ore", Material.ROCK);
 	public static final Block DIAMOND_ORE = new GemBase("diamond_ore", Material.ROCK);
 	public static final Block RUBY_ORE = new GemBase("ruby_ore", Material.ROCK);
@@ -36,7 +37,7 @@ public class ModBlocks {
 	public static final Block IRON_BLOCK = new RockBase("iron_block", Material.ROCK);
 	public static final Block SULFUR_BLOCK = new BlockBase("sulfur_block", Material.ROCK);
 
-
+	public static final Block HARDROCK_ONYX = new GemBase("hardrock_onyx", Material.ROCK);
 	public static final Block HARDROCK_AMAZONITE = new GemBase("hardrock_amazonite", Material.ROCK);
 	public static final Block HARDROCK_DIAMOND = new GemBase("hardrock_diamond", Material.ROCK);
 	public static final Block HARDROCK_RUBY = new GemBase("hardrock_ruby", Material.ROCK);
@@ -51,6 +52,7 @@ public class ModBlocks {
 	public static final Block HARDROCK_LAPIS = new LapisBase("hardrock_lapis", Material.ROCK);
 	public static final Block HARDROCK_SULFUR = new GemBase("hardrock_sulfur", Material.ROCK);
 	
+	public static final Block REDROCK_ONYX = new GemBase("redrock_onyx", Material.ROCK);
 	public static final Block REDROCK_AMAZONITE = new GemBase("redrock_amazonite", Material.ROCK);
 	public static final Block REDROCK_DIAMOND = new GemBase("redrock_diamond", Material.ROCK);
 	public static final Block REDROCK_RUBY = new GemBase("redrock_ruby", Material.ROCK);
@@ -65,6 +67,7 @@ public class ModBlocks {
 	public static final Block REDROCK_LAPIS = new LapisBase("redrock_lapis", Material.ROCK);
 	public static final Block REDROCK_SULFUR = new GemBase("redrock_sulfur", Material.ROCK);
 	
+	public static final Block MANTLEROCK_ONYX = new GemBase("mantlerock_onyx", Material.ROCK);
 	public static final Block MANTLEROCK_AMAZONITE = new GemBase("mantlerock_amazonite", Material.ROCK);
 	public static final Block MANTLEROCK_DIAMOND = new GemBase("mantlerock_diamond", Material.ROCK);
 	public static final Block MANTLEROCK_RUBY = new GemBase("mantlerock_ruby", Material.ROCK);
