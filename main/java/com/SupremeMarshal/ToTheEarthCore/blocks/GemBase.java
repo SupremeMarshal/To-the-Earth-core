@@ -49,6 +49,8 @@ public class GemBase extends BlockBase
 	{return new ItemStack(ModItems.DIAMOND, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.AMAZONITE_ORE)
 	{return new ItemStack(ModItems.AMAZONITE, (int) (1), 0).getItem();}
+	else if (block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.ONYX_ORE)
+	{return new ItemStack(ModItems.ONYX, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD)
 	{return new ItemStack(Items.EMERALD, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE)
@@ -186,6 +188,29 @@ public class GemBase extends BlockBase
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 
+		}
+		else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX)
+		{
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 		}
 		}
 		return super.removedByPlayer(state, world, pos, entity, willHarvest);
