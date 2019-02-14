@@ -14,18 +14,7 @@ public class ModBlocks {
 	
 	public static final Block HOT_LAVA_BLOCK = new HotLavaFluid("hot_lava", ModFluids.HOT_LAVA_FLUID, Material.LAVA);
 	public static final Block CORE_LAVA_BLOCK = new CoreLavaFluid("core_lava", ModFluids.CORE_LAVA_FLUID, Material.LAVA);
-	
-	public static final Block ONYX_ORE = new GemBase("onyx_ore", Material.ROCK);
-	public static final Block AMAZONITE_ORE = new GemBase("amazonite_ore", Material.ROCK);
-	public static final Block DIAMOND_ORE = new GemBase("diamond_ore", Material.ROCK);
-	public static final Block RUBY_ORE = new GemBase("ruby_ore", Material.ROCK);
-	public static final Block SAPHIR_ORE = new GemBase("saphir_ore", Material.ROCK);
-	public static final Block PLATINUM_ORE = new GemBase("platinum_ore", Material.ROCK);
-	public static final Block GOLD_ORE = new GemBase("gold_ore", Material.ROCK);
-	public static final Block SILVER_ORE = new GemBase("silver_ore", Material.ROCK);
-	public static final Block IRON_ORE = new GemBase("iron_ore", Material.ROCK);
-	public static final Block SULFUR_ORE = new GemBase("sulfur_ore", Material.ROCK);
-	
+
 	public static final Block AMAZONITE_BLOCK = new RockBase("amazonite_block", Material.ROCK);
 	public static final Block DIAMOND_BLOCK = new RockBase("diamond_block", Material.ROCK);
 	public static final Block RUBY_BLOCK = new RockBase("ruby_block", Material.ROCK);
@@ -36,6 +25,32 @@ public class ModBlocks {
 	public static final Block STEEL_BLOCK = new RockBase("steel_block", Material.ROCK);
 	public static final Block IRON_BLOCK = new RockBase("iron_block", Material.ROCK);
 	public static final Block SULFUR_BLOCK = new BlockBase("sulfur_block", Material.ROCK);
+	
+	public static final Block ONYX_ORE = new GemBase("onyx_ore", Material.ROCK);
+	public static final Block AMAZONITE_ORE = new GemBase("amazonite_ore", Material.ROCK);
+	public static final Block DIAMOND_ORE = new GemBase("diamond_ore", Material.ROCK);
+	public static final Block RUBY_ORE = new GemBase("ruby_ore", Material.ROCK);
+	public static final Block SAPHIR_ORE = new GemBase("saphir_ore", Material.ROCK);
+	public static final Block PLATINUM_ORE = new RockBase("platinum_ore", Material.ROCK);
+	public static final Block GOLD_ORE = new RockBase("gold_ore", Material.ROCK);
+	public static final Block SILVER_ORE = new RockBase("silver_ore", Material.ROCK);
+	public static final Block IRON_ORE = new RockBase("iron_ore", Material.ROCK);
+	public static final Block SULFUR_ORE = new GemBase("sulfur_ore", Material.ROCK);
+	
+	public static final Block STIFFROCK_ONYX = new GemBase("stiffrock_onyx", Material.ROCK);
+	public static final Block STIFFROCK_AMAZONITE = new GemBase("stiffrock_amazonite", Material.ROCK);
+	public static final Block STIFFROCK_DIAMOND = new GemBase("stiffrock_diamond", Material.ROCK);
+	public static final Block STIFFROCK_RUBY = new GemBase("stiffrock_ruby", Material.ROCK);
+	public static final Block STIFFROCK_SAPHIR = new GemBase("stiffrock_saphir", Material.ROCK);
+	public static final Block STIFFROCK_EMERALD = new GemBase("stiffrock_emerald", Material.ROCK);
+	public static final Block STIFFROCK_PLATINUM = new RockBase("stiffrock_platinum", Material.ROCK);
+	public static final Block STIFFROCK_GOLD = new RockBase("stiffrock_gold", Material.ROCK);
+	public static final Block STIFFROCK_SILVER = new RockBase("stiffrock_silver", Material.ROCK);
+	public static final Block STIFFROCK_IRON = new RockBase("stiffrock_iron", Material.ROCK);
+	public static final Block STIFFROCK_COAL = new GemBase("stiffrock_coal", Material.ROCK);
+	public static final Block STIFFROCK_REDSTONE = new GemBase("stiffrock_redstone", Material.ROCK);
+	public static final Block STIFFROCK_LAPIS = new LapisBase("stiffrock_lapis", Material.ROCK);
+	public static final Block STIFFROCK_SULFUR = new GemBase("stiffrock_sulfur", Material.ROCK);
 	
 	public static final Block HARDROCK_ONYX = new GemBase("hardrock_onyx", Material.ROCK);
 	public static final Block HARDROCK_AMAZONITE = new GemBase("hardrock_amazonite", Material.ROCK);
