@@ -18,7 +18,10 @@ public class HardnessHandler
 		int hardness = -1;
 		int tier = 0;
 		
-		if (block == ModBlocks.STIFFROCK)
+		if (block == ModBlocks.STIFFROCK || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.STIFFROCK_REDSTONE
+		    		|| block == ModBlocks.STIFFROCK_LAPIS || block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.STIFFROCK_SILVER
+		   		|| block == ModBlocks.STIFFROCK_GOLD || block == ModBlocks.STIFFROCK_PLATINUM || block == ModBlocks.STIFFROCK_SAPHIR
+		   		|| block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.STIFFROCK_SULFUR)
 		{hardness = 0;}
 		else if (block == ModBlocks.HARDROCK || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.HARDROCK_REDSTONE
 				|| block == ModBlocks.HARDROCK_LAPIS || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDROCK_SILVER 
@@ -50,7 +53,7 @@ public class HardnessHandler
 		else
 		{hardness = -1;}
 		
-		if (block == ModBlocks.HARDROCK_GOLD || block == ModBlocks.REDROCK_GOLD || block == ModBlocks.MANTLEROCK_GOLD || block == ModBlocks.GOLD_ORE || block == ModBlocks.REDROCK_LAPIS || block == ModBlocks.MANTLEROCK_LAPIS
+		if (block == ModBlocks.STIFFROCK_GOLD || block == ModBlocks.STIFFROCK_LAPIS || block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.STIFFROCK_SILVER || block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.HARDROCK_GOLD || block == ModBlocks.REDROCK_GOLD || block == ModBlocks.MANTLEROCK_GOLD || block == ModBlocks.GOLD_ORE || block == ModBlocks.REDROCK_LAPIS || block == ModBlocks.MANTLEROCK_LAPIS
 				|| block == ModBlocks.HARDROCK_REDSTONE  || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE || block == ModBlocks.IRON_BLOCK || block == ModBlocks.HARDROCK_SULFUR
 				|| block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR || block == ModBlocks.SULFUR_ORE || block == ModBlocks.HARDROCK_LAPIS || block == ModBlocks.COREROCK_GOLD || block == ModBlocks.COREROCK_SILVER || block == ModBlocks.COREROCK_IRON
 				|| block == ModBlocks.COREROCK_COAL || block == ModBlocks.COREROCK_SULFUR || block == ModBlocks.COREROCK_LAPIS || block == ModBlocks.COREROCK_REDSTONE || block == ModBlocks.INNERCOREROCK_GOLD || block == ModBlocks.INNERCOREROCK_SILVER || block == ModBlocks.INNERCOREROCK_IRON
@@ -69,7 +72,7 @@ public class HardnessHandler
 		{tier = 6;}
 		else if (block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.ONYX_ORE || block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
 		{tier = 7;}
-		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.REDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.HARDROCK_COAL ||
+		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.REDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL ||
 		block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL)
 		{tier = 0;}
 	
