@@ -75,8 +75,8 @@ public class HardnessHandler
 		{tier = 6;}
 		else if (block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.ONYX_ORE || block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
 		{tier = 7;}
-		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.REDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL ||
-		block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL)
+		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.HARDERROCK_IRON || block == ModBlocks.REDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL ||
+		block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL)
 		{tier = 0;}
 	
 			if (((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.IRON_PICKAXE, (int) (1)).getItem())
