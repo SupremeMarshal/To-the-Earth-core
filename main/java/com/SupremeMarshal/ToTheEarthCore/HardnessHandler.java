@@ -1,4 +1,4 @@
-package com.SupremeMarshal.ToTheEarthCore;
+package com.SupremeMarshal.ToTheEarthCore.util.handlers;
 
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
@@ -201,7 +201,8 @@ public class HardnessHandler
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
 			}
-		else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.SAPHIR_PICKAXE, (int) (1)).getItem())) 
+		else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.EMERALD_PICKAXE, (int) (1)).getItem())
+					|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.SAPHIR_PICKAXE, (int) (1)).getItem()))
 			{
 			if ((int)hardness == -1 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == -1 && (int)tier == 1) { block.setHardness((float) 5.0F);}
@@ -250,9 +251,9 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 3) { block.setHardness((float) 25F);}
 			else if ((int)hardness == 1 && (int)tier == 4) { block.setHardness((float) 35F);}
 			else if ((int)hardness == 1 && (int)tier == 5) { block.setHardness((float) 50F);}
-			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 15F);}
-			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 20F);}
-			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 25F);}
+			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 20F);}
+			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 25F);}
+			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 30F);}
 			else if ((int)hardness == 2 && (int)tier == 3) { block.setHardness((float) 35F);}
 			else if ((int)hardness == 2 && (int)tier == 4) { block.setHardness((float) 50F);}
 			else if ((int)hardness == 2 && (int)tier == 5) { block.setHardness((float) 60F);}
