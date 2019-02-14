@@ -36,7 +36,7 @@ public class ModBlocks {
 	public static final Block STEEL_BLOCK = new RockBase("steel_block", Material.ROCK);
 	public static final Block IRON_BLOCK = new RockBase("iron_block", Material.ROCK);
 	public static final Block SULFUR_BLOCK = new BlockBase("sulfur_block", Material.ROCK);
-
+	
 	public static final Block HARDROCK_ONYX = new GemBase("hardrock_onyx", Material.ROCK);
 	public static final Block HARDROCK_AMAZONITE = new GemBase("hardrock_amazonite", Material.ROCK);
 	public static final Block HARDROCK_DIAMOND = new GemBase("hardrock_diamond", Material.ROCK);
@@ -82,7 +82,9 @@ public class ModBlocks {
 	public static final Block MANTLEROCK_LAPIS = new LapisBase("mantlerock_lapis", Material.ROCK);
 	public static final Block MANTLEROCK_SULFUR = new GemBase("mantlerock_sulfur", Material.ROCK);
 	
+	public static final Block STIFFROCK = new RockBase("stiffrock", Material.ROCK);
 	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);
+	public static final Block HARDERROCK = new RockBase("harderrock", Material.ROCK);
 	public static final Block REDROCK = new RockBase("redrock", Material.ROCK);
 	public static final Block MANTLEROCK = new RockBase("mantlerock", Material.ROCK);
 	public static final Block COREROCK = new Corerock("corerock", Material.ROCK);
