@@ -130,14 +130,14 @@ public class GemBase extends BlockBase
 		int z = pos.getZ();
 		Block block = this;
 		if (!world.isRemote) {
-			if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || blocks == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.HARDROCK_REDSTONE ||
-				block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE  ||
-				block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.SULFUR_ORE
-				|| block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR)
+			if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL ||
+				block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDERROCK_REDSTONE || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE ||
+				block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD ||
+				block == ModBlocks.SULFUR_ORE || block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.HARDERROCK_SULFUR || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR)
 		{
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 		}
-		else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR)
+		else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR)
 		{
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
@@ -146,24 +146,8 @@ public class GemBase extends BlockBase
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 
 		}
-		else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY)
+		else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-
-		}
-		else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND)
-		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
@@ -174,16 +158,8 @@ public class GemBase extends BlockBase
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 
 		}
-		else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE)
+		else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
@@ -198,7 +174,31 @@ public class GemBase extends BlockBase
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 
 		}
-		else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX)
+		else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE)
+		{
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+
+		}
+		else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX)
 		{
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
