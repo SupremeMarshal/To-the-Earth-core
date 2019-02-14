@@ -31,10 +31,10 @@ public class ModBlocks {
 	public static final Block DIAMOND_ORE = new GemBase("diamond_ore", Material.ROCK);
 	public static final Block RUBY_ORE = new GemBase("ruby_ore", Material.ROCK);
 	public static final Block SAPHIR_ORE = new GemBase("saphir_ore", Material.ROCK);
-	public static final Block PLATINUM_ORE = new RockBase("platinum_ore", Material.ROCK);
-	public static final Block GOLD_ORE = new RockBase("gold_ore", Material.ROCK);
-	public static final Block SILVER_ORE = new RockBase("silver_ore", Material.ROCK);
-	public static final Block IRON_ORE = new RockBase("iron_ore", Material.ROCK);
+	public static final Block PLATINUM_ORE = new GemBase("platinum_ore", Material.ROCK);
+	public static final Block GOLD_ORE = new GemBase("gold_ore", Material.ROCK);
+	public static final Block SILVER_ORE = new GemBase("silver_ore", Material.ROCK);
+	public static final Block IRON_ORE = new GemBase("iron_ore", Material.ROCK);
 	public static final Block SULFUR_ORE = new GemBase("sulfur_ore", Material.ROCK);
 	
 	public static final Block STIFFROCK_ONYX = new GemBase("stiffrock_onyx", Material.ROCK);
