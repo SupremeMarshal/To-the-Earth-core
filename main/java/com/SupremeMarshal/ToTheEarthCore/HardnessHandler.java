@@ -56,27 +56,32 @@ public class HardnessHandler
 		else
 		{hardness = -1;}
 		
-		if (block == ModBlocks.STIFFROCK_GOLD || block == ModBlocks.STIFFROCK_LAPIS || block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.STIFFROCK_SILVER || block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.HARDROCK_GOLD || block == ModBlocks.REDROCK_GOLD || block == ModBlocks.MANTLEROCK_GOLD || block == ModBlocks.GOLD_ORE || block == ModBlocks.REDROCK_LAPIS || block == ModBlocks.MANTLEROCK_LAPIS
-				|| block == ModBlocks.HARDROCK_REDSTONE  || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE || block == ModBlocks.IRON_BLOCK || block == ModBlocks.HARDROCK_SULFUR
-				|| block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR || block == ModBlocks.SULFUR_ORE || block == ModBlocks.HARDROCK_LAPIS || block == ModBlocks.COREROCK_GOLD || block == ModBlocks.COREROCK_SILVER || block == ModBlocks.COREROCK_IRON
-				|| block == ModBlocks.COREROCK_COAL || block == ModBlocks.COREROCK_SULFUR || block == ModBlocks.COREROCK_LAPIS || block == ModBlocks.COREROCK_REDSTONE || block == ModBlocks.INNERCOREROCK_GOLD || block == ModBlocks.INNERCOREROCK_SILVER || block == ModBlocks.INNERCOREROCK_IRON
-				|| block == ModBlocks.INNERCOREROCK_COAL || block == ModBlocks.INNERCOREROCK_SULFUR || block == ModBlocks.INNERCOREROCK_LAPIS || block == ModBlocks.INNERCOREROCK_REDSTONE)
+		if (block == ModBlocks.GOLD_ORE || block == ModBlocks.SULFUR_ORE || block == ModBlocks.SILVER_ORE 
+		    		|| block == ModBlocks.STIFFROCK_GOLD || block == ModBlocks.STIFFROCK_LAPIS || block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.STIFFROCK_SILVER || block == ModBlocks.STIFFROCK_SULFUR 
+		    		|| block == ModBlocks.HARDROCK_GOLD || block == ModBlocks.HARDROCK_LAPIS || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDROCK_SILVER || block == ModBlocks.HARDROCK_SULFUR 
+		    		|| block == ModBlocks.HARDERROCK_GOLD || block == ModBlocks.HARDERROCK_LAPIS || block == ModBlocks.HARDERROCK_REDSTONE || block == ModBlocks.HARDERROCK_SILVER || block == ModBlocks.HARDERROCK_SULFUR 
+		    		|| block == ModBlocks.REDROCK_GOLD || block == ModBlocks.REDROCK_LAPIS || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.REDROCK_SILVER || block == ModBlocks.REDROCK_SULFUR 
+		    		|| block == ModBlocks.MANTLEROCK_GOLD || block == ModBlocks.MANTLEROCK_LAPIS || block == ModBlocks.MANTLEROCK_REDSTONE || block == ModBlocks.MANTLEROCK_SILVER || block == ModBlocks.MANTLEROCK_SULFUR 
+		    		|| block == ModBlocks.COREROCK_GOLD || block == ModBlocks.COREROCK_LAPIS || block == ModBlocks.COREROCK_REDSTONE || block == ModBlocks.COREROCK_SILVER || block == ModBlocks.COREROCK_SULFUR 
+		    		|| block == ModBlocks.INNERCOREROCK_GOLD || block == ModBlocks.INNERCOREROCK_LAPIS || block == ModBlocks.INNERCOREROCK_REDSTONE || block == ModBlocks.INNERCOREROCK_SILVER || block == ModBlocks.INNERCOREROCK_SULFUR 
+		    		|| block == ModBlocks.COREROCK_IRON || block == ModBlocks.INNERCOREROCK_IRON
+				|| block == ModBlocks.COREROCK_COAL || block == ModBlocks.INNERCOREROCK_COAL)
 		{tier = 1;}
-		else if (block == ModBlocks.HARDROCK_PLATINUM || block == ModBlocks.REDROCK_PLATINUM || block == ModBlocks.MANTLEROCK_PLATINUM || block == ModBlocks.PLATINUM_ORE || block == ModBlocks.HARDROCK_EMERALD
-				|| block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.COREROCK_PLATINUM || block == ModBlocks.INNERCOREROCK_PLATINUM || block == ModBlocks.INNERCOREROCK_EMERALD)
+		else if (block == ModBlocks.PLATINUM_ORE || block == ModBlocks.STIFFROCK_PLATINUM || block == ModBlocks.HARDROCK_PLATINUM || block == ModBlocks.HARDERROCK_PLATINUM || block == ModBlocks.REDROCK_PLATINUM || block == ModBlocks.MANTLEROCK_PLATINUM || block == ModBlocks.COREROCK_PLATINUM || block == ModBlocks.INNERCOREROCK_PLATINUM 
+			 || block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD)
 		{tier = 2;}
-		else if (block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.SAPHIR_ORE || block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR)
+		else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR)
 		{tier = 3;}
-		else if (block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.RUBY_ORE || block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY)
+		else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY)
 		{tier = 4;}
-		else if (block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.DIAMOND_ORE || block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND)
+		else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND)
 		{tier = 5;}
-		else if (block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE)
+		else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE)
 		{tier = 6;}
-		else if (block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.ONYX_ORE || block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
+		else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
 		{tier = 7;}
-		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.REDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL ||
-		block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL)
+		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.HARDERROCK_IRON || block == ModBlocks.REDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON
+			 || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL)
 		{tier = 0;}
 	
 			if (((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.IRON_PICKAXE, (int) (1)).getItem())
@@ -209,6 +214,9 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 2) { block.setHardness((float) 18.0F);}
 			else if ((int)hardness == 1 && (int)tier == 3) { block.setHardness((float) 25.0F);}
 			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 15.0F);}
+			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 20F);}
+			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 25F);}
+			else if ((int)hardness == 2 && (int)tier == 3) { block.setHardness((float) 30F);}
 			else { block.setHardness((float) -1.0F);}
 			if (block == ModBlocks.IRON_BLOCK) { block.setHardness(8.0f);}
 			else if (block == ModBlocks.STEEL_BLOCK) { block.setHardness(13.0f);}
@@ -240,6 +248,10 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 3) { block.setHardness((float) 25.0F);}
 			else if ((int)hardness == 1 && (int)tier == 4) { block.setHardness((float) 30.0F);}
 			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 6.0F);}
+			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 10F);}
+			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 15F);}
+			else if ((int)hardness == 2 && (int)tier == 3) { block.setHardness((float) 25F);}
+			else if ((int)hardness == 2 && (int)tier == 4) { block.setHardness((float) 35F);}
 			else if ((int)hardness == 3 && (int)tier == 0) { block.setHardness((float) 15.0F);}
 			else if ((int)hardness == 3 && (int)tier == 1) { block.setHardness((float) 20F);}
 			else if ((int)hardness == 3 && (int)tier == 2) { block.setHardness((float) 25F);}
@@ -278,6 +290,11 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 4) { block.setHardness((float) 18.0F);}
 			else if ((int)hardness == 1 && (int)tier == 5) { block.setHardness((float) 30.0F);}
 			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 4.5F);}
+			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 5F);}
+			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 10F);}
+			else if ((int)hardness == 2 && (int)tier == 3) { block.setHardness((float) 15F);}
+			else if ((int)hardness == 2 && (int)tier == 4) { block.setHardness((float) 20F);}
+			else if ((int)hardness == 2 && (int)tier == 5) { block.setHardness((float) 30F);}
 			else if ((int)hardness == 3 && (int)tier == 0) { block.setHardness((float) 6.0F);}
 			else if ((int)hardness == 3 && (int)tier == 1) { block.setHardness((float) 10F);}
 			else if ((int)hardness == 3 && (int)tier == 2) { block.setHardness((float) 15F);}
@@ -326,6 +343,12 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 5) { block.setHardness((float) 18.0F);}
 			else if ((int)hardness == 1 && (int)tier == 6) { block.setHardness((float) 30.0F);}
 			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 5.0F);}
+			else if ((int)hardness == 2 && (int)tier == 3) { block.setHardness((float) 7.5F);}
+			else if ((int)hardness == 2 && (int)tier == 4) { block.setHardness((float) 10F);}
+			else if ((int)hardness == 2 && (int)tier == 5) { block.setHardness((float) 15F);}
+			else if ((int)hardness == 2 && (int)tier == 6) { block.setHardness((float) 30F);}
 			else if ((int)hardness == 3 && (int)tier == 0) { block.setHardness((float) 4.5F);}
 			else if ((int)hardness == 3 && (int)tier == 1) { block.setHardness((float) 5F);}
 			else if ((int)hardness == 3 && (int)tier == 2) { block.setHardness((float) 10F);}
@@ -378,6 +401,13 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 6) { block.setHardness((float) 18.0F);}
 			else if ((int)hardness == 1 && (int)tier == 7) { block.setHardness((float) 24.0F);}
 			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 3) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 4) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 5) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 6) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 7) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 2) { block.setHardness((float) 5.0F);}
@@ -441,6 +471,13 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 1 && (int)tier == 7) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 3) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 4) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 5) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 6) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 7) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 2) { block.setHardness((float) 4.0F);}
