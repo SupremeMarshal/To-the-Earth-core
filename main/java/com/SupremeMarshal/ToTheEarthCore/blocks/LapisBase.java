@@ -59,10 +59,17 @@ public class LapisBase extends BlockBase
     public int quantityDropped(Random random) {
         Block block = this;
         int quantity = 2;
-        if (block == ModBlocks.HARDROCK_LAPIS)
+        if (block == ModBlocks.STIFFROCK_LAPIS)
+        {
+            quantity = 3;
+        }
+        else if (block == ModBlocks.HARDROCK_LAPIS)
         {
             quantity = 4;
-
+        }
+        else if (block == ModBlocks.HARDERROCK_LAPIS)
+        {
+            quantity = 6;
         }
         else if (block == ModBlocks.REDROCK_LAPIS)
         {
@@ -82,7 +89,18 @@ public class LapisBase extends BlockBase
         int z = pos.getZ();
         Block block = this;
         if (!world.isRemote) {
-            if (block == ModBlocks.HARDROCK_LAPIS) {
+            if (block == ModBlocks.STIFFROCK_LAPIS) {
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));             
+            } else if (block == ModBlocks.HARDROCK_LAPIS) {
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+            } else if (block == ModBlocks.HARDERROCK_LAPIS) {
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
                 world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
                 world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
                 world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
