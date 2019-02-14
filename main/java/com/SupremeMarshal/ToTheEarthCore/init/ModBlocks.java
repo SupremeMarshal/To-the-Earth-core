@@ -67,6 +67,21 @@ public class ModBlocks {
 	public static final Block HARDROCK_LAPIS = new LapisBase("hardrock_lapis", Material.ROCK);
 	public static final Block HARDROCK_SULFUR = new GemBase("hardrock_sulfur", Material.ROCK);
 	
+	public static final Block HARDERROCK_ONYX = new GemBase("harderrock_onyx", Material.ROCK);
+	public static final Block HARDERROCK_AMAZONITE = new GemBase("harderrock_amazonite", Material.ROCK);
+	public static final Block HARDERROCK_DIAMOND = new GemBase("harderrock_diamond", Material.ROCK);
+	public static final Block HARDERROCK_RUBY = new GemBase("harderrock_ruby", Material.ROCK);
+	public static final Block HARDERROCK_SAPHIR = new GemBase("harderrock_saphir", Material.ROCK);
+	public static final Block HARDERROCK_EMERALD = new GemBase("harderrock_emerald", Material.ROCK);
+	public static final Block HARDERROCK_PLATINUM = new RockBase("harderrock_platinum", Material.ROCK);
+	public static final Block HARDERROCK_GOLD = new RockBase("harderrock_gold", Material.ROCK);
+	public static final Block HARDERROCK_SILVER = new RockBase("harderrock_silver", Material.ROCK);
+	public static final Block HARDERROCK_IRON = new RockBase("harderrock_iron", Material.ROCK);
+	public static final Block HARDERROCK_COAL = new GemBase("harderrock_coal", Material.ROCK);
+	public static final Block HARDERROCK_REDSTONE = new GemBase("harderrock_redstone", Material.ROCK);
+	public static final Block HARDERROCK_LAPIS = new LapisBase("harderrock_lapis", Material.ROCK);
+	public static final Block HARDERROCK_SULFUR = new GemBase("harderrock_sulfur", Material.ROCK);
+
 	public static final Block REDROCK_ONYX = new GemBase("redrock_onyx", Material.ROCK);
 	public static final Block REDROCK_AMAZONITE = new GemBase("redrock_amazonite", Material.ROCK);
 	public static final Block REDROCK_DIAMOND = new GemBase("redrock_diamond", Material.ROCK);
