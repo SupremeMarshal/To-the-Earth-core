@@ -69,7 +69,7 @@ public class HardnessHandler
 		{tier = 6;}
 		else if (block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.ONYX_ORE || block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
 		{tier = 7;}
-		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.HARDROCK_COAL ||
+		else if (block == ModBlocks.IRON_ORE || block == ModBlocks.HARDROCK_IRON || block == ModBlocks.REDROCK_IRON || block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.HARDROCK_COAL ||
 		block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL)
 		{tier = 0;}
 	
