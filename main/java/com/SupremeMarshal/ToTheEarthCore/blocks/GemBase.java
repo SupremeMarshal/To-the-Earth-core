@@ -39,23 +39,23 @@ public class GemBase extends BlockBase
 	{
 	Block block = this;
 
-	if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL)
+	if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_COAL)
 		{return new ItemStack(Items.COAL, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.SAPHIR_ORE)
+	else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.LOWER_MANTLEROCK_SAPHIR)
 		{return new ItemStack(ModItems.SAPHIR, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block = ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.RUBY_ORE)
+	else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block = ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.LOWER_MANTLEROCK_RUBY)
 	{return new ItemStack(ModItems.RUBY, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.DIAMOND_ORE)
+	else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.LOWER_MANTLEROCK_DIAMOND)
 	{return new ItemStack(ModItems.DIAMOND, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.AMAZONITE_ORE)
+	else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.LOWER_MANTLEROCK_AMAZONITE)
 	{return new ItemStack(ModItems.AMAZONITE, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.ONYX_ORE)
+	else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.LOWER_MANTLEROCK_ONYX)
 	{return new ItemStack(ModItems.ONYX, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD)
+	else if (block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.LOWER_MANTLEROCK_EMERALD)
 	{return new ItemStack(Items.EMERALD, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDERROCK_REDSTONE || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE)
+	else if (block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDERROCK_REDSTONE || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE || block == ModBlocks.LOWER_MANTLEROCK_REDSTONE)
 	{return new ItemStack(Items.REDSTONE, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.HARDERROCK_SULFUR || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR || block == ModBlocks.SULFUR_ORE)
+	else if (block == ModBlocks.SULFUR_ORE || block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.HARDERROCK_SULFUR || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR || block == ModBlocks.LOWER_MANTLEROCK_SULFUR)
 	{return new ItemStack(ModItems.SULFUR, 1,0).getItem();}
 	else
 	{return new ItemStack(block, (int) (1), 0).getItem();}
@@ -88,7 +88,15 @@ public class GemBase extends BlockBase
 		{
 			return 10 + random.nextInt(8);
 		}
-		else if (block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.HARDERROCK_SULFUR)
+		else if (block == ModBlocks.LOWER_MANTLEROCK_REDSTONE)
+		{
+			return 11 + random.nextInt(9);
+		}
+		else if (block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDROCK_SULFUR)
+		{
+			return 2;
+		}
+		else if (block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.HARDERROCK_SULFUR)
 		{
 			return 2;
 		}
@@ -97,6 +105,10 @@ public class GemBase extends BlockBase
 			return 3;
 		}
 		else if (block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.MANTLEROCK_SULFUR)
+		{
+			return 4;
+		}
+		else if (block == ModBlocks.LOWER_MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_SULFUR)
 		{
 			return 4;
 		}
