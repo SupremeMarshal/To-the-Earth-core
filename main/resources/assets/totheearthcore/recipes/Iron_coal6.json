@@ -1,0 +1,26 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+        "item": "totheearthcore:lower_mantlerock_iron"
+    },
+    {
+        "item": "totheearthcore:lower_mantlerock_iron"
+    },
+    {
+        "item": "minecraft:coal_block"
+    },
+    {
+        "item": "minecraft_coal_block"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:iron_coal",
+        "count": 9
+    }
