@@ -112,15 +112,20 @@ public class ModBlocks {
 	public static final Block MANTLEROCK_LAPIS = new LapisBase("mantlerock_lapis", Material.ROCK);
 	public static final Block MANTLEROCK_SULFUR = new GemBase("mantlerock_sulfur", Material.ROCK);
 	
-	public static final Block STIFFROCK = new RockBase("stiffrock", Material.ROCK);
-	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);
-	public static final Block HARDERROCK = new RockBase("harderrock", Material.ROCK);
-	public static final Block REDROCK = new RockBase("redrock", Material.ROCK);
-	public static final Block MANTLEROCK = new RockBase("mantlerock", Material.ROCK);
-	public static final Block COREROCK = new Corerock("corerock", Material.ROCK);
-	public static final Block INNERCOREROCK = new Corerock("innercorerock", Material.ROCK);
-	public static final Block MANTLEGAS = new GasBase("mantlegas", Material.ROCK);
-	public static final Block HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_ONYX = new GemBase("lower_mantlerock_onyx", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_AMAZONITE = new GemBase("lower_mantlerock_amazonite", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_DIAMOND = new GemBase("lower_mantlerock_diamond", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_RUBY = new GemBase("lower_mantlerock_ruby", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_SAPHIR = new GemBase("lower_mantlerock_saphir", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_EMERALD = new GemBase("lower_mantlerock_emerald", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_PLATINUM = new RockBase("lower_mantlerock_platinum", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_GOLD = new RockBase("lower_mantlerock_gold", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_SILVER = new RockBase("lower_mantlerock_silver", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_IRON = new RockBase("lower_mantlerock_iron", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_COAL = new GemBase("lower_mantlerock_coal", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_REDSTONE = new GemBase("lower_mantlerock_redstone", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_LAPIS = new LapisBase("lower_mantlerock_lapis", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_SULFUR = new GemBase("lower_mantlerock_sulfur", Material.ROCK);
 
 	public static final Block COREROCK_ONYX = new Corerock("corerock_onyx", Material.ROCK);
 	public static final Block COREROCK_AMAZONITE = new Corerock("corerock_amazonite", Material.ROCK);
@@ -151,6 +156,17 @@ public class ModBlocks {
 	public static final Block INNERCOREROCK_IRON = new Corerock("innercorerock_iron", Material.ROCK);
 	public static final Block INNERCOREROCK_COAL = new Corerock("innercorerock_coal", Material.ROCK);
 	public static final Block INNERCOREROCK_SULFUR = new Corerock("innercorerock_sulfur", Material.ROCK);
+	
+	public static final Block STIFFROCK = new RockBase("stiffrock", Material.ROCK);
+	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);
+	public static final Block HARDERROCK = new RockBase("harderrock", Material.ROCK);
+	public static final Block REDROCK = new RockBase("redrock", Material.ROCK);
+	public static final Block MANTLEROCK = new RockBase("mantlerock", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK = new RockBase("lower_mantlerock", Material.ROCK);
+	public static final Block COREROCK = new Corerock("corerock", Material.ROCK);
+	public static final Block INNERCOREROCK = new Corerock("innercorerock", Material.ROCK);
+	public static final Block MANTLEGAS = new GasBase("mantlegas", Material.ROCK);
+	public static final Block HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock", Material.ROCK);
 	
 	public static final Block HOTROCK = new BlockBase("hotrock", Material.ROCK);
 	
