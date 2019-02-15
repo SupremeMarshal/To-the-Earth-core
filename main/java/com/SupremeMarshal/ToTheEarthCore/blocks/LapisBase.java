@@ -79,6 +79,10 @@ public class LapisBase extends BlockBase
         {
             quantity = 12;
         }
+        else if (block == ModBlocks.LOWER_MANTLEROCK_LAPIS)
+        {
+            quantity = 16;
+        }
         return quantity;
     }
 
@@ -127,7 +131,25 @@ public class LapisBase extends BlockBase
                 world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
                 world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
                 world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-            }}
+            } else if (block == ModBlocks.LOWER_MANTLEROCK_LAPIS) {
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+            }
+            }
             return super.removedByPlayer(state, world, pos, entity, willHarvest);
         }
 
