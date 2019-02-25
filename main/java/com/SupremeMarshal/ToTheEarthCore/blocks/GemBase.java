@@ -156,7 +156,15 @@ public class GemBase extends BlockBase
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-
+		}
+		else if (block == ModBlocks.FLAMING_TOPAZ_ORE || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ || block == ModBlocks.HARDROCK_FLAMING_TOPAZ || block == ModBlocks.HARDERROCK_FLAMING_TOPAZ || block == ModBlocks.REDROCK_FLAMING_TOPAZ || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ)
+		{
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 		}
 		else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY)
 		{
