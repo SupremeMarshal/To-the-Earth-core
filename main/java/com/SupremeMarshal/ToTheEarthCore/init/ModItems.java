@@ -249,6 +249,7 @@ public class ModItems {
 
 	//GEMS//
 	public static final Item SAPHIR = new ItemBase("saphir");
+	public static final Item FLAMING_TOPAZ = new ItemBase("flaming_topaz");
 	public static final Item RUBY = new ItemBase("ruby");
 	public static final Item DIAMOND = new ItemBase("diamond");
 	public static final Item AMAZONITE = new Gems("amazonite");
@@ -257,6 +258,7 @@ public class ModItems {
 	//ROD//
 	public static final Item EMERALD_ROD = new ItemBase("emerald_rod");
 	public static final Item SAPHIR_ROD = new ItemBase("saphir_rod");
+	public static final Item FLAMING_TOPAZ_ROD = new ItemBase("flaming_topaz_rod");
 	public static final Item RUBY_ROD = new ItemBase("ruby_rod");
 	public static final Item DIAMOND_ROD = new ItemBase("diamond_rod");
 	public static final Item AMAZONITE_ROD = new Gems("amazonite_rod");
