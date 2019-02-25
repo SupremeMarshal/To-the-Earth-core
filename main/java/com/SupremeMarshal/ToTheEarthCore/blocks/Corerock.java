@@ -76,6 +76,14 @@ public class Corerock extends BlockBase
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			}
+			else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
 			else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY) {
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
@@ -165,6 +173,8 @@ public class Corerock extends BlockBase
 		{return new ItemStack(ModItems.DIAMOND, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY)
 		{return new ItemStack(ModItems.RUBY, 1, 0).getItem();}
+		else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ)
+		{return new ItemStack(ModItems.FLAMING_TOPAZ, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR)
 		{return new ItemStack(ModItems.SAPHIR, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD)
