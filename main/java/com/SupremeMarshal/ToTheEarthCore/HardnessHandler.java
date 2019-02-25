@@ -92,43 +92,45 @@ public class HardnessHandler
 			 || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_IRON)
 		{tier = 0;}
 	
-			if (((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.IRON_PICKAXE, (int) (1)).getItem())
-				|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.STEEL_PICKAXE, (int) (1)).getItem())
-				|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.SILVER_PICKAXE, (int) (1)).getItem()))
-				&& ((int)hardness == 0 || (int)hardness == 1 || (int)hardness == 2 || (int)hardness == 3 || (int)hardness == 4) || (int)hardness == 5 || (int)hardness == 6 || (int)hardness == 7)
-			{
+		if (((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.IRON_PICKAXE, (int) (1)).getItem())
+			|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.STEEL_PICKAXE, (int) (1)).getItem())
+			|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.SILVER_PICKAXE, (int) (1)).getItem()))
+			&& ((int)hardness == 0 || (int)hardness == 1 || (int)hardness == 2 || (int)hardness == 3 || (int)hardness == 4) || (int)hardness == 5 || (int)hardness == 6 || (int)hardness == 7)
+		{
 			block.setHardness((float) -1.0F);
-			}
-			else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(Items.WOODEN_PICKAXE, (int) (1)).getItem()) && (int)hardness == -1)
-			{
-				if ((int)hardness == -1 && (int)tier == 0) { block.setHardness((float) 9.0F);}
-				else { block.setHardness((float) -1.0F);}
-				if (block == ModBlocks.IRON_BLOCK ) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.STEEL_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.SILVER_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.GOLD_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
+		}
+		else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(Items.WOODEN_PICKAXE, (int) (1)).getItem()) && (int)hardness == -1)
+		{
+			if ((int)hardness == -1 && (int)tier == 0) { block.setHardness((float) 9.0F);}
+			else { block.setHardness((float) -1.0F);}
+			if (block == ModBlocks.IRON_BLOCK ) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.STEEL_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.SILVER_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.GOLD_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
-			}
-			else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(Items.STONE_PICKAXE, (int) (1)).getItem()) && (int)hardness == -1)
-			{
-				if ((int)hardness == -1 && (int)tier == 0) { block.setHardness((float) 8.0F);}
-				else { block.setHardness((float) -1.0F);}
-				if (block == ModBlocks.IRON_BLOCK) { block.setHardness(15.0f);}
-				else if (block == ModBlocks.STEEL_BLOCK) { block.setHardness(16.0f);}
-				else if (block == ModBlocks.SILVER_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.GOLD_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
-				else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
+		}
+		else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(Items.STONE_PICKAXE, (int) (1)).getItem()) && (int)hardness == -1)
+		{
+			if ((int)hardness == -1 && (int)tier == 0) { block.setHardness((float) 8.0F);}
+			else { block.setHardness((float) -1.0F);}
+			if (block == ModBlocks.IRON_BLOCK) { block.setHardness(15.0f);}
+			else if (block == ModBlocks.STEEL_BLOCK) { block.setHardness(16.0f);}
+			else if (block == ModBlocks.SILVER_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.GOLD_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
-			}
+		}
 		else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.IRON_PICKAXE, (int) (1)).getItem()) && (int)hardness == -1)
 		{
 			if ((int)hardness == -1 && (int)tier == 0) { block.setHardness((float) 8.0F);}
@@ -140,6 +142,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.GOLD_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
@@ -159,6 +162,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -179,6 +183,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -202,6 +207,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(29.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -233,6 +239,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(28.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(35.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(35.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -273,6 +280,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(27.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(34.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(50.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(34.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -324,6 +332,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(25.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(33.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(44.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(33.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(60.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -387,6 +396,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(22.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(30.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(40.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(30.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(55.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(100.0f);}
 
@@ -464,6 +474,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(20.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(30.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(40.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(30.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(50.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(80.0f);}
 		}
@@ -550,6 +561,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(7.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(10.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(15.0f);}
+			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(10.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(20.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(30.0f);}
 		}
