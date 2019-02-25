@@ -30,8 +30,9 @@ public class ModItems {
 	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 3, 200, 6.0F, 3.0F, 16);
 	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 4, 750, 8.5F, 3.5F, 14);
 	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 5, 900, 11.0F, 4.0F, 12);
-	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 250, 14.0F, 5.0F, 8);
+	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 250, 15.0F, 5.0F, 10);
 	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1500, 15.0F, 5.0F, 10);
+	public static final ToolMaterial MATERIAL_FLAMING_TOPAZ = EnumHelper.addToolMaterial("material_flaming_topaz", 7, 400, 20.0F, 6.0F, 8);
 	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 2000, 20.0F, 6.0F, 8);
 	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 3000, 25.0F, 7.5F, 6);
 	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 9, 4000, 30.0F, 10.0F, 5);
@@ -174,6 +175,15 @@ public class ModItems {
 	public static final Item SAPHIR_LEGGINGS = new SapphirLegs("saphir_leggings", ARMOR_MATERIAL_SAPHIR, 2, EntityEquipmentSlot.LEGS);
 	public static final Item SAPHIR_BOOTS = new SapphirBoots("saphir_boots", ARMOR_MATERIAL_SAPHIR, 1, EntityEquipmentSlot.FEET);
 
+	//FLAMING_TOPAZ//
+	
+	
+	public static final ItemSword FLAMING_TOPAZ_SWORD = new ToolSword("flaming_topaz_sword", MATERIAL_FLAMING_TOPAZ);
+	public static final ItemSpade FLAMING_TOPAZ_SHOVEL = new ToolSpade("flaming_topaz_shovel", MATERIAL_FLAMING_TOPAZ);
+	public static final ItemPickaxe FLAMING_TOPAZ_PICKAXE = new ToolPickaxe("flaming_topaz_pickaxe", MATERIAL_FLAMING_TOPAZ);
+	public static final ItemAxe FLAMING_TOPAZ_AXE = new ToolAxe("flaming_topaz_axe", MATERIAL_FLAMING_TOPAZ);
+	public static final ItemHoe FLAMING_TOPAZ_HOE = new ToolHoe("flaming_topaz_hoe", MATERIAL_FLAMING_TOPAZ);
+	
 	//RUBY//
 
 	
