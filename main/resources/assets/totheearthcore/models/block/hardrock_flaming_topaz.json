@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "totheearthcore:blocks/hardrock"
+       "all": "totheearthcore:blocks/hardrock_flaming_topaz"
    }
 }
