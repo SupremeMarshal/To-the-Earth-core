@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "totheearthcore:blocks/innercorerock_flaming_topaz.png"
+       "all": "totheearthcore:blocks/innercorerock_flaming_topaz"
    }
 }
