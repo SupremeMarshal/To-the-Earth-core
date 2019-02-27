@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "A",
+        "A",
+        "B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:topaz"
+        },
+        "B":
+        {
+            "item": "totheearthcore:topaz_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:topaz_sword",
+        "count": 1
+    }
+}
