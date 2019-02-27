@@ -40,13 +40,15 @@ public class GemBase extends BlockBase
 	Block block = this;
 
 	if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_COAL)
-		{return new ItemStack(Items.COAL, (int) (1), 0).getItem();}
+	{return new ItemStack(Items.COAL, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.LOWER_MANTLEROCK_SAPHIR)
-		{return new ItemStack(ModItems.SAPHIR, (int) (1), 0).getItem();}
+	{return new ItemStack(ModItems.SAPHIR, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.FLAMING_TOPAZ_ORE || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ || block == ModBlocks.HARDROCK_FLAMING_TOPAZ || block = ModBlocks.HARDERROCK_FLAMING_TOPAZ || block == ModBlocks.REDROCK_FLAMING_TOPAZ || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ)
 	{return new ItemStack(ModItems.FLAMING_TOPAZ, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block = ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.LOWER_MANTLEROCK_RUBY)
 	{return new ItemStack(ModItems.RUBY, (int) (1), 0).getItem();}
+	else if (block == ModBlocks.TOPAZ_ORE || block == ModBlocks.STIFFROCK_TOPAZ || block == ModBlocks.HARDROCK_TOPAZ || block == ModBlocks.HARDERROCK_TOPAZ || block == ModBlocks.REDROCK_TOPAZ || block == ModBlocks.MANTLEROCK_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_TOPAZ)
+	{return new ItemStack(ModItems.TOPAZ, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.LOWER_MANTLEROCK_DIAMOND)
 	{return new ItemStack(ModItems.DIAMOND, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.LOWER_MANTLEROCK_AMAZONITE)
@@ -153,95 +155,48 @@ public class GemBase extends BlockBase
 		}
 		else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			for (int i = 0; i < 5; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
 		}
 		else if (block == ModBlocks.FLAMING_TOPAZ_ORE || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ || block == ModBlocks.HARDROCK_FLAMING_TOPAZ || block == ModBlocks.HARDERROCK_FLAMING_TOPAZ || block == ModBlocks.REDROCK_FLAMING_TOPAZ || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			for (int i = 0; i < 6; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
 		}
 		else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-
+			for (int i = 0; i < 8; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
+		}
+		else if (block == ModBlocks.TOPAZ_ORE || block == ModBlocks.STIFFROCK_TOPAZ || block == ModBlocks.HARDROCK_TOPAZ || block == ModBlocks.HARDERROCK_TOPAZ || block == ModBlocks.REDROCK_TOPAZ || block == ModBlocks.MANTLEROCK_TOPAZ)
+		{
+			for (int i = 0; i < 9; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
 		}
 		else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-
+			for (int i = 0; i < 12; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
 		}
 		else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-
+			for (int i = 0; i < 20; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
 		}
 		else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX)
 		{
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-			world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			for (int i = 0; i < 6; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			}
+			for (int i = 0; i < 13; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
 		}
 		}
 		return super.removedByPlayer(state, world, pos, entity, willHarvest);
