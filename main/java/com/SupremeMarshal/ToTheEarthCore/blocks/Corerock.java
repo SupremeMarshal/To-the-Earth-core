@@ -64,93 +64,47 @@ public class Corerock extends BlockBase
 		if (!world.isRemote) {
 			if (block == ModBlocks.COREROCK) { }
 			else if (block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD) {
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				for (int i = 0; i < 4; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
 			}
 			else if (block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR) {
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				for (int i = 0; i < 5; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
 			}
 			else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ) {
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				for (int i = 0; i < 6; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
 			}
 			else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY) {
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				for (int i = 0; i < 8; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
+			}
+			else if (block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ) {
+				for (int i = 0; i < 9; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
 			}
 			else if (block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND) {
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				for (int i = 0; i < 12; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
 			}
 			else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE) {
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				for (int i = 0; i < 20; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
 			}
 			else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX) {
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				for (int i = 0; i < 6; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+				}
+				for (int i = 0; i < 13; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
 			}
 			else
 			{
@@ -166,11 +120,13 @@ public class Corerock extends BlockBase
 		Block block = this;
 
         if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
-        {return new ItemStack(ModItems.ONYX, 1, 0).getItem();}
+        	{return new ItemStack(ModItems.ONYX, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE)
 		{return new ItemStack(ModItems.AMAZONITE, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND)
 		{return new ItemStack(ModItems.DIAMOND, 1, 0).getItem();}
+		else if (block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ)
+		{return new ItemStack(ModItems.TOPAZ, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY)
 		{return new ItemStack(ModItems.RUBY, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ)
@@ -234,9 +190,9 @@ public class Corerock extends BlockBase
 		if (!entityIn.isImmuneToFire() && entityIn instanceof EntityLivingBase && !EnchantmentHelper.hasFrostWalkerEnchantment((EntityLivingBase)entityIn))
 		{
 			if (block == ModBlocks.COREROCK)
-		{
-			entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 6.0F);
-		}
+			{
+				entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 6.0F);
+			}
 			else if (block == ModBlocks.INNERCOREROCK)
 			{
 				entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 12.0F);
