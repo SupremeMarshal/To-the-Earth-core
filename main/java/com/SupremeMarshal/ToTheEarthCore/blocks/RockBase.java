@@ -25,7 +25,10 @@ public class RockBase extends BlockBase
 		if (this == ModBlocks.COREROCK) {
 			setLightLevel(1.0F);
 		}
+		if (this == ModBlocks.INNERCOREROCK) {
+			setLightLevel(1.0F);
 		}
+	}
 	
 	public void onBlockClicked(World world, BlockPos pos, EntityPlayer entity) {
 		Block block = this;
