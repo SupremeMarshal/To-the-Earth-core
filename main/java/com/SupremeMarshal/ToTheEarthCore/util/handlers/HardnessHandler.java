@@ -19,44 +19,44 @@ public class HardnessHandler
 		int tier = 0;
 		
 		if (block == ModBlocks.STIFFROCK || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.STIFFROCK_LAPIS 
-		    		|| block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.STIFFROCK_SILVER 
-		   		|| block == ModBlocks.STIFFROCK_GOLD || block == ModBlocks.STIFFROCK_PLATINUM || block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ
-		   		|| block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.STIFFROCK_ONYX)
+		    		|| block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.STIFFROCK_SILVER || block == ModBlocks.STIFFROCK_GOLD 
+		    		|| block == ModBlocks.STIFFROCK_PLATINUM || block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ
+		   		|| block == ModBlocks.STIFFROCK_RUBY || block = ModBlocks.STIFFROCK_TOPAZ || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.STIFFROCK_ONYX)
 		{hardness = 0;}
 		else if (block == ModBlocks.HARDROCK || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDROCK_LAPIS 
-			 	|| block == ModBlocks.HARDROCK_IRON || block == ModBlocks.HARDROCK_SILVER
-				|| block == ModBlocks.HARDROCK_GOLD || block == ModBlocks.HARDROCK_PLATINUM || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDROCK_FLAMING_TOPAZ
-				|| block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDROCK_ONYX)
+			 	|| block == ModBlocks.HARDROCK_IRON || block == ModBlocks.HARDROCK_SILVER || block == ModBlocks.HARDROCK_GOLD 
+			 	|| block == ModBlocks.HARDROCK_PLATINUM || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDROCK_FLAMING_TOPAZ
+				|| block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.HARDROCK_TOPAZ || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDROCK_ONYX)
 		{hardness = 1;}
 		else if (block == ModBlocks.HARDERROCK || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.HARDERROCK_SULFUR || block == ModBlocks.HARDERROCK_REDSTONE || block == ModBlocks.HARDERROCK_LAPIS 
-			 	|| block == ModBlocks.HARDERROCK_IRON || block == ModBlocks.HARDERROCK_SILVER 
-				|| block == ModBlocks.HARDERROCK_GOLD || block == ModBlocks.HARDERROCK_PLATINUM || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.HARDERROCK_FLAMING_TOPAZ
-				|| block == ModBlocks.HARDERROCK_RUBY || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.HARDERROCK_ONYX)
+			 	|| block == ModBlocks.HARDERROCK_IRON || block == ModBlocks.HARDERROCK_SILVER || block == ModBlocks.HARDERROCK_GOLD 
+			 	|| block == ModBlocks.HARDERROCK_PLATINUM || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.HARDERROCK_FLAMING_TOPAZ
+				|| block == ModBlocks.HARDERROCK_RUBY || block == ModBlocks.HARDERROCK_TOPAZ || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.HARDERROCK_ONYX)
 		{hardness = 2;}
 		else if (block == ModBlocks.REDROCK || block == ModBlocks.REDROCK_COAL || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.REDROCK_LAPIS 
-			 	|| block == ModBlocks.REDROCK_IRON || block == ModBlocks.REDROCK_SILVER 
-				|| block == ModBlocks.REDROCK_GOLD || block == ModBlocks.REDROCK_PLATINUM || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.REDROCK_FLAMING_TOPAZ
-				|| block == ModBlocks.REDROCK_RUBY || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.REDROCK_ONYX)
+			 	|| block == ModBlocks.REDROCK_IRON || block == ModBlocks.REDROCK_SILVER || block == ModBlocks.REDROCK_GOLD 
+			 	|| block == ModBlocks.REDROCK_PLATINUM || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.REDROCK_FLAMING_TOPAZ
+				|| block == ModBlocks.REDROCK_RUBY || block == ModBlocks.REDROCK_TOPAZ || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.REDROCK_ONYX)
 		{hardness = 3;}
 		else if (block == ModBlocks.MANTLEROCK || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.MANTLEROCK_SULFUR || block == ModBlocks.MANTLEROCK_REDSTONE || block == ModBlocks.MANTLEROCK_LAPIS 
-			 	|| block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.MANTLEROCK_SILVER || block == ModBlocks.HOT_MANTLEROCK
-				|| block == ModBlocks.MANTLEROCK_GOLD || block == ModBlocks.MANTLEROCK_PLATINUM || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ
-				|| block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_ONYX)
+			 	|| block == ModBlocks.MANTLEROCK_IRON || block == ModBlocks.MANTLEROCK_SILVER || block == ModBlocks.HOT_MANTLEROCK || block == ModBlocks.MANTLEROCK_GOLD 
+			 	|| block == ModBlocks.MANTLEROCK_PLATINUM || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ
+				|| block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.MANTLEROCK_TOPAZ || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_ONYX)
 		{hardness = 4;}
 		else if (block == ModBlocks.LOWER_MANTLEROCK || block == ModBlocks.LOWER_MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_SULFUR || block == ModBlocks.LOWER_MANTLEROCK_REDSTONE || block == ModBlocks.LOWER_MANTLEROCK_LAPIS
-			 	|| block == ModBlocks.LOWER_MANTLEROCK_IRON || block == ModBlocks.LOWER_MANTLEROCK_SILVER
-				|| block == ModBlocks.LOWER_MANTLEROCK_GOLD || block == ModBlocks.LOWER_MANTLEROCK_PLATINUM || block == ModBlocks.LOWER_MANTLEROCK_EMERALD || block == ModBlocks.LOWER_MANTLEROCK_SAPHIR || block == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ
-				|| block == ModBlocks.LOWER_MANTLEROCK_RUBY || block == ModBlocks.LOWER_MANTLEROCK_DIAMOND || block == ModBlocks.LOWER_MANTLEROCK_AMAZONITE || block == ModBlocks.LOWER_MANTLEROCK_ONYX)
+			 	|| block == ModBlocks.LOWER_MANTLEROCK_IRON || block == ModBlocks.LOWER_MANTLEROCK_SILVER || block == ModBlocks.LOWER_MANTLEROCK_GOLD 
+			 	|| block == ModBlocks.LOWER_MANTLEROCK_PLATINUM || block == ModBlocks.LOWER_MANTLEROCK_EMERALD || block == ModBlocks.LOWER_MANTLEROCK_SAPHIR || block == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ
+				|| block == ModBlocks.LOWER_MANTLEROCK_RUBY || block == ModBlocks.LOWER_MANTLEROCK_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_DIAMOND || block == ModBlocks.LOWER_MANTLEROCK_AMAZONITE || block == ModBlocks.LOWER_MANTLEROCK_ONYX)
 		{hardness = 5;}
 		else if (block == ModBlocks.COREROCK || block == ModBlocks.COREROCK_COAL || block == ModBlocks.COREROCK_SULFUR || block == ModBlocks.COREROCK_REDSTONE || block == ModBlocks.COREROCK_LAPIS
-			 	|| block == ModBlocks.COREROCK_IRON || block == ModBlocks.COREROCK_SILVER
-				|| block == ModBlocks.COREROCK_GOLD || block == ModBlocks.COREROCK_PLATINUM || block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.COREROCK_FLAMING_TOPAZ
-				|| block == ModBlocks.COREROCK_RUBY || block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.COREROCK_ONYX)
+			 	|| block == ModBlocks.COREROCK_IRON || block == ModBlocks.COREROCK_SILVER || block == ModBlocks.COREROCK_GOLD 
+			 	|| block == ModBlocks.COREROCK_PLATINUM || block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.COREROCK_FLAMING_TOPAZ
+				|| block == ModBlocks.COREROCK_RUBY || block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.COREROCK_ONYX)
 		{hardness = 6;}
 		else if (block == ModBlocks.INNERCOREROCK || block == ModBlocks.INNERCOREROCK_COAL || block == ModBlocks.INNERCOREROCK_SULFUR || block == ModBlocks.INNERCOREROCK_REDSTONE || block == ModBlocks.INNERCOREROCK_LAPIS
-			 	|| block == ModBlocks.INNERCOREROCK_IRON || block == ModBlocks.INNERCOREROCK_SILVER
-				|| block == ModBlocks.INNERCOREROCK_GOLD || block == ModBlocks.INNERCOREROCK_PLATINUM || block == ModBlocks.INNERCOREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ
-				|| block == ModBlocks.INNERCOREROCK_RUBY || block == ModBlocks.INNERCOREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_ONYX)
+			 	|| block == ModBlocks.INNERCOREROCK_IRON || block == ModBlocks.INNERCOREROCK_SILVER || block == ModBlocks.INNERCOREROCK_GOLD 
+			 	|| block == ModBlocks.INNERCOREROCK_PLATINUM || block == ModBlocks.INNERCOREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ
+				|| block == ModBlocks.INNERCOREROCK_RUBY || block == ModBlocks.INNERCOREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_ONYX)
 		{hardness = 7;}
 		else
 		{hardness = -1;}
@@ -81,6 +81,8 @@ public class HardnessHandler
 		else if (block == ModBlocks.FLAMING_TOPAZ_ORE || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ || block == ModBlocks.HARDROCK_FLAMING_TOPAZ || block == ModBlocks.HARDERROCK_FLAMING_TOPAZ || block == ModBlocks.REDROCK_FLAMING_TOPAZ || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ || block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ)
 		{tier = 3;}
 		else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.HARDERROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.LOWER_MANTLEROCK_RUBY || block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY)
+		{tier = 4;}
+		else if (block == ModBlocks.TOPAZ_ORE || block == ModBlocks.STIFFROCK_TOPAZ || block == ModBlocks.HARDROCK_TOPAZ || block == ModBlocks.HARDERROCK_TOPAZ || block == ModBlocks.REDROCK_TOPAZ || block == ModBlocks.MANTLEROCK_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_TOPAZ || block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ)
 		{tier = 4;}
 		else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.LOWER_MANTLEROCK_DIAMOND || block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND)
 		{tier = 5;}
@@ -110,6 +112,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
@@ -126,6 +129,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
@@ -143,6 +147,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.PLATINUM_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
@@ -163,6 +168,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -184,6 +190,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -208,6 +215,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(-1.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -240,6 +248,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(35.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(35.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -281,6 +290,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(34.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(50.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(34.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(50.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(-1.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
@@ -333,11 +343,13 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(33.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(44.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(33.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(44.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(60.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(-1.0f);}
 
 			}
-		else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.DIAMOND_PICKAXE, (int) (1)).getItem())) 
+		else if ((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.DIAMOND_PICKAXE, (int) (1)).getItem()) 
+					|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.TOPAZ_PICKAXE, (int) (1)).getItem())) 
 			{
 			if ((int)hardness == -1 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == -1 && (int)tier == 1) { block.setHardness((float) 4.0F);}
@@ -475,6 +487,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(30.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(40.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(30.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(40.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(50.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(80.0f);}
 		}
@@ -562,6 +575,7 @@ public class HardnessHandler
 			else if (block == ModBlocks.SAPHIR_BLOCK) { block.setHardness(10.0f);}
 			else if (block == ModBlocks.RUBY_BLOCK) { block.setHardness(15.0f);}
 			else if (block == ModBlocks.FLAMING_TOPAZ_BLOCK) { block.setHardness(10.0f);}
+			else if (block == ModBlocks.TOPAZ_BLOCK) { block.setHardness(15.0f);}
 			else if (block == ModBlocks.DIAMOND_BLOCK) { block.setHardness(20.0f);}
 			else if (block == ModBlocks.AMAZONITE_BLOCK) { block.setHardness(30.0f);}
 		}
