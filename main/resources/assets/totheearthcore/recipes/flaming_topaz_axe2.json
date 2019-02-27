@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AA",
+        "BA",
+        "B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:flaming_topaz"
+        },
+        "B":
+        {
+            "item": "totheearthcore:flaming_topaz_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:flaming_topaz_axe",
+        "count": 1
+    }
+}
