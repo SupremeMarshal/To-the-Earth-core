@@ -34,6 +34,7 @@ public class ModItems {
 	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1500, 15.0F, 5.0F, 10);
 	public static final ToolMaterial MATERIAL_FLAMING_TOPAZ = EnumHelper.addToolMaterial("material_flaming_topaz", 7, 400, 20.0F, 6.0F, 8);
 	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 2000, 20.0F, 6.0F, 8);
+	public static final ToolMaterial MATERIAL_TOPAZ = EnumHelper.addToolMaterial("material_topaz", 8, 500, 25.0F, 7.5F, 6);
 	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 3000, 25.0F, 7.5F, 6);
 	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 9, 4000, 30.0F, 10.0F, 5);
 	public static final ToolMaterial MATERIAL_DEMON = EnumHelper.addToolMaterial("material_demon", 9, 1000, 25.0F, 20F, 5);
@@ -198,6 +199,15 @@ public class ModItems {
 	public static final Item RUBY_LEGGINGS = new RubyLegs("ruby_leggings", ARMOR_MATERIAL_RUBY, 2, EntityEquipmentSlot.LEGS);
 	public static final Item RUBY_BOOTS = new RubyBoots("ruby_boots", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET);
 	
+	//TOPAZ//
+	
+	
+	public static final ItemSword TOPAZ_SWORD = new ToolSword("topaz_sword", MATERIAL_TOPAZ);
+	public static final ItemSpade TOPAZ_SHOVEL = new ToolSpade("topaz_shovel", MATERIAL_TOPAZ);
+	public static final ItemPickaxe TOPAZ_PICKAXE = new ToolPickaxe("topaz_pickaxe", MATERIAL_TOPAZ);
+	public static final ItemAxe TOPAZ_AXE = new ToolAxe("topaz_axe", MATERIAL_TOPAZ);
+	public static final ItemHoe TOPAZ_HOE = new ToolHoe("topaz_hoe", MATERIAL_TOPAZ);
+	
 	//DIAMOND//
 
 	
@@ -251,6 +261,7 @@ public class ModItems {
 	public static final Item SAPHIR = new ItemBase("saphir");
 	public static final Item FLAMING_TOPAZ = new ItemBase("flaming_topaz");
 	public static final Item RUBY = new ItemBase("ruby");
+	public static final Item TOPAZ = new ItemBase("topaz");
 	public static final Item DIAMOND = new ItemBase("diamond");
 	public static final Item AMAZONITE = new Gems("amazonite");
 	public static final Item ONYX = new Gems("onyx");
@@ -260,6 +271,7 @@ public class ModItems {
 	public static final Item SAPHIR_ROD = new ItemBase("saphir_rod");
 	public static final Item FLAMING_TOPAZ_ROD = new ItemBase("flaming_topaz_rod");
 	public static final Item RUBY_ROD = new ItemBase("ruby_rod");
+	public static final Item TOPAZ_ROD = new ItemBase("topaz_rod");
 	public static final Item DIAMOND_ROD = new ItemBase("diamond_rod");
 	public static final Item AMAZONITE_ROD = new Gems("amazonite_rod");
 	public static final Item ONYX_ROD = new Gems("onyx_rod");
