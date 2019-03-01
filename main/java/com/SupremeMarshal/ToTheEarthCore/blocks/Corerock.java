@@ -93,6 +93,11 @@ public class Corerock extends BlockBase
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
+			else if (block == ModBlocks.COREROCK_JADE || block == ModBlocks.INNERCOREROCK_JADE) {
+				for (int i = 0; i < 15; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
+			}
 			else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE) {
 				for (int i = 0; i < 20; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
@@ -123,6 +128,8 @@ public class Corerock extends BlockBase
         	{return new ItemStack(ModItems.ONYX, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE)
 		{return new ItemStack(ModItems.AMAZONITE, 1, 0).getItem();}
+		else if (block == ModBlocks.COREROCK_JADE || block == ModBlocks.INNERCOREROCK_JADE)
+		{return new ItemStack(ModItems.JADE, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND)
 		{return new ItemStack(ModItems.DIAMOND, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ)
