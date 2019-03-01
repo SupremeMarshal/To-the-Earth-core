@@ -39,8 +39,8 @@ public class GemBase extends BlockBase
 	{
 	Block block = this;
 
-	if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_COAL)
-	{return new ItemStack(Items.COAL, (int) (1), 0).getItem();}
+	if (block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.LOWER_MANTLEROCK_EMERALD)
+	{return new ItemStack(Items.EMERALD, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.HARDERROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.LOWER_MANTLEROCK_SAPHIR)
 	{return new ItemStack(ModItems.SAPHIR, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.FLAMING_TOPAZ_ORE || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ || block == ModBlocks.HARDROCK_FLAMING_TOPAZ || block = ModBlocks.HARDERROCK_FLAMING_TOPAZ || block == ModBlocks.REDROCK_FLAMING_TOPAZ || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ)
@@ -53,10 +53,12 @@ public class GemBase extends BlockBase
 	{return new ItemStack(ModItems.DIAMOND, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.LOWER_MANTLEROCK_AMAZONITE)
 	{return new ItemStack(ModItems.AMAZONITE, (int) (1), 0).getItem();}
+	else if (block == ModBlocks.JADE_ORE || block == ModBlocks.STIFFROCK_JADE || block == ModBlocks.HARDROCK_JADE || block == ModBlocks.HARDERROCK_JADE || block == ModBlocks.REDROCK_JADE || block == ModBlocks.MANTLEROCK_JADE || block == ModBlocks.LOWER_MANTLEROCK_JADE)
+	{return new ItemStack(ModItems.JADE, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.LOWER_MANTLEROCK_ONYX)
 	{return new ItemStack(ModItems.ONYX, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.HARDROCK_EMERALD || block == ModBlocks.HARDERROCK_EMERALD || block == ModBlocks.REDROCK_EMERALD || block == ModBlocks.MANTLEROCK_EMERALD || block == ModBlocks.LOWER_MANTLEROCK_EMERALD)
-	{return new ItemStack(Items.EMERALD, (int) (1), 0).getItem();}
+	else if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_COAL)
+	{return new ItemStack(Items.COAL, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDERROCK_REDSTONE || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE || block == ModBlocks.LOWER_MANTLEROCK_REDSTONE)
 	{return new ItemStack(Items.REDSTONE, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.SULFUR_ORE || block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.HARDERROCK_SULFUR || block == ModBlocks.REDROCK_SULFUR || block == ModBlocks.MANTLEROCK_SULFUR || block == ModBlocks.LOWER_MANTLEROCK_SULFUR)
@@ -180,6 +182,12 @@ public class GemBase extends BlockBase
 		else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND)
 		{
 			for (int i = 0; i < 12; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
+		}
+		else if (block == ModBlocks.JADE_ORE || block == ModBlocks.STIFFROCK_JADE || block == ModBlocks.HARDROCK_JADE || block == ModBlocks.HARDERROCK_JADE || block == ModBlocks.REDROCK_JADE || block == ModBlocks.MANTLEROCK_JADE)
+		{
+			for (int i = 0; i < 15; i++) {
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			}
 		}
