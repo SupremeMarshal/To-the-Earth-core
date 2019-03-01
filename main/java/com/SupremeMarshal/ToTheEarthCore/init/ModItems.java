@@ -36,6 +36,7 @@ public class ModItems {
 	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 2000, 20.0F, 6.0F, 8);
 	public static final ToolMaterial MATERIAL_TOPAZ = EnumHelper.addToolMaterial("material_topaz", 8, 500, 25.0F, 7.5F, 6);
 	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 3000, 25.0F, 7.5F, 6);
+	public static final ToolMaterial MATERIAL_JADE = EnumHelper.addToolMaterial("material_jade", 9, 800, 30.0F, 10.0F, 5);
 	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 9, 4000, 30.0F, 10.0F, 5);
 	public static final ToolMaterial MATERIAL_DEMON = EnumHelper.addToolMaterial("material_demon", 9, 1000, 25.0F, 20F, 5);
 	public static final ToolMaterial MATERIAL_CORE = EnumHelper.addToolMaterial("material_core", 10, 2500, 30.0F, 24F, 5);
@@ -222,6 +223,15 @@ public class ModItems {
 	public static final Item DIAMOND_LEGGINGS = new DiamondLegs("diamond_leggings", ARMOR_MATERIAL_DIAMOND, 2, EntityEquipmentSlot.LEGS);
 	public static final Item DIAMOND_BOOTS = new DiamondBoots("diamond_boots", ARMOR_MATERIAL_DIAMOND, 1, EntityEquipmentSlot.FEET);
 	
+	//JADE//
+	
+	
+	public static final ItemSword JADE_SWORD = new ToolSword("jade_sword", Material.JADE);
+	public static final ItemSpade JADE_SHOVEL = new ToolShovel("jade_shovel", Material.JADE);
+	public static final ItemPickaxe JADE_PICKAXE = new ToolPickaxe("jade_pickaxe", Material.JADE);
+	public static final ItemAxe JADE_AXE = new ToolAxe("jade_axe", Material.JADE);
+	public static final ItemHoe JADE_HOE = new ToolHoe("jade_hoe", Material.JADE);
+	
 	//AMAZONITE//
 
 	
@@ -263,6 +273,7 @@ public class ModItems {
 	public static final Item RUBY = new ItemBase("ruby");
 	public static final Item TOPAZ = new ItemBase("topaz");
 	public static final Item DIAMOND = new ItemBase("diamond");
+	public static final Item JADE = new ItemBase("jade");
 	public static final Item AMAZONITE = new Gems("amazonite");
 	public static final Item ONYX = new Gems("onyx");
 	
@@ -273,6 +284,7 @@ public class ModItems {
 	public static final Item RUBY_ROD = new ItemBase("ruby_rod");
 	public static final Item TOPAZ_ROD = new ItemBase("topaz_rod");
 	public static final Item DIAMOND_ROD = new ItemBase("diamond_rod");
+	public static final Item JADE_ROD = new ItemBase("jade_rod");
 	public static final Item AMAZONITE_ROD = new Gems("amazonite_rod");
 	public static final Item ONYX_ROD = new Gems("onyx_rod");
 	
