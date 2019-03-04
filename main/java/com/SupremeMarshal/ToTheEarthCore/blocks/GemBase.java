@@ -51,10 +51,12 @@ public class GemBase extends BlockBase
 	{return new ItemStack(ModItems.TOPAZ, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.DIAMOND_ORE || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.HARDROCK_DIAMOND || block == ModBlocks.HARDERROCK_DIAMOND || block == ModBlocks.REDROCK_DIAMOND || block == ModBlocks.MANTLEROCK_DIAMOND || block == ModBlocks.LOWER_MANTLEROCK_DIAMOND)
 	{return new ItemStack(ModItems.DIAMOND, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.LOWER_MANTLEROCK_AMAZONITE)
-	{return new ItemStack(ModItems.AMAZONITE, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.JADE_ORE || block == ModBlocks.STIFFROCK_JADE || block == ModBlocks.HARDROCK_JADE || block == ModBlocks.HARDERROCK_JADE || block == ModBlocks.REDROCK_JADE || block == ModBlocks.MANTLEROCK_JADE || block == ModBlocks.LOWER_MANTLEROCK_JADE)
 	{return new ItemStack(ModItems.JADE, (int) (1), 0).getItem();}
+	else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE || block == ModBlocks.LOWER_MANTLEROCK_AMAZONITE)
+	{return new ItemStack(ModItems.AMAZONITE, (int) (1), 0).getItem();}
+	else if (block == ModBlocks.AMETHYST_ORE || block == ModBlocks.STIFFROCK_AMETHYST || block == ModBlocks.HARDROCK_AMETHYST || block == ModBlocks.HARDERROCK_AMETHYST || block == ModBlocks.REDROCK_AMETHYST || block == ModBlocks.MANTLEROCK_AMETHYST || block == ModBlocks.LOWER_MANTLEROCK_AMETHYST)
+	{return new ItemStack(ModItems.AMETHYST, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.LOWER_MANTLEROCK_ONYX)
 	{return new ItemStack(ModItems.ONYX, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_COAL)
@@ -194,6 +196,15 @@ public class GemBase extends BlockBase
 		else if (block == ModBlocks.AMAZONITE_ORE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.HARDROCK_AMAZONITE || block == ModBlocks.HARDERROCK_AMAZONITE || block == ModBlocks.REDROCK_AMAZONITE || block == ModBlocks.MANTLEROCK_AMAZONITE)
 		{
 			for (int i = 0; i < 20; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
+		}
+		else if (block == ModBlocks.AMETHYST_ORE || block == ModBlocks.STIFFROCK_AMETHYST || block == ModBlocks.HARDROCK_AMETHYST || block == ModBlocks.HARDERROCK_AMETHYST || block == ModBlocks.REDROCK_AMETHYST || block == ModBlocks.MANTLEROCK_AMETHYST)
+		{
+			for (int i = 0; i < 4; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			}
+			for (int i = 0; i < 9; i++) {
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			}
 		}
