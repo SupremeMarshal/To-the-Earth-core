@@ -15,6 +15,8 @@ public class ModBlocks {
 	public static final Block HOT_LAVA_BLOCK = new HotLavaFluid("hot_lava", ModFluids.HOT_LAVA_FLUID, Material.LAVA);
 	public static final Block CORE_LAVA_BLOCK = new CoreLavaFluid("core_lava", ModFluids.CORE_LAVA_FLUID, Material.LAVA);
 
+	public static final Block ONYX_BLOCK = new RockBase("onyx_block", Material.ROCK);
+	public static final Block AMETHYST_BLOCK = new RockBase("amethyst_block", Material.ROCK);
 	public static final Block AMAZONITE_BLOCK = new RockBase("amazonite_block", Material.ROCK);
 	public static final Block JADE_BLOCK = new RockBase("jade_block", Material.ROCK);
 	public static final Block DIAMOND_BLOCK = new RockBase("diamond_block", Material.ROCK);
@@ -30,6 +32,7 @@ public class ModBlocks {
 	public static final Block SULFUR_BLOCK = new BlockBase("sulfur_block", Material.ROCK);
 	
 	public static final Block ONYX_ORE = new GemBase("onyx_ore", Material.ROCK);
+	public static final Block AMETHYST_ORE = new GemBase("amethyst_ore", Material.ROCK);
 	public static final Block AMAZONITE_ORE = new GemBase("amazonite_ore", Material.ROCK);
 	public static final Block JADE_ORE = new GemBase("jade_ore", Material.ROCK);
 	public static final Block DIAMOND_ORE = new GemBase("diamond_ore", Material.ROCK);
@@ -44,6 +47,7 @@ public class ModBlocks {
 	public static final Block SULFUR_ORE = new GemBase("sulfur_ore", Material.ROCK);
 	
 	public static final Block STIFFROCK_ONYX = new GemBase("stiffrock_onyx", Material.ROCK);
+	public static final Block STIFFROCK_AMETHYST = new GemBase("stiffrock_amethyst", Material.ROCK);
 	public static final Block STIFFROCK_AMAZONITE = new GemBase("stiffrock_amazonite", Material.ROCK);
 	public static final Block STIFFROCK_JADE = new GemBase("stiffrock_jade", Material.ROCK);
 	public static final Block STIFFROCK_DIAMOND = new GemBase("stiffrock_diamond", Material.ROCK);
@@ -62,6 +66,7 @@ public class ModBlocks {
 	public static final Block STIFFROCK_SULFUR = new GemBase("stiffrock_sulfur", Material.ROCK);
 	
 	public static final Block HARDROCK_ONYX = new GemBase("hardrock_onyx", Material.ROCK);
+	public static final Block HARDROCK_AMETHYST = new GemBase("hardrock_amethyst", Material.ROCK);
 	public static final Block HARDROCK_AMAZONITE = new GemBase("hardrock_amazonite", Material.ROCK);
 	public static final Block HARDROCK_JADE = new GemBase("hardrock_jade", Material.ROCK);
 	public static final Block HARDROCK_DIAMOND = new GemBase("hardrock_diamond", Material.ROCK);
@@ -80,6 +85,7 @@ public class ModBlocks {
 	public static final Block HARDROCK_SULFUR = new GemBase("hardrock_sulfur", Material.ROCK);
 	
 	public static final Block HARDERROCK_ONYX = new GemBase("harderrock_onyx", Material.ROCK);
+	public static final Block HARDERROCK_AMETHYST = new GemBase("harderrock_amethyst", Material.ROCK);
 	public static final Block HARDERROCK_AMAZONITE = new GemBase("harderrock_amazonite", Material.ROCK);
 	public static final Block HARDERROCK_JADE = new GemBase("harderrock_jade", Material.ROCK);
 	public static final Block HARDERROCK_DIAMOND = new GemBase("harderrock_diamond", Material.ROCK);
@@ -98,6 +104,7 @@ public class ModBlocks {
 	public static final Block HARDERROCK_SULFUR = new GemBase("harderrock_sulfur", Material.ROCK);
 
 	public static final Block REDROCK_ONYX = new GemBase("redrock_onyx", Material.ROCK);
+	public static final Block REDROCK_AMETHYST = new GemBase("redrock_amethyst", Material.ROCK);
 	public static final Block REDROCK_AMAZONITE = new GemBase("redrock_amazonite", Material.ROCK);
 	public static final Block REDROCK_JADE = new GemBase("redrock_jade", Material.ROCK);
 	public static final Block REDROCK_DIAMOND = new GemBase("redrock_diamond", Material.ROCK);
@@ -116,6 +123,7 @@ public class ModBlocks {
 	public static final Block REDROCK_SULFUR = new GemBase("redrock_sulfur", Material.ROCK);
 	
 	public static final Block MANTLEROCK_ONYX = new GemBase("mantlerock_onyx", Material.ROCK);
+	public static final Block MANTLEROCK_AMETHYST = new GemBase("mantlerock_amethyst", Material.ROCK);
 	public static final Block MANTLEROCK_AMAZONITE = new GemBase("mantlerock_amazonite", Material.ROCK);
 	public static final Block MANTLEROCK_JADE = new GemBase("mantlerock_jade", Material.ROCK);
 	public static final Block MANTLEROCK_DIAMOND = new GemBase("mantlerock_diamond", Material.ROCK);
@@ -134,6 +142,7 @@ public class ModBlocks {
 	public static final Block MANTLEROCK_SULFUR = new GemBase("mantlerock_sulfur", Material.ROCK);
 	
 	public static final Block LOWER_MANTLEROCK_ONYX = new GemBase("lower_mantlerock_onyx", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK_AMETHYST = new GemBase("lower_mantlerock_amethyst", Material.ROCK);
 	public static final Block LOWER_MANTLEROCK_AMAZONITE = new GemBase("lower_mantlerock_amazonite", Material.ROCK);
 	public static final Block LOWER_MANTLEROCK_JADE = new GemBase("lower_mantlerock_jade", Material.ROCK);
 	public static final Block LOWER_MANTLEROCK_DIAMOND = new GemBase("lower_mantlerock_diamond", Material.ROCK);
@@ -152,6 +161,7 @@ public class ModBlocks {
 	public static final Block LOWER_MANTLEROCK_SULFUR = new GemBase("lower_mantlerock_sulfur", Material.ROCK);
 
 	public static final Block COREROCK_ONYX = new Corerock("corerock_onyx", Material.ROCK);
+	public static final Block COREROCK_AMETHYST = new Corerock("corerock_amethyst", Material.ROCK);
 	public static final Block COREROCK_AMAZONITE = new Corerock("corerock_amazonite", Material.ROCK);
 	public static final Block COREROCK_JADE = new Corerock("corerock_jade", Material.ROCK);
 	public static final Block COREROCK_DIAMOND = new Corerock("corerock_diamond", Material.ROCK);
@@ -170,6 +180,7 @@ public class ModBlocks {
 	public static final Block COREROCK_SULFUR = new Corerock("corerock_sulfur", Material.ROCK);
 
 	public static final Block INNERCOREROCK_ONYX = new Corerock("innercorerock_onyx", Material.ROCK);
+	public static final Block INNERCOREROCK_AMETHYST = new Corerock("innercorerock_amethyst", Material.ROCK);
 	public static final Block INNERCOREROCK_AMAZONITE = new Corerock("innercorerock_amazonite", Material.ROCK);
 	public static final Block INNERCOREROCK_JADE = new Corerock("innercorerock_jade", Material.ROCK);
 	public static final Block INNERCOREROCK_DIAMOND = new Corerock("innercorerock_diamond", Material.ROCK);
