@@ -163,6 +163,16 @@ public class ModSmelting {
 		GameRegistry.addSmelting(ModBlocks.COREROCK_AMAZONITE, new ItemStack(ModItems.AMAZONITE, 1), 13.0F);
 		GameRegistry.addSmelting(ModBlocks.INNERCOREROCK_AMAZONITE, new ItemStack(ModItems.AMAZONITE, 1), 19.5F);
 
+		GameRegistry.addSmelting(ModBlocks.AMETHYST_ORE, new ItemStack(ModItems.AMETHYST, 1), 5.5F);
+		GameRegistry.addSmelting(ModBlocks.STIFFROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 5.75F);
+		GameRegistry.addSmelting(ModBlocks.HARDROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 6.0F);
+		GameRegistry.addSmelting(ModBlocks.HARDERROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 6.25F);
+		GameRegistry.addSmelting(ModBlocks.REDROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 6.5F);
+		GameRegistry.addSmelting(ModBlocks.MANTLEROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 7.0F);
+		GameRegistry.addSmelting(ModBlocks.LOWER_MANTLEROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 10.5F);
+		GameRegistry.addSmelting(ModBlocks.COREROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 14.0F);
+		GameRegistry.addSmelting(ModBlocks.INNERCOREROCK_AMETHYST, new ItemStack(ModItems.AMETHYST, 1), 21.0F);
+		
 		GameRegistry.addSmelting(ModBlocks.ONYX_ORE, new ItemStack(ModItems.ONYX, 1), 6.0F);
 		GameRegistry.addSmelting(ModBlocks.STIFFROCK_ONYX, new ItemStack(ModItems.ONYX, 1), 6.25F);
 		GameRegistry.addSmelting(ModBlocks.HARDROCK_ONYX, new ItemStack(ModItems.ONYX, 1), 6.5F);
