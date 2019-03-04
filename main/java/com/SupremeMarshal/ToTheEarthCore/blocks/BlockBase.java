@@ -64,7 +64,7 @@ public class BlockBase extends Block implements IHasModel
 	{
 		return this == ModBlocks.IRON_BLOCK || this == ModBlocks.STEEL_BLOCK || this == ModBlocks.SILVER_BLOCK || this ==  ModBlocks.GOLD_BLOCK
 				|| this == ModBlocks.PLATINUM_BLOCK || this == ModBlocks.SAPHIR_BLOCK || this == ModBlocks.FLAMING_TOPAZ_BLOCK || this == ModBlocks.RUBY_BLOCK
-				|| this == ModBlocks.TOPAZ_BLOCK || this == ModBlocks.DIAMOND_BLOCK || this == ModBlocks.JADE_BLOCK || this == ModBlocks.AMAZONITE_BLOCK;
+				|| this == ModBlocks.TOPAZ_BLOCK || this == ModBlocks.DIAMOND_BLOCK || this == ModBlocks.JADE_BLOCK || this == ModBlocks.AMAZONITE_BLOCK || this == ModBlocks.AMETHYST_BLOCK || this == ModBlocks.ONYX_BLOCK;
 	}
 	
 	
