@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AA",
+        "BA",
+        "B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:amethyst"
+        },
+        "B":
+        {
+            "item": "totheearthcore:amethyst_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:amethyst_axe",
+        "count": 1
+    }
+}
