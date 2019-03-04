@@ -103,6 +103,14 @@ public class Corerock extends BlockBase
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
+			else if (block == ModBlocks.COREROCK_AMETHYST || block == ModBlocks.INNERCOREROCK_AMETHYST) {
+				for (int i = 0; i < 4; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+				}
+				for (int i = 0; i < 9; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
+			}
 			else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX) {
 				for (int i = 0; i < 6; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
