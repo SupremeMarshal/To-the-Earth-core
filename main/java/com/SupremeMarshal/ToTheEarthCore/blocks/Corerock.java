@@ -62,48 +62,48 @@ public class Corerock extends BlockBase
 		int z = pos.getZ();
 		Block block = this;
 		if (!world.isRemote) {
-			if (block == ModBlocks.COREROCK) { }
-			else if (block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD) {
+			if (block == ModBlocks.COREROCK || block == ModBlocks.INNERCOREROCK || block == ModBlocks.BLUE_COREROCK) { }
+			else if (block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD || block == ModBlocks.BLUE_COREROCK_EMERALD) {
 				for (int i = 0; i < 4; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR) {
+			else if (block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR || block == ModBlocks.BLUE_COREROCK_SAPHIR) {
 				for (int i = 0; i < 5; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ) {
+			else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ || block == ModBlocks.BLUE_COREROCK_FLAMING_TOPAZ) {
 				for (int i = 0; i < 6; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY) {
+			else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY || block == ModBlocks.BLUE_COREROCK_RUBY) {
 				for (int i = 0; i < 8; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ) {
+			else if (block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ || block == ModBlocks.BLUE_COREROCK_TOPAZ) {
 				for (int i = 0; i < 9; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND) {
+			else if (block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND || block == ModBlocks.BLUE_COREROCK_DIAMOND) {
 				for (int i = 0; i < 12; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_JADE || block == ModBlocks.INNERCOREROCK_JADE) {
+			else if (block == ModBlocks.COREROCK_JADE || block == ModBlocks.INNERCOREROCK_JADE || block == ModBlocks.BLUE_COREROCK_JADE) {
 				for (int i = 0; i < 15; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE) {
+			else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE || block == ModBlocks.BLUE_COREROCK_AMAZONITE) {
 				for (int i = 0; i < 20; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_AMETHYST || block == ModBlocks.INNERCOREROCK_AMETHYST) {
+			else if (block == ModBlocks.COREROCK_AMETHYST || block == ModBlocks.INNERCOREROCK_AMETHYST || block == ModBlocks.BLUE_COREROCK_AMETHYST) {
 				for (int i = 0; i < 4; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
 				}
@@ -111,11 +111,19 @@ public class Corerock extends BlockBase
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
-			else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX) {
+			else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX || block == ModBlocks.BLUE_COREROCK_ONYX) {
 				for (int i = 0; i < 6; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
 				}
 				for (int i = 0; i < 13; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+				}
+			}
+			else if (block == ModBlocks.COREROCK_AZURITE || block == ModBlocks.INNERCOREROCK_AZURITE || block == ModBlocks.BLUE_COREROCK_AZURITE) {
+				for (int i = 0; i < 9; i++) {
+					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+				}
+				for (int i = 0; i < 18; i++) {
 					world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 				}
 			}
@@ -132,8 +140,12 @@ public class Corerock extends BlockBase
 	{
 		Block block = this;
 
-        if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
+        if (block == ModBlocks.COREROCK_AZURITE || block == ModBlocks.INNERCOREROCK_AZURITE)
+        	{return new ItemStack(ModItems.AZURITE, 1, 0).getItem();}
+		else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
         	{return new ItemStack(ModItems.ONYX, 1, 0).getItem();}
+		else if (block == ModBlocks.COREROCK_AMETHYST || block == ModBlocks.INNERCOREROCK_AMETHYST)
+		{return new ItemStack(ModItems.AMETHYST, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE)
 		{return new ItemStack(ModItems.AMAZONITE, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_JADE || block == ModBlocks.INNERCOREROCK_JADE)
@@ -172,6 +184,10 @@ public class Corerock extends BlockBase
 		{
 			return 15 + random.nextInt(12);
 		}
+		else if (block == ModBlocks.BLUE_COREROCK_REDSTONE)
+		{
+			return 18 + random.nextInt(14);
+		}
 		else if (block == ModBlocks.COREROCK_COAL || block == ModBlocks.COREROCK_SULFUR)
 		{
 			return 5;
@@ -179,6 +195,10 @@ public class Corerock extends BlockBase
 		else if (block == ModBlocks.INNERCOREROCK_COAL || block == ModBlocks.INNERCOREROCK_SULFUR)
 		{
 			return 7;
+		}
+		else if (block == ModBlocks.BLUE_COREROCK_COAL || block == ModBlocks.BLUE_COREROCK_SULFUR)
+		{
+			return 9;
 		}
 		else
 		{
@@ -190,7 +210,7 @@ public class Corerock extends BlockBase
 	@Override
 	public int damageDropped(IBlockState state) {
 		Block block = this;
-		if (block == ModBlocks.COREROCK_LAPIS || block == ModBlocks.INNERCOREROCK_LAPIS) {
+		if (block == ModBlocks.COREROCK_LAPIS || block == ModBlocks.INNERCOREROCK_LAPIS || block == ModBlocks.BLUE_COREROCK_LAPIS) {
 			return 4;
 		}
 		else
@@ -211,6 +231,10 @@ public class Corerock extends BlockBase
 			else if (block == ModBlocks.INNERCOREROCK)
 			{
 				entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 12.0F);
+			}
+			else if (block == ModBlocks.BLUE_COREROCK)
+			{
+				entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 18.0F);
 			}
 		}
 
