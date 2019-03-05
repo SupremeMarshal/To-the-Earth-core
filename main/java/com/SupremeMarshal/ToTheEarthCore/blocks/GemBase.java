@@ -59,6 +59,8 @@ public class GemBase extends BlockBase
 	{return new ItemStack(ModItems.AMETHYST, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.ONYX_ORE || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.HARDROCK_ONYX || block == ModBlocks.HARDERROCK_ONYX || block == ModBlocks.REDROCK_ONYX || block == ModBlocks.MANTLEROCK_ONYX || block == ModBlocks.LOWER_MANTLEROCK_ONYX)
 	{return new ItemStack(ModItems.ONYX, (int) (1), 0).getItem();}
+	else if (block == ModBlocks.AZURITE_ORE || block == ModBlocks.STIFFROCK_AZURITE || block == ModBlocks.HARDROCK_AZURITE || block == ModBlocks.HARDERROCK_AZURITE || block == ModBlocks.REDROCK_AZURITE || block == ModBlocks.MANTLEROCK_AZURITE || block == ModBlocks.LOWER_MANTLEROCK_AZURITE)
+	{return new ItemStack(ModItems.AZURITE, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDERROCK_COAL || block == ModBlocks.REDROCK_COAL || block == ModBlocks.MANTLEROCK_COAL || block == ModBlocks.LOWER_MANTLEROCK_COAL)
 	{return new ItemStack(Items.COAL, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDERROCK_REDSTONE || block == ModBlocks.REDROCK_REDSTONE || block == ModBlocks.MANTLEROCK_REDSTONE || block == ModBlocks.LOWER_MANTLEROCK_REDSTONE)
@@ -214,6 +216,15 @@ public class GemBase extends BlockBase
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
 			}
 			for (int i = 0; i < 13; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			}
+		}
+		else if (block == ModBlocks.AZURITE_ORE || block == ModBlocks.STIFFROCK_AZURITE || block == ModBlocks.HARDROCK_AZURITE || block == ModBlocks.HARDERROCK_AZURITE || block == ModBlocks.REDROCK_AZURITE || block == ModBlocks.MANTLEROCK_AZURITE)
+		{
+			for (int i = 0; i < 9; i++) {
+				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 4));
+			}
+			for (int i = 0; i < 18; i++) {
 				world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
 			}
 		}
