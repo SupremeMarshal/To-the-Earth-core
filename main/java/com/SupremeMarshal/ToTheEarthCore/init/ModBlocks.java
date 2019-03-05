@@ -208,6 +208,26 @@ public class ModBlocks {
 	public static final Block INNERCOREROCK_COAL = new Corerock("innercorerock_coal", Material.ROCK);
 	public static final Block INNERCOREROCK_SULFUR = new Corerock("innercorerock_sulfur", Material.ROCK);
 	
+	public static final Block BLUE_COREROCK_AZURITE = new Corerock("blue_corerock_azurite", Material.ROCK);
+	public static final Block BLUE_COREROCK_ONYX = new Corerock("blue_corerock_onyx", Material.ROCK);
+	public static final Block BLUE_COREROCK_AMETHYST = new Corerock("blue_corerock_amethyst", Material.ROCK);
+	public static final Block BLUE_COREROCK_AMAZONITE = new Corerock("blue_corerock_amazonite", Material.ROCK);
+	public static final Block BLUE_COREROCK_JADE = new Corerock("blue_corerock_jade", Material.ROCK);
+	public static final Block BLUE_COREROCK_DIAMOND = new Corerock("blue_corerock_diamond", Material.ROCK);
+	public static final Block BLUE_COREROCK_TOPAZ = new Corerock("blue_corerock_topaz", Material.ROCK);
+	public static final Block BLUE_COREROCK_RUBY = new Corerock("blue_corerock_ruby", Material.ROCK);
+	public static final Block BLUE_COREROCK_FLAMING_TOPAZ = new Corerock("blue_corerock_flaming_topaz", Material.ROCK);
+	public static final Block BLUE_COREROCK_SAPHIR = new Corerock("blue_corerock_saphir", Material.ROCK);
+	public static final Block BLUE_COREROCK_EMERALD = new Corerock("blue_corerock_emerald", Material.ROCK);
+	public static final Block BLUE_COREROCK_LAPIS = new Corerock("blue_corerock_lapis", Material.ROCK);
+	public static final Block BLUE_COREROCK_REDSTONE = new Corerock("blue_corerock_redstone", Material.ROCK);
+	public static final Block BLUE_COREROCK_PLATINUM = new Corerock("blue_corerock_platinum", Material.ROCK);
+	public static final Block BLUE_COREROCK_GOLD = new Corerock("blue_corerock_gold", Material.ROCK);
+	public static final Block BLUE_COREROCK_SILVER = new Corerock("blue_corerock_silver", Material.ROCK);
+	public static final Block BLUE_COREROCK_IRON = new Corerock("blue_corerock_iron", Material.ROCK);
+	public static final Block BLUE_COREROCK_COAL = new Corerock("blue_corerock_coal", Material.ROCK);
+	public static final Block BLUE_COREROCK_SULFUR = new Corerock("blue_corerock_sulfur", Material.ROCK);
+	
 	public static final Block STIFFROCK = new RockBase("stiffrock", Material.ROCK);
 	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);
 	public static final Block HARDERROCK = new RockBase("harderrock", Material.ROCK);
@@ -216,6 +236,8 @@ public class ModBlocks {
 	public static final Block LOWER_MANTLEROCK = new RockBase("lower_mantlerock", Material.ROCK);
 	public static final Block COREROCK = new Corerock("corerock", Material.ROCK);
 	public static final Block INNERCOREROCK = new Corerock("innercorerock", Material.ROCK);
+	public static final Block BLUE_COREROCK = new Corerock("blue_corerock", Material.ROCK);
+	
 	public static final Block MANTLEGAS = new GasBase("mantlegas", Material.ROCK);
 	public static final Block HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock", Material.ROCK);
 	
