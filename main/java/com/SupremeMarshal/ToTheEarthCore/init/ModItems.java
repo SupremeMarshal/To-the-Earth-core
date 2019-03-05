@@ -42,6 +42,7 @@ public class ModItems {
 	public static final ToolMaterial MATERIAL_CORE = EnumHelper.addToolMaterial("material_core", 10, 2500, 30.0F, 24F, 5);
 	public static final ToolMaterial MATERIAL_AMETHYST = EnumHelper.addToolMaterial("material_amethyst", 10, 1000, 35.0F, 15.0F, 4);
 	public static final ToolMaterial MATERIAL_ONYX = EnumHelper.addToolMaterial("material_onyx", 10, 5000, 35.0F, 15.0F, 4);
+	public static final ToolMaterial MATERIAL_AZURITE = EnumHelper.addToolMaterial("material_azurite", 11, 7500, 40.0F, 20.0F, 4);
 	
 	
 	//ARMOR MATERIAL (name, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness)
@@ -271,6 +272,16 @@ public class ModItems {
 	public static final Item ONYX_LEGGINGS = new OnyxLegs("onyx_leggings", ARMOR_MATERIAL_ONYX, 2, EntityEquipmentSlot.LEGS);
 	public static final Item ONYX_BOOTS = new OnyxBoots("onyx_boots", ARMOR_MATERIAL_ONYX, 1, EntityEquipmentSlot.FEET);
 
+	
+	//AZURITE//
+	
+	public static final ItemSword AZURITE_SWORD = new ToolSword("azurite_sword", MATERIAL_AZURITE);
+	public static final ItemSpade AZURITE_SHOVEL = new ToolSpade("azurite_shovel", MATERIAL_AZURITE);
+	public static final ItemPickaxe AZURITE_PICKAXE = new ToolPickaxe("azurite_pickaxe", MATERIAL_AZURITE);
+	public static final ItemAxe AZURITE_AXE = new ToolAxe("azurite_axe", MATERIAL_AZURITE);
+ 	public static final ItemHoe AZURITE_HOE = new ToolHoe("azurite_hoe", MATERIAL_AZURITE);
+	
+	
 	//DEMON//CORE//
 	
 	public static final ItemSword DEMON_SWORD = new ToolSword("demon_sword", MATERIAL_DEMON);
@@ -288,6 +299,7 @@ public class ModItems {
 	public static final Item AMAZONITE = new Gems("amazonite");
 	public static final Item AMETHYST = new Gems("amethyst");
 	public static final Item ONYX = new Gems("onyx");
+	public static final Item AZURITE = new Gems("azurite");
 	
 	//ROD//
 	public static final Item EMERALD_ROD = new ItemBase("emerald_rod");
@@ -300,6 +312,7 @@ public class ModItems {
 	public static final Item AMAZONITE_ROD = new Gems("amazonite_rod");
 	public static final Item AMETHYST_ROD = new Gems("amethyst_rod");
 	public static final Item ONYX_ROD = new Gems("onyx_rod");
+	public static final Item AZURITE_ROD = new Gems("azurite_rod");
 	
 	//Ingot//
 	public static final Item IRON_INGOT = new ItemBase("iron_ingot");
