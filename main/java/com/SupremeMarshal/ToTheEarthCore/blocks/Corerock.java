@@ -140,33 +140,33 @@ public class Corerock extends BlockBase
 	{
 		Block block = this;
 
-        if (block == ModBlocks.COREROCK_AZURITE || block == ModBlocks.INNERCOREROCK_AZURITE)
+        if (block == ModBlocks.COREROCK_AZURITE || block == ModBlocks.INNERCOREROCK_AZURITE || block == ModBlocks.BLUE_COREROCK_AZURITE)
         	{return new ItemStack(ModItems.AZURITE, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX)
+		else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX || block == ModBlocks.BLUE_COREROCK_ONYS)
         	{return new ItemStack(ModItems.ONYX, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_AMETHYST || block == ModBlocks.INNERCOREROCK_AMETHYST)
+		else if (block == ModBlocks.COREROCK_AMETHYST || block == ModBlocks.INNERCOREROCK_AMETHYST || block == ModBlocks.BLUE_COREROCK_AMETHYST)
 		{return new ItemStack(ModItems.AMETHYST, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE)
+		else if (block == ModBlocks.COREROCK_AMAZONITE || block == ModBlocks.INNERCOREROCK_AMAZONITE || block == ModBlocks.BLUE_COREROCK_AMAZONITE)
 		{return new ItemStack(ModItems.AMAZONITE, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_JADE || block == ModBlocks.INNERCOREROCK_JADE)
+		else if (block == ModBlocks.COREROCK_JADE || block == ModBlocks.INNERCOREROCK_JADE || block == ModBlocks.BLUE_COREROCK_JADE)
 		{return new ItemStack(ModItems.JADE, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND)
+		else if (block == ModBlocks.COREROCK_DIAMOND || block == ModBlocks.INNERCOREROCK_DIAMOND || block == ModBlocks.BLUE_COREROCK_DIAMOND)
 		{return new ItemStack(ModItems.DIAMOND, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ)
+		else if (block == ModBlocks.COREROCK_TOPAZ || block == ModBlocks.INNERCOREROCK_TOPAZ || block == ModBlocks.BLUE_COREROCK_TOPAZ)
 		{return new ItemStack(ModItems.TOPAZ, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY)
+		else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY || block == ModBlocks.BLUE_COREROCK_RUBY)
 		{return new ItemStack(ModItems.RUBY, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ)
+		else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ || block == ModBlocks.BLUE_COREROCK_FLAMING_TOPAZ)
 		{return new ItemStack(ModItems.FLAMING_TOPAZ, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR)
+		else if (block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR || block == ModBlocks.BLUE_COREROCK_SAPHIR)
 		{return new ItemStack(ModItems.SAPHIR, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD)
+		else if (block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD || block == ModBlocks.BLUE_COREROCK_EMERALD)
 		{return new ItemStack(Items.EMERALD, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_LAPIS || block == ModBlocks.INNERCOREROCK_LAPIS)
+		else if (block == ModBlocks.COREROCK_LAPIS || block == ModBlocks.INNERCOREROCK_LAPIS || block == ModBlocks.BLUE_COREROCK_LAPIS)
 		{return Items.DYE;}
-		else if (block == ModBlocks.COREROCK_REDSTONE || block == ModBlocks.INNERCOREROCK_REDSTONE)
+		else if (block == ModBlocks.COREROCK_REDSTONE || block == ModBlocks.INNERCOREROCK_REDSTONE || block == ModBlocks.BLUE_COREROCK_REDSTONE)
 		{return new ItemStack(Items.REDSTONE, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_COAL || block == ModBlocks.INNERCOREROCK_COAL)
+		else if (block == ModBlocks.COREROCK_COAL || block == ModBlocks.INNERCOREROCK_COAL || block == ModBlocks.BLUE_COREROCK_COAL)
 		{return new ItemStack(Items.COAL, 1, 0).getItem();}
 		else
 		{return new ItemStack(block, 1, 0).getItem();}
