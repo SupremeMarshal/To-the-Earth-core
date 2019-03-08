@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "A",
+        "A",
+        "B"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:azurite"
+        },
+        "B":
+        {
+            "item": "totheearthcore:azurite_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:azurite_sword",
+        "count": 1
+    }
+}

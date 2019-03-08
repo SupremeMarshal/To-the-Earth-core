@@ -1,0 +1,28 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+        "item": "totheearthcore:harderrock_iron"
+    },
+    {
+        "item": "totheearthcore:harderrock_iron"
+    },
+    {
+        "item": "minecraft:coal_block"
+    },
+    {
+        "type": "forge:ore_dict",
+        "ore": "itemCoal",
+        "data": 32767
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:iron_coal",
+        "count": 5
+    }

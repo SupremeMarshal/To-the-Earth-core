@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "totheearthcore:jade_block"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "totheearthcore:jade",
+        "count": 9
+    }
+}

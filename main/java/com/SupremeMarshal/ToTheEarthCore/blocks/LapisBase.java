@@ -59,10 +59,17 @@ public class LapisBase extends BlockBase
     public int quantityDropped(Random random) {
         Block block = this;
         int quantity = 2;
-        if (block == ModBlocks.HARDROCK_LAPIS)
+        if (block == ModBlocks.STIFFROCK_LAPIS)
+        {
+            quantity = 3;
+        }
+        else if (block == ModBlocks.HARDROCK_LAPIS)
         {
             quantity = 4;
-
+        }
+        else if (block == ModBlocks.HARDERROCK_LAPIS)
+        {
+            quantity = 6;
         }
         else if (block == ModBlocks.REDROCK_LAPIS)
         {
@@ -71,6 +78,10 @@ public class LapisBase extends BlockBase
         else if (block == ModBlocks.MANTLEROCK_LAPIS)
         {
             quantity = 12;
+        }
+        else if (block == ModBlocks.LOWER_MANTLEROCK_LAPIS)
+        {
+            quantity = 16;
         }
         return quantity;
     }
@@ -82,34 +93,32 @@ public class LapisBase extends BlockBase
         int z = pos.getZ();
         Block block = this;
         if (!world.isRemote) {
-            if (block == ModBlocks.HARDROCK_LAPIS) {
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+            if (block == ModBlocks.STIFFROCK_LAPIS) {
+			    for (int i = 0; i < 3; i++) {
+				    world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			    }           
+            } else if (block == ModBlocks.HARDROCK_LAPIS) {
+			    for (int i = 0; i < 4; i++) {
+				    world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			    }  
+            } else if (block == ModBlocks.HARDERROCK_LAPIS) {
+			    for (int i = 0; i < 6; i++) {
+				    world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			    }  
             } else if (block == ModBlocks.REDROCK_LAPIS) {
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			    for (int i = 0; i < 8; i++) {
+				    world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			    }  
             } else if (block == ModBlocks.MANTLEROCK_LAPIS) {
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-                world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
-            }}
+			    for (int i = 0; i < 12; i++) {
+				    world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			    }  
+            } else if (block == ModBlocks.LOWER_MANTLEROCK_LAPIS) {
+			    for (int i = 0; i < 16; i++) {
+				    world.spawnEntity(new EntityXPOrb(world, x, y, z, (int) 1));
+			    }  
+            }
+        }
             return super.removedByPlayer(state, world, pos, entity, willHarvest);
         }
 

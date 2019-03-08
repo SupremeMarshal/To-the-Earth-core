@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AA",
+        "B ",
+        "B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:topaz"
+        },
+        "B":
+        {
+            "item": "totheearthcore:topaz_rod"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:topaz_hoe",
+        "count": 1
+    }
+}
