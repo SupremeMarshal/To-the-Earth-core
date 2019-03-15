@@ -108,7 +108,7 @@ public class HardnessHandler
 	
 		if (((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.IRON_PICKAXE, (int) (1)).getItem())
 			|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.STEEL_PICKAXE, (int) (1)).getItem())
-			|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.SILVER_PICKAXE, (int) (1)).getItem()))
+			/*|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.SILVER_PICKAXE, (int) (1)).getItem())*/)
 			&& ((int)hardness == 0 || (int)hardness == 1 || (int)hardness == 2 || (int)hardness == 3 || (int)hardness == 4) || (int)hardness == 5 || (int)hardness == 6 || (int)hardness == 7)
 		{
 			block.setHardness((float) -1.0F);
@@ -559,6 +559,7 @@ public class HardnessHandler
 			else if ((int)hardness == -1 && (int)tier == 5) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == -1 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == -1 && (int)tier == 7) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == -1 && (int)tier == 8) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 0 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 0 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 0 && (int)tier == 2) { block.setHardness((float) 4.0F);}
@@ -567,6 +568,7 @@ public class HardnessHandler
 			else if ((int)hardness == 0 && (int)tier == 5) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 0 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 0 && (int)tier == 7) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 0 && (int)tier == 8) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 1 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 1 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 1 && (int)tier == 2) { block.setHardness((float) 4.0F);}
@@ -575,6 +577,7 @@ public class HardnessHandler
 			else if ((int)hardness == 1 && (int)tier == 5) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 1 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 1 && (int)tier == 7) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 1 && (int)tier == 8) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 2 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 2 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 2 && (int)tier == 2) { block.setHardness((float) 4.0F);}
@@ -583,6 +586,7 @@ public class HardnessHandler
 			else if ((int)hardness == 2 && (int)tier == 5) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 2 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 2 && (int)tier == 7) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 2 && (int)tier == 8) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 2) { block.setHardness((float) 4.0F);}
@@ -591,6 +595,7 @@ public class HardnessHandler
 			else if ((int)hardness == 3 && (int)tier == 5) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 3 && (int)tier == 7) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 3 && (int)tier == 8) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 4 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 4 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 4 && (int)tier == 2) { block.setHardness((float) 4.0F);}
@@ -599,6 +604,7 @@ public class HardnessHandler
 			else if ((int)hardness == 4 && (int)tier == 5) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 4 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 4 && (int)tier == 7) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 4 && (int)tier == 8) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 5 && (int)tier == 0) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 5 && (int)tier == 1) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 5 && (int)tier == 2) { block.setHardness((float) 4.0F);}
@@ -607,6 +613,7 @@ public class HardnessHandler
 			else if ((int)hardness == 5 && (int)tier == 5) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 5 && (int)tier == 6) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 5 && (int)tier == 7) { block.setHardness((float) 4.0F);}
+			else if ((int)hardness == 5 && (int)tier == 8) { block.setHardness((float) 4.0F);}
 			else if ((int)hardness == 6 && (int)tier == 0) { block.setHardness((float) 10.0F);}
 			else if ((int)hardness == 6 && (int)tier == 1) { block.setHardness((float) 15.0F);}
 			else if ((int)hardness == 6 && (int)tier == 2) { block.setHardness((float) 20.0F);}
@@ -615,6 +622,7 @@ public class HardnessHandler
 			else if ((int)hardness == 6 && (int)tier == 5) { block.setHardness((float) 35.0F);}
 			else if ((int)hardness == 6 && (int)tier == 6) { block.setHardness((float) 40.0F);}
 			else if ((int)hardness == 6 && (int)tier == 7) { block.setHardness((float) 50.0F);}
+			else if ((int)hardness == 6 && (int)tier == 7) { block.setHardness((float) 60.0F);}
 			else if ((int)hardness == 7 && (int)tier == 0) { block.setHardness((float) 20.0F);}
 			else if ((int)hardness == 7 && (int)tier == 1) { block.setHardness((float) 30.0F);}
 			else if ((int)hardness == 7 && (int)tier == 2) { block.setHardness((float) 40.0F);}
@@ -623,6 +631,7 @@ public class HardnessHandler
 			else if ((int)hardness == 7 && (int)tier == 5) { block.setHardness((float) 70.0F);}
 			else if ((int)hardness == 7 && (int)tier == 6) { block.setHardness((float) 80.0F);}
 			else if ((int)hardness == 7 && (int)tier == 7) { block.setHardness((float) 100.0F);}
+			else if ((int)hardness == 7 && (int)tier == 8) { block.setHardness((float) 120.0F);}
 			else { block.setHardness((float) -1.0F);}
 			if (block == ModBlocks.IRON_BLOCK) { block.setHardness(4.0f);}
 			else if (block == ModBlocks.STEEL_BLOCK) { block.setHardness(4.0f);}
