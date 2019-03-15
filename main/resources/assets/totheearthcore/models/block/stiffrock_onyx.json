@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "totheearthcore:blocks/hardrock_onyx"
+       "all": "totheearthcore:blocks/stiffrock_onyx"
    }
 }
