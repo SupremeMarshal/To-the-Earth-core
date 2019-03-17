@@ -17,11 +17,11 @@ public class HardnessHandler
 		Entity entity = (Entity) dependencies.get("entity");
 		int hardness = -1;
 		int tier = 0;
-		
+		boolean random_thing;//Only here for debugging
 		if (block == ModBlocks.STIFFROCK || block == ModBlocks.STIFFROCK_COAL || block == ModBlocks.STIFFROCK_SULFUR || block == ModBlocks.STIFFROCK_REDSTONE || block == ModBlocks.STIFFROCK_LAPIS 
 		    		|| block == ModBlocks.STIFFROCK_IRON || block == ModBlocks.STIFFROCK_SILVER || block == ModBlocks.STIFFROCK_GOLD || block == ModBlocks.STIFFROCK_PLATINUM
 		    		|| block == ModBlocks.STIFFROCK_EMERALD || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ || block == ModBlocks.STIFFROCK_RUBY 
-		    		|| block = ModBlocks.STIFFROCK_TOPAZ || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.STIFFROCK_JADE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.STIFFROCK_AMETHYST || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.STIFFROCK_AZURITE)
+		    		|| block == ModBlocks.STIFFROCK_TOPAZ || block == ModBlocks.STIFFROCK_DIAMOND || block == ModBlocks.STIFFROCK_JADE || block == ModBlocks.STIFFROCK_AMAZONITE || block == ModBlocks.STIFFROCK_AMETHYST || block == ModBlocks.STIFFROCK_ONYX || block == ModBlocks.STIFFROCK_AZURITE)
 		{hardness = 0;}
 		else if (block == ModBlocks.HARDROCK || block == ModBlocks.HARDROCK_COAL || block == ModBlocks.HARDROCK_SULFUR || block == ModBlocks.HARDROCK_REDSTONE || block == ModBlocks.HARDROCK_LAPIS 
 			 	|| block == ModBlocks.HARDROCK_IRON || block == ModBlocks.HARDROCK_SILVER || block == ModBlocks.HARDROCK_GOLD || block == ModBlocks.HARDROCK_PLATINUM 
@@ -109,7 +109,7 @@ public class HardnessHandler
 		if (((new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.IRON_PICKAXE, (int) (1)).getItem())
 			|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.STEEL_PICKAXE, (int) (1)).getItem())
 			/*|| (new ItemStack(((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand().getItem() : null), (int) (1)).getItem() == new ItemStack(ModItems.SILVER_PICKAXE, (int) (1)).getItem())*/)
-			&& ((int)hardness == 0 || (int)hardness == 1 || (int)hardness == 2 || (int)hardness == 3 || (int)hardness == 4) || (int)hardness == 5 || (int)hardness == 6 || (int)hardness == 7)
+			&& ((int)hardness == 0 || (int)hardness == 1 || (int)hardness == 2 || (int)hardness == 3 || (int)hardness == 4 || (int)hardness == 5 || (int)hardness == 6 || (int)hardness == 7 || (int)hardness == 8))
 		{
 			block.setHardness((float) -1.0F);
 		}
