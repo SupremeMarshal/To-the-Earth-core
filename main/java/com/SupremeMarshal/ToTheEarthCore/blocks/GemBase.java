@@ -14,7 +14,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
@@ -28,11 +31,9 @@ public class GemBase extends BlockBase
 		setHardness(1.0F);
 		setResistance(15.0F);
 		setHarvestLevel("pickaxe", 1);
-
-		if (this == ModBlocks.FLAMING_TOPAZ_ORE || this == ModBlocks.STIFFROCK_FLAMING_TOPAZ || this == ModBlocks.HARDROCK_FLAMING_TOPAZ || this == ModBlocks.HARDERROCK_FLAMING_TOPAZ || this == ModBlocks.REDROCK_FLAMING_TOPAZ || this == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || this == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ)
-		{
+		//if (this == ModBlocks.FLAMING_TOPAZ_ORE || this == ModBlocks.STIFFROCK_FLAMING_TOPAZ || this == ModBlocks.HARDROCK_FLAMING_TOPAZ || this == ModBlocks.HARDERROCK_FLAMING_TOPAZ || this == ModBlocks.REDROCK_FLAMING_TOPAZ || this == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || this == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ) {
 			setLightLevel(0.6F);
-		}
+		//}
 
 
 	}
@@ -233,6 +234,12 @@ public class GemBase extends BlockBase
 		}
 		}
 		return super.removedByPlayer(state, world, pos, entity, willHarvest);
+	}
+	
+	@SideOnly(Side.CLIENT)
+	public int getPackedLightmapCoords(IBlockState state, IBlockAccess source, BlockPos pos)
+	{
+		return 15728880;
 	}
 
 
