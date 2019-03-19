@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BAB",
+        "BBB",
+        " B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:ruby_rod"
+        },
+        "B":
+        {
+            "type": "forge:ore_dict",
+            "ore": "blockRuby"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:ruby_shield",
+        "count": 1
+    }
+}

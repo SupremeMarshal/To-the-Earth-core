@@ -1,8 +1,8 @@
 package com.SupremeMarshal.ToTheEarthCore.blocks;
 
-import com.SupremeMarshal.ToTheEarthCore.util.handlers.HardnessHandler;
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
+import com.SupremeMarshal.ToTheEarthCore.util.handlers.HardnessHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -142,7 +142,7 @@ public class Corerock extends BlockBase
 
         if (block == ModBlocks.COREROCK_AZURITE || block == ModBlocks.INNERCOREROCK_AZURITE || block == ModBlocks.BLUE_COREROCK_AZURITE)
         	{return new ItemStack(ModItems.AZURITE, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX || block == ModBlocks.BLUE_COREROCK_ONYS)
+		else if (block == ModBlocks.COREROCK_ONYX || block == ModBlocks.INNERCOREROCK_ONYX || block == ModBlocks.BLUE_COREROCK_ONYX)
         	{return new ItemStack(ModItems.ONYX, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_AMETHYST || block == ModBlocks.INNERCOREROCK_AMETHYST || block == ModBlocks.BLUE_COREROCK_AMETHYST)
 		{return new ItemStack(ModItems.AMETHYST, 1, 0).getItem();}

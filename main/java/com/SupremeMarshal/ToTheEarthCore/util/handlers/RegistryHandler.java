@@ -70,7 +70,7 @@ public class RegistryHandler {
 		ModConfiguration.registerConfig(event);
 
 
-		
+
 
 
 	}
@@ -78,11 +78,9 @@ public class RegistryHandler {
 	public static void initRegistries(FMLInitializationEvent event) {
 		OreDictionary.registerOre("itemCoal", new ItemStack(Items.COAL, 1, OreDictionary.WILDCARD_VALUE));
 		OreDictionary.registerOre("itemPlank", new ItemStack(Blocks.PLANKS, 1, OreDictionary.WILDCARD_VALUE));
-		OreDictionary.registerOre("ingotIron", new ItemStack(ModItems.IRON_INGOT, 1, OreDictionary.WILDCARD_VALUE));
 		OreDictionary.registerOre("ingotSteel", new ItemStack(ModItems.STEEL_INGOT, 1, OreDictionary.WILDCARD_VALUE));
 		OreDictionary.registerOre("ingotSilver", new ItemStack(ModItems.SILVER_INGOT, 1, OreDictionary.WILDCARD_VALUE));
-		OreDictionary.registerOre("ingotGold", new ItemStack(ModItems.SILVER_INGOT, 1, OreDictionary.WILDCARD_VALUE));
-		OreDictionary.registerOre("ingotPlatinum", new ItemStack(ModItems.SILVER_INGOT, 1, OreDictionary.WILDCARD_VALUE));
+		OreDictionary.registerOre("ingotPlatinum", new ItemStack(ModItems.PLATINUM_INGOT, 1, OreDictionary.WILDCARD_VALUE));
 		OreDictionary.registerOre("itemSapphire", new ItemStack(ModItems.SAPHIR, 1, OreDictionary.WILDCARD_VALUE));
 		OreDictionary.registerOre("itemRuby", new ItemStack(ModItems.RUBY, 1, OreDictionary.WILDCARD_VALUE));
 		OreDictionary.registerOre("itemDiamond", new ItemStack(ModItems.DIAMOND, 1, OreDictionary.WILDCARD_VALUE));

@@ -742,6 +742,10 @@ tile.hot_mantlerock.name=Hot Mantlerock
 tile.hotrock.name=Hot rock
 tile.mantlegas.name=Pocket of gas
 
+//SEDIMENTARY ROCKS
+tile.limestone.name=Limestone
+
+//TOOLS
 item.azurite_rod.name=Azurite rod
 item.onyx_rod.name=§6Onyx rod
 item.amethyst_rod.name=Amethyst rod

@@ -25,18 +25,19 @@ public class ModItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//TOOLS MATERIAL	(NAME, HARVEST LVL, MAX USE, EFFICIENCY, DAMAGE, ENCHANTABILITY)
-	public static final ToolMaterial MATERIAL_IRON = EnumHelper.addToolMaterial("material_iron", 2, 250, 3.0F, 2.0F, 20);
-	public static final ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 2, 500, 4.0F, 2.5F, 18);
-	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 3, 200, 6.0F, 3.0F, 16);
-	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 4, 750, 8.5F, 3.5F, 14);
-	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 5, 900, 11.0F, 4.0F, 12);
-	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 250, 15.0F, 5.0F, 10);
-	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1500, 15.0F, 5.0F, 10);
-	public static final ToolMaterial MATERIAL_FLAMING_TOPAZ = EnumHelper.addToolMaterial("material_flaming_topaz", 7, 400, 20.0F, 6.0F, 8);
-	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 2000, 20.0F, 6.0F, 8);
-	public static final ToolMaterial MATERIAL_TOPAZ = EnumHelper.addToolMaterial("material_topaz", 8, 500, 25.0F, 7.5F, 6);
-	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 3000, 25.0F, 7.5F, 6);
+	public static final ToolMaterial MATERIAL_BRONZE = EnumHelper.addToolMaterial("material_bronze", 1, 100, 2.0F, 1.0F, 10);
+	public static final ToolMaterial MATERIAL_IRON = EnumHelper.addToolMaterial("material_iron", 2, 200, 3.0F, 2.0F, 20);
+	public static final ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 2, 400, 4.0F, 2.5F, 18);
+	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 3, 150, 6.0F, 3.0F, 16);
+	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 4, 500, 8.5F, 3.5F, 14);
+	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 5, 750, 11.0F, 4.0F, 12);
 	public static final ToolMaterial MATERIAL_JADE = EnumHelper.addToolMaterial("material_jade", 9, 800, 30.0F, 10.0F, 5);
+	public static final ToolMaterial MATERIAL_TOPAZ = EnumHelper.addToolMaterial("material_topaz", 8, 500, 25.0F, 7.5F, 6);
+	public static final ToolMaterial MATERIAL_FLAMING_TOPAZ = EnumHelper.addToolMaterial("material_flaming_topaz", 7, 400, 20.0F, 6.0F, 8);
+	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 750, 15.0F, 5.0F, 10);
+	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1000, 15.0F, 5.0F, 10);
+	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 1500, 20.0F, 6.0F, 8);
+	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 2000, 25.0F, 7.5F, 6);
 	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 9, 4000, 30.0F, 10.0F, 5);
 	public static final ToolMaterial MATERIAL_DEMON = EnumHelper.addToolMaterial("material_demon", 9, 1000, 25.0F, 20F, 5);
 	public static final ToolMaterial MATERIAL_CORE = EnumHelper.addToolMaterial("material_core", 10, 2500, 30.0F, 24F, 5);
@@ -46,6 +47,9 @@ public class ModItems {
 	
 	
 	//ARMOR MATERIAL (name, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness)
+	public static final ArmorMaterial ARMOR_MATERIAL_BRONZE= EnumHelper.addArmorMaterial("armor_material_bronze", Reference.MOD_ID + ":bronze", 8,
+			new int[] {2, 4, 4, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+
 	public static final ArmorMaterial ARMOR_MATERIAL_IRON = EnumHelper.addArmorMaterial("armor_material_iron", Reference.MOD_ID + ":iron", 15,
 			new int[] {2, 5, 4, 2}, 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	
@@ -228,11 +232,11 @@ public class ModItems {
 	//JADE//
 	
 	
-	public static final ItemSword JADE_SWORD = new ToolSword("jade_sword", Material.JADE);
-	public static final ItemSpade JADE_SHOVEL = new ToolShovel("jade_shovel", Material.JADE);
-	public static final ItemPickaxe JADE_PICKAXE = new ToolPickaxe("jade_pickaxe", Material.JADE);
-	public static final ItemAxe JADE_AXE = new ToolAxe("jade_axe", Material.JADE);
-	public static final ItemHoe JADE_HOE = new ToolHoe("jade_hoe", Material.JADE);
+	public static final ItemSword JADE_SWORD = new ToolSword("jade_sword", MATERIAL_JADE);
+	public static final ItemSpade JADE_SHOVEL = new ToolSpade("jade_shovel", MATERIAL_JADE);
+	public static final ItemPickaxe JADE_PICKAXE = new ToolPickaxe("jade_pickaxe", MATERIAL_JADE);
+	public static final ItemAxe JADE_AXE = new ToolAxe("jade_axe", MATERIAL_JADE);
+	public static final ItemHoe JADE_HOE = new ToolHoe("jade_hoe", MATERIAL_JADE);
 	
 	//AMAZONITE//
 
@@ -252,7 +256,7 @@ public class ModItems {
 	//AMETHYST//
 	
 	
-	public static final ItemSword AMETHYST_SWORD = new ToolSword("amethyst_sword", MATERIAL.AMETHYST);
+	public static final ItemSword AMETHYST_SWORD = new ToolSword("amethyst_sword", MATERIAL_AMETHYST);
 	public static final ItemSpade AMETHYST_SHOVEL = new ToolSpade("amethyst_shovel", MATERIAL_AMETHYST);
 	public static final ItemPickaxe AMETHYST_PICKAXE = new ToolPickaxe("amethyst_pickaxe", MATERIAL_AMETHYST);
 	public static final ItemAxe AMETHYST_AXE = new ToolAxe("amethyst_axe", MATERIAL_AMETHYST);
@@ -352,12 +356,12 @@ public class ModItems {
 	public static final Item STEEL_SHIELD = new SteelShield("steel_shield");
 	public static final Item SILVER_SHIELD = new SilverShield("silver_shield");
 	public static final Item GOLD_SHIELD = new GoldShield("gold_shield");
-//	public static final Item PLATINUM_SHIELD = new PlatinumShield("platinum_shield");
-//	public static final Item SAPPHIRE_SHIELD = new SapphireShield("sapphire_shield");
-//	public static final Item RUBY_SHIELD = new RubyShield("ruby_shield");
-//	public static final Item DIAMOND_SHIELD = new DiamondShield("diamond_shield");
-//	public static final Item AMAZONITE_SHIELD = new AmazoniteShield("amazonite_shield");
-//	public static final Item ONYX_SHIELD = new OnyxShield("onyx_shield");
+	public static final Item PLATINUM_SHIELD = new PlatinumShield("platinum_shield");
+	public static final Item SAPPHIRE_SHIELD = new SapphireShield("sapphire_shield");
+	public static final Item RUBY_SHIELD = new RubyShield("ruby_shield");
+	public static final Item DIAMOND_SHIELD = new DiamondShield("diamond_shield");
+	public static final Item AMAZONITE_SHIELD = new AmazoniteShield("amazonite_shield");
+	public static final Item ONYX_SHIELD = new OnyxShield("onyx_shield");
 
 
 

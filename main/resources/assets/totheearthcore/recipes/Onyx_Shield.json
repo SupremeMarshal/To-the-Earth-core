@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BAB",
+        "BBB",
+        " B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:onyx_rod"
+        },
+        "B":
+        {
+            "type": "forge:ore_dict",
+            "ore": "blockOnyx"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:onyx_shield",
+        "count": 1
+    }
+}

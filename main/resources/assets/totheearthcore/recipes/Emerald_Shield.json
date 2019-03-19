@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BAB",
+        "BBB",
+        " B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "totheearthcore:emerald_rod"
+        },
+        "B":
+        {
+            "item": "minecraft:emerald_block"
+        }
+    },
+    
+    "result":
+    {
+        "item": "totheearthcore:emerald_shield",
+        "count": 1
+    }
+}
