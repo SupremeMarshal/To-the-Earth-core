@@ -26,6 +26,8 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
@@ -46,7 +48,7 @@ public class BlockBase extends Block implements IHasModel
 	public BlockBase(String name, Material material)
 	{
 		super(material);
-		setTranslationKey(name);
+		//setTranslationKey(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		setResistance(8.0F);
@@ -54,8 +56,10 @@ public class BlockBase extends Block implements IHasModel
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		setSoundType(SoundType.METAL);
-
-
+		
+		if (this == ModBlocks.FLAMING_TOPAZ_ORE || this == ModBlocks.STIFFROCK_FLAMING_TOPAZ || this == ModBlocks.HARDROCK_FLAMING_TOPAZ || this == ModBlocks.HARDERROCK_FLAMING_TOPAZ || this == ModBlocks.REDROCK_FLAMING_TOPAZ || this == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || this == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ) {
+			setLightLevel(0.6F);
+		}
 
 	}
 
@@ -169,7 +173,6 @@ public class BlockBase extends Block implements IHasModel
 
 		return this.golemPattern;
 	}
-	
 		
 
 }

@@ -1,5 +1,5 @@
 # To-the-Earth-core
-A modpack for Minecraft that works with Cubic Chunk. You can dig down all the way to the Earth's core!
+A modpack for Minecraft that works with Cubic Chunks. You can dig down all the way to the Earth's core!
 First, you need to install Cubic Chunks 912 and Cubic World Gen. 
 
 https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/wip-mods/2792887-cubic-chunks-mod-almost-infinite-world-height-and
@@ -14,7 +14,7 @@ IMPORTANT: This mod needs the preset, else you will just play in a normal vanill
 The preset does not include any of the ores I have been working on, that were not in the original mod version.
 This is a fork for me to code stuff in, to show my ideas to Supreme Marshal.
 
-NOTE: It is recommended to download Vertical Spawn Control mod [by Foghrye4]. Next, copy the `vertical_spawn_control` folder into
+NOTE: It is recommended to download the Vertical Spawn Control mod [by Foghrye4]. Next, copy the `vertical_spawn_control` folder into
 `%APPDATA%/Roaming/.minecraft/saves/[World name]/data`
 
-NOTE: My mod replace all vanilla tools and armor from the game so to avoid any mobs or chest from giving vanilla tools and armor, place the `loot_tables` folder into `%APPDATA%/Roaming/.minecraft/saves/[World name]/data` too.
+NOTE: My mod replaces all vanilla tools and armor from the game except for wood and stone so to avoid any mobs or chest from giving vanilla tools and armor, place the `loot_tables` folder into `%APPDATA%/Roaming/.minecraft/saves/[World name]/data` too.

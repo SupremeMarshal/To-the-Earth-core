@@ -362,7 +362,6 @@ item.amazonite_helmet.tooltip.9=When full amazonite armor is equipped:
 item.amazonite_helmet.tooltip.10=§6Fire Resistance I
 item.amazonite_helmet.tooltip.11=§6Strength I
 
-
 item.amazonite_chestplate.name=§6Amazonite chestplate
 item.amazonite_chestplate.tooltip.0=When equipped:
 item.amazonite_chestplate.tooltip.1=§9+12 Armor
@@ -404,7 +403,6 @@ item.amazonite_boots.tooltip.8=§6Resistance I
 item.amazonite_boots.tooltip.9=When full amazonite armor is equipped:
 item.amazonite_boots.tooltip.10=§6Fire Resistance I
 item.amazonite_boots.tooltip.11=§6Strength I
-
 
 item.amethyst_sword.name=Amethyst sword
 item.amethyst_shovel.name=Amethyst shovel
@@ -484,6 +482,12 @@ item.onyx_boots.tooltip.11=When full amazonite armor is equipped:
 item.onyx_boots.tooltip.12=§6Resistance II
 item.onyx_boots.tooltip.13=§6Strength II
 item.onyx_boots.tooltip.14=§6Speed II
+
+item.azurite_sword.name=Azurite sword
+item.azurite_shovel.name=Azurite shovel
+item.azurite_pickaxe.name=Azurite pickaxe
+item.azurite_axe.name=Azurite axe
+item.azurite_hoe.name=Azurite hoe
 
 //Items
 item.iron_ingot.name=Iron ingot
