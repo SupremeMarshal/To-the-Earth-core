@@ -49,6 +49,7 @@ public class BlockBase extends Block implements IHasModel
 	{
 		super(material);
 		//setTranslationKey(name);
+		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		setResistance(8.0F);
@@ -58,7 +59,7 @@ public class BlockBase extends Block implements IHasModel
 		setSoundType(SoundType.METAL);
 		
 		if (this == ModBlocks.FLAMING_TOPAZ_ORE || this == ModBlocks.STIFFROCK_FLAMING_TOPAZ || this == ModBlocks.HARDROCK_FLAMING_TOPAZ || this == ModBlocks.HARDERROCK_FLAMING_TOPAZ || this == ModBlocks.REDROCK_FLAMING_TOPAZ || this == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || this == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ) {
-			setLightLevel(0.6F);
+			setLightLevel(0.0F);
 		}
 
 	}
