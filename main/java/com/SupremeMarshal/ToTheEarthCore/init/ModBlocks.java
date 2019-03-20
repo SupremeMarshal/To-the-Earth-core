@@ -15,7 +15,7 @@ public class ModBlocks {
 	public static final Block HOT_LAVA_BLOCK = new HotLavaFluid("hot_lava", ModFluids.HOT_LAVA_FLUID, Material.LAVA);
 	public static final Block CORE_LAVA_BLOCK = new CoreLavaFluid("core_lava", ModFluids.CORE_LAVA_FLUID, Material.LAVA);
 
-	public static final Block AZURITE_BLOCK = new RockBase("azurite_block", Materia.ROCK);
+	public static final Block AZURITE_BLOCK = new RockBase("azurite_block", Material.ROCK);
 	public static final Block ONYX_BLOCK = new RockBase("onyx_block", Material.ROCK);
 	public static final Block AMETHYST_BLOCK = new RockBase("amethyst_block", Material.ROCK);
 	public static final Block AMAZONITE_BLOCK = new RockBase("amazonite_block", Material.ROCK);

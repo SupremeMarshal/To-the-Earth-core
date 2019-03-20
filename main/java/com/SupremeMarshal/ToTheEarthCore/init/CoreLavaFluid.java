@@ -18,7 +18,7 @@ public class CoreLavaFluid extends BlockFluidClassic {
 
 	public CoreLavaFluid(String name, Fluid fluid, Material material) {
 		super(fluid, material);
-		setTranslationKey(name);
+		//setTranslationKey(name);
 		setRegistryName(name);
 
 		setLightLevel(1);

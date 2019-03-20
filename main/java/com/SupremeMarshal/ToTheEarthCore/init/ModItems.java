@@ -228,11 +228,11 @@ public class ModItems {
 	//JADE//
 	
 	
-	public static final ItemSword JADE_SWORD = new ToolSword("jade_sword", Material.JADE);
-	public static final ItemSpade JADE_SHOVEL = new ToolShovel("jade_shovel", Material.JADE);
-	public static final ItemPickaxe JADE_PICKAXE = new ToolPickaxe("jade_pickaxe", Material.JADE);
-	public static final ItemAxe JADE_AXE = new ToolAxe("jade_axe", Material.JADE);
-	public static final ItemHoe JADE_HOE = new ToolHoe("jade_hoe", Material.JADE);
+	public static final ItemSword JADE_SWORD = new ToolSword("jade_sword", MATERIAL_JADE);
+	public static final ItemSpade JADE_SHOVEL = new ToolSpade("jade_shovel", MATERIAL_JADE);
+	public static final ItemPickaxe JADE_PICKAXE = new ToolPickaxe("jade_pickaxe", MATERIAL_JADE);
+	public static final ItemAxe JADE_AXE = new ToolAxe("jade_axe", MATERIAL_JADE);
+	public static final ItemHoe JADE_HOE = new ToolHoe("jade_hoe", MATERIAL_JADE);
 	
 	//AMAZONITE//
 
@@ -252,7 +252,7 @@ public class ModItems {
 	//AMETHYST//
 	
 	
-	public static final ItemSword AMETHYST_SWORD = new ToolSword("amethyst_sword", MATERIAL.AMETHYST);
+	public static final ItemSword AMETHYST_SWORD = new ToolSword("amethyst_sword", MATERIAL_AMETHYST);
 	public static final ItemSpade AMETHYST_SHOVEL = new ToolSpade("amethyst_shovel", MATERIAL_AMETHYST);
 	public static final ItemPickaxe AMETHYST_PICKAXE = new ToolPickaxe("amethyst_pickaxe", MATERIAL_AMETHYST);
 	public static final ItemAxe AMETHYST_AXE = new ToolAxe("amethyst_axe", MATERIAL_AMETHYST);

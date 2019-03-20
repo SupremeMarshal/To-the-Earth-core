@@ -29,7 +29,7 @@ public class HotLavaFluid extends BlockFluidClassic {
 
 	public HotLavaFluid(String name, Fluid fluid, Material material) {
 		super(fluid, material);
-		setTranslationKey(name);
+		//setTranslationKey(name);
 		setRegistryName(name);
 		setDensity(1500);
 		setLightLevel(1);
@@ -60,8 +60,8 @@ public class HotLavaFluid extends BlockFluidClassic {
 
 	public boolean checkForMixing(World worldIn, BlockPos pos, IBlockState state)
 	{
-		if (this.material == Material.LAVA)
-		{
+		//if (this.material == Material.LAVA)
+		//{
 			boolean flag = false;
 
 			for (EnumFacing enumfacing : EnumFacing.values())
@@ -91,7 +91,7 @@ public class HotLavaFluid extends BlockFluidClassic {
 					return true;
 				}
 			}
-		}
+		//}
 
 		return false;
 	}
@@ -215,8 +215,8 @@ public class HotLavaFluid extends BlockFluidClassic {
 		}
 
 		//Cause fire around lava
-		if (this.material == Material.LAVA)
-		{
+		//if (this.material == Material.LAVA)
+		//{
 			if (worldIn.getGameRules().getBoolean("doFireTick"))
 			{
 				int i = rand.nextInt(3);
@@ -268,7 +268,7 @@ public class HotLavaFluid extends BlockFluidClassic {
 					}
 				}
 			}
-		}
+		//}
 	}
 
 	protected boolean isSurroundingBlockFlammable(World worldIn, BlockPos pos)
