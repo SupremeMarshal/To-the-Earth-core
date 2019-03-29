@@ -57,11 +57,10 @@ public class BlockBase extends Block implements IHasModel
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 		setSoundType(SoundType.METAL);
-		
-		if (this == ModBlocks.FLAMING_TOPAZ_ORE || this == ModBlocks.STIFFROCK_FLAMING_TOPAZ || this == ModBlocks.HARDROCK_FLAMING_TOPAZ || this == ModBlocks.HARDERROCK_FLAMING_TOPAZ || this == ModBlocks.REDROCK_FLAMING_TOPAZ || this == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || this == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ) {
-			setLightLevel(0.0F);
+		if(name=="flaming_topaz_ore"||name=="stiffrock_flaming_topaz"||name=="hardrock_flaming_topaz"||name=="harderrock_flaming_topaz"||name=="redrock_flaming_topaz"||name=="mantlerock_flaming_topaz"||name=="lower_mantlerock_flaming_topaz") {
+			setLightLevel(0.7F);
 		}
-
+		
 	}
 
 
