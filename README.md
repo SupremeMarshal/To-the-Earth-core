@@ -14,6 +14,8 @@ IMPORTANT: This mod needs the preset, else you will just play in a normal vanill
 The preset does not include any of the ores I have been working on, that were not in the original mod version.
 This is a fork for me to code stuff in, to show my ideas to Supreme Marshal.
 
+Update: As of 3/31/2019, I am making my own version of the mod. `preset2.json` has all my blocks in it too.
+
 NOTE: It is recommended to download the Vertical Spawn Control mod [by Foghrye4]. Next, copy the `vertical_spawn_control` folder into
 `%APPDATA%/Roaming/.minecraft/saves/[World name]/data`
 
