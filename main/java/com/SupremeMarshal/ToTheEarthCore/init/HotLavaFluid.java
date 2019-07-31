@@ -33,7 +33,7 @@ public class HotLavaFluid extends BlockFluidClassic {
 		setRegistryName(name);
 		setDensity(1500);
 		setLightLevel(1);
-		setTickRate(30);
+		setTickRate(60);
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(name));
 
@@ -54,7 +54,7 @@ public class HotLavaFluid extends BlockFluidClassic {
 			//no protection
 
 
-			entityIn.attackEntityFrom(DamageSource.GENERIC, 4.0F);
+			entityIn.attackEntityFrom(DamageSource.GENERIC, 10.0F);
 		}
 	}
 

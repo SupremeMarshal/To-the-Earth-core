@@ -4,6 +4,7 @@ import com.SupremeMarshal.ToTheEarthCore.items.Gems;
 import com.SupremeMarshal.ToTheEarthCore.items.ItemBase;
 import com.SupremeMarshal.ToTheEarthCore.items.armor.*;
 import com.SupremeMarshal.ToTheEarthCore.items.food.EnchantedFoodEffectBase;
+import com.SupremeMarshal.ToTheEarthCore.items.food.EnchantedFoodEffectBase1;
 import com.SupremeMarshal.ToTheEarthCore.items.food.FoodEffectBase;
 import com.SupremeMarshal.ToTheEarthCore.items.shields.*;
 import com.SupremeMarshal.ToTheEarthCore.items.tools.*;
@@ -25,25 +26,25 @@ public class ModItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//TOOLS MATERIAL	(NAME, HARVEST LVL, MAX USE, EFFICIENCY, DAMAGE, ENCHANTABILITY)
-	public static final ToolMaterial MATERIAL_BRONZE = EnumHelper.addToolMaterial("material_bronze", 1, 100, 2.0F, 1.0F, 10);
-	public static final ToolMaterial MATERIAL_IRON = EnumHelper.addToolMaterial("material_iron", 2, 200, 3.0F, 2.0F, 20);
-	public static final ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 2, 400, 4.0F, 2.5F, 18);
-	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 3, 150, 6.0F, 3.0F, 16);
-	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 4, 500, 8.5F, 3.5F, 14);
-	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 5, 750, 11.0F, 4.0F, 12);
-	public static final ToolMaterial MATERIAL_JADE = EnumHelper.addToolMaterial("material_jade", 9, 800, 30.0F, 10.0F, 5);
-	public static final ToolMaterial MATERIAL_TOPAZ = EnumHelper.addToolMaterial("material_topaz", 8, 500, 25.0F, 7.5F, 6);
-	public static final ToolMaterial MATERIAL_FLAMING_TOPAZ = EnumHelper.addToolMaterial("material_flaming_topaz", 7, 400, 20.0F, 6.0F, 8);
-	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 6, 750, 15.0F, 5.0F, 10);
-	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 6, 1000, 15.0F, 5.0F, 10);
-	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 7, 1500, 20.0F, 6.0F, 8);
-	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 8, 2000, 25.0F, 7.5F, 6);
-	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 9, 4000, 30.0F, 10.0F, 5);
-	public static final ToolMaterial MATERIAL_DEMON = EnumHelper.addToolMaterial("material_demon", 9, 1000, 25.0F, 20F, 5);
-	public static final ToolMaterial MATERIAL_CORE = EnumHelper.addToolMaterial("material_core", 10, 2500, 30.0F, 24F, 5);
-	public static final ToolMaterial MATERIAL_AMETHYST = EnumHelper.addToolMaterial("material_amethyst", 10, 1000, 35.0F, 15.0F, 4);
-	public static final ToolMaterial MATERIAL_ONYX = EnumHelper.addToolMaterial("material_onyx", 10, 5000, 35.0F, 15.0F, 4);
-	public static final ToolMaterial MATERIAL_AZURITE = EnumHelper.addToolMaterial("material_azurite", 11, 7500, 40.0F, 20.0F, 4);
+	public static final ToolMaterial MATERIAL_BRONZE = EnumHelper.addToolMaterial("material_bronze", 2, 100, 0.8F, 1.0F, 10);
+	public static final ToolMaterial MATERIAL_IRON = EnumHelper.addToolMaterial("material_iron", 3, 200, 1.0F, 1.2F, 20);
+	public static final ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 4, 400, 1.25F, 1.5F, 18);
+	public static final ToolMaterial MATERIAL_SILVER = EnumHelper.addToolMaterial("material_silver", 5, 200, 1.5F, 2.0F, 16);
+	public static final ToolMaterial MATERIAL_GOLD = EnumHelper.addToolMaterial("material_gold", 6, 300, 2.0F, 2.5F, 14);
+	public static final ToolMaterial MATERIAL_PLATINUM = EnumHelper.addToolMaterial("material_platinum", 7, 500, 3.0F, 3.0F, 12);
+	public static final ToolMaterial MATERIAL_JADE = EnumHelper.addToolMaterial("material_jade", 7, 200, 4.0F, 4.0F, 5);
+	public static final ToolMaterial MATERIAL_TOPAZ = EnumHelper.addToolMaterial("material_topaz", 8, 100, 4.0F, 4.0F, 6);
+	public static final ToolMaterial MATERIAL_ES = EnumHelper.addToolMaterial("material_es", 8, 100, 6.0F, 5.0F, 6);
+	public static final ToolMaterial MATERIAL_EMERALD = EnumHelper.addToolMaterial("material_emerald", 8, 700, 10.0F, 6.0F, 10);
+	public static final ToolMaterial MATERIAL_SAPHIR = EnumHelper.addToolMaterial("material_saphir", 9, 900, 15.0F, 7.0F, 10);
+	public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 10, 1200, 20.0F, 8.0F, 8);
+	public static final ToolMaterial MATERIAL_AMETHYST = EnumHelper.addToolMaterial("material_amethyst", 12, 400, 30.0F, 9.0F, 4);
+	public static final ToolMaterial MATERIAL_DIAMOND = EnumHelper.addToolMaterial("material_diamond", 11, 2000, 50.0F, 10.0F, 6);
+	public static final ToolMaterial MATERIAL_AMAZONITE = EnumHelper.addToolMaterial("material_amazonite", 12, 3000, 100.0F, 12.0F, 5);
+	public static final ToolMaterial MATERIAL_DEMON = EnumHelper.addToolMaterial("material_demon", 10, 1000, 25.0F, 15F, 5);
+	public static final ToolMaterial MATERIAL_CORE = EnumHelper.addToolMaterial("material_core", 12, 2500, 30.0F, 20F, 5);
+	public static final ToolMaterial MATERIAL_ONYX = EnumHelper.addToolMaterial("material_onyx", 13, 5000, 200.0F, 20.0F, 4);
+	public static final ToolMaterial MATERIAL_AZURITE = EnumHelper.addToolMaterial("material_azurite", 13, 10000, 400.0F, 30.0F, 4);
 	
 	
 	//ARMOR MATERIAL (name, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness)
@@ -86,6 +87,18 @@ public class ModItems {
 	
 	
 //TOOLS
+
+	//BRONZE//
+	public static final ItemSword BRONZE_SWORD = new ToolSword("bronze_sword", MATERIAL_BRONZE);
+	public static final ItemSpade BRONZE_SHOVEL = new ToolSpade("bronze_shovel", MATERIAL_BRONZE);
+	public static final ItemPickaxe BRONZE_PICKAXE = new ToolPickaxe("bronze_pickaxe", MATERIAL_BRONZE);
+	public static final ItemAxe BRONZE_AXE = new ToolAxe("bronze_axe", MATERIAL_BRONZE);
+	public static final ItemHoe BRONZE_HOE = new ToolHoe("bronze_hoe", MATERIAL_BRONZE);
+
+	public static final Item BRONZE_HELMET = new ArmorBase("bronze_helmet", ARMOR_MATERIAL_BRONZE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BRONZE_CHESTPLATE = new ArmorBase("bronze_chestplate", ARMOR_MATERIAL_BRONZE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item BRONZE_LEGGINGS = new ArmorBase("bronze_leggings", ARMOR_MATERIAL_BRONZE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BRONZE_BOOTS = new ArmorBase("bronze_boots", ARMOR_MATERIAL_BRONZE, 1, EntityEquipmentSlot.FEET);
 
 	//IRON//
 	public static final ItemSword IRON_SWORD = new ToolSword("iron_sword", MATERIAL_IRON);
@@ -182,15 +195,6 @@ public class ModItems {
 	public static final Item SAPHIR_CHESTPLATE = new SapphirBody("saphir_chestplate", ARMOR_MATERIAL_SAPHIR, 1, EntityEquipmentSlot.CHEST);
 	public static final Item SAPHIR_LEGGINGS = new SapphirLegs("saphir_leggings", ARMOR_MATERIAL_SAPHIR, 2, EntityEquipmentSlot.LEGS);
 	public static final Item SAPHIR_BOOTS = new SapphirBoots("saphir_boots", ARMOR_MATERIAL_SAPHIR, 1, EntityEquipmentSlot.FEET);
-
-	//FLAMING_TOPAZ//
-	
-	
-	public static final ItemSword FLAMING_TOPAZ_SWORD = new ToolSword("flaming_topaz_sword", MATERIAL_FLAMING_TOPAZ);
-	public static final ItemSpade FLAMING_TOPAZ_SHOVEL = new ToolSpade("flaming_topaz_shovel", MATERIAL_FLAMING_TOPAZ);
-	public static final ItemPickaxe FLAMING_TOPAZ_PICKAXE = new ToolPickaxe("flaming_topaz_pickaxe", MATERIAL_FLAMING_TOPAZ);
-	public static final ItemAxe FLAMING_TOPAZ_AXE = new ToolAxe("flaming_topaz_axe", MATERIAL_FLAMING_TOPAZ);
-	public static final ItemHoe FLAMING_TOPAZ_HOE = new ToolHoe("flaming_topaz_hoe", MATERIAL_FLAMING_TOPAZ);
 	
 	//RUBY//
 
@@ -295,7 +299,6 @@ public class ModItems {
 
 	//GEMS//
 	public static final Item SAPHIR = new ItemBase("saphir");
-	public static final Item FLAMING_TOPAZ = new ItemBase("flaming_topaz");
 	public static final Item RUBY = new ItemBase("ruby");
 	public static final Item TOPAZ = new ItemBase("topaz");
 	public static final Item DIAMOND = new ItemBase("diamond");
@@ -308,7 +311,6 @@ public class ModItems {
 	//ROD//
 	public static final Item EMERALD_ROD = new ItemBase("emerald_rod");
 	public static final Item SAPHIR_ROD = new ItemBase("saphir_rod");
-	public static final Item FLAMING_TOPAZ_ROD = new ItemBase("flaming_topaz_rod");
 	public static final Item RUBY_ROD = new ItemBase("ruby_rod");
 	public static final Item TOPAZ_ROD = new ItemBase("topaz_rod");
 	public static final Item DIAMOND_ROD = new ItemBase("diamond_rod");
@@ -350,6 +352,62 @@ public class ModItems {
 			new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000,1, false, false),
 			new PotionEffect(MobEffects.RESISTANCE, 6000,1, false, false),
 			new PotionEffect(MobEffects.GLOWING, 3000,0, false, false));
+
+	public static final Item SAPHIR_APPLE = new EnchantedFoodEffectBase("saphir_apple", 15, 6.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 12000,8, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 1200,3, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 6000,1, false, false),
+			new PotionEffect(MobEffects.SPEED, 6000,0, false, false),
+			new PotionEffect(MobEffects.JUMP_BOOST, 6000,0, false, false),
+			new PotionEffect(MobEffects.GLOWING, 3000,0, false, false));
+
+
+	public static final Item ENCHANTED_SAPHIR_APPLE = new EnchantedFoodEffectBase1("enchanted_saphir_apple", 15, 6.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 12000,8, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 1200,3, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 6000,2, false, false),
+			new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000,2, false, false),
+			new PotionEffect(MobEffects.RESISTANCE, 6000,2, false, false),
+			new PotionEffect(MobEffects.SPEED, 6000,1, false, false),
+			new PotionEffect(MobEffects.JUMP_BOOST, 6000,1, false, false),
+			new PotionEffect(MobEffects.GLOWING, 6000,0, false, false));
+
+	public static final Item RUBY_APPLE = new EnchantedFoodEffectBase("ruby_apple", 20, 12.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 12000,12, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 3000,4, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 6000,2, false, false),
+			new PotionEffect(MobEffects.SPEED, 6000,1, false, false),
+			new PotionEffect(MobEffects.JUMP_BOOST, 6000,1, false, false),
+			new PotionEffect(MobEffects.GLOWING, 6000,0, false, false));
+
+
+	public static final Item ENCHANTED_RUBY_APPLE = new EnchantedFoodEffectBase1("enchanted_ruby_apple", 20, 12.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 12000,12, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 3000,4, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 6000,3, false, false),
+			new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000,2, false, false),
+			new PotionEffect(MobEffects.RESISTANCE, 6000,2, false, false),
+			new PotionEffect(MobEffects.SPEED, 6000,2, false, false),
+			new PotionEffect(MobEffects.JUMP_BOOST, 6000,2, false, false),
+			new PotionEffect(MobEffects.GLOWING, 6000,0, false, false));
+
+	public static final Item DIAMOND_APPLE = new EnchantedFoodEffectBase("diamond_apple", 20, 24.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 24000,16, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 6000,4, false, false),
+			new PotionEffect(MobEffects.SPEED, 6000,2, false, false),
+			new PotionEffect(MobEffects.JUMP_BOOST, 6000,2, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 6000,4, false, false),
+			new PotionEffect(MobEffects.GLOWING, 6000,0, false, false));
+
+	public static final Item ENCHANTED_DIAMOND_APPLE = new EnchantedFoodEffectBase1("enchanted_diamond_apple", 20, 24.0F, false,
+			new PotionEffect(MobEffects.ABSORPTION, 24000,16, false, false),
+			new PotionEffect(MobEffects.REGENERATION, 12000,4, false, false),
+			new PotionEffect(MobEffects.STRENGTH, 12000,5, false, false),
+			new PotionEffect(MobEffects.FIRE_RESISTANCE, 12000,2, false, false),
+			new PotionEffect(MobEffects.RESISTANCE, 12000,2, false, false),
+			new PotionEffect(MobEffects.SPEED, 12000,3, false, false),
+			new PotionEffect(MobEffects.JUMP_BOOST, 12000,3, false, false),
+			new PotionEffect(MobEffects.GLOWING, 12000,0, false, false));
 
 //SHIELDS
 	public static final Item IRON_SHIELD = new IronShield("iron_shield");

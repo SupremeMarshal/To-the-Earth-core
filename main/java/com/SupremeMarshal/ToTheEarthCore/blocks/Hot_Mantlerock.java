@@ -1,6 +1,6 @@
 package com.SupremeMarshal.ToTheEarthCore.blocks;
 
-import com.SupremeMarshal.ToTheEarthCore.util.handlers.HardnessHandler;
+import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -37,22 +37,23 @@ public class Hot_Mantlerock extends BlockBase
 		setTickRandomly(true);
 
 		}
-	
-	public void onBlockClicked(World world, BlockPos pos, EntityPlayer entity) {
-		Block block = this;
-		{
-			java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-			$_dependencies.put("block", block);
-			$_dependencies.put("entity", entity);
-			HardnessHandler.executeProcedure($_dependencies);
-		}	
-	}
+
 
 	public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn)
 	{
+		Block block = this;
 		if (!entityIn.isImmuneToFire() && entityIn instanceof EntityLivingBase && !EnchantmentHelper.hasFrostWalkerEnchantment((EntityLivingBase)entityIn))
 		{
-			entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 3.0F);
+			if (block == ModBlocks.HOT_MANTLEROCK) {
+				entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 3.0F);
+			}
+			else if (block == ModBlocks.VERY_HOT_MANTLEROCK)
+			{
+				entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 6.0F);
+			}
+			else if (block == ModBlocks.SUPER_HOT_MANTLEROCK) {
+				entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, 12.0F);
+			}
 		}
 
 		super.onEntityWalk(worldIn, pos, entityIn);

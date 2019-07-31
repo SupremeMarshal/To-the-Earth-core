@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "totheearthcore:blocks/hot_mantlerock"
+       "all": "totheearthcore:blocks/hot_mantlerock_2"
    }
 }

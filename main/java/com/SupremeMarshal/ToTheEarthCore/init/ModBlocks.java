@@ -210,10 +210,9 @@ public class ModBlocks {
 	
 	public static final Block STIFFROCK = new RockBase("stiffrock", Material.ROCK);
 	public static final Block HARDROCK = new RockBase("hardrock", Material.ROCK);
-	public static final Block HARDERROCK = new RockBase("harderrock", Material.ROCK);
 	public static final Block REDROCK = new RockBase("redrock", Material.ROCK);
 	public static final Block MANTLEROCK = new RockBase("mantlerock", Material.ROCK);
-	public static final Block LOWER_MANTLEROCK = new RockBase("lowermantlerock", Material.ROCK);
+	public static final Block LOWER_MANTLEROCK = new RockBase("lower_mantlerock", Material.ROCK);
 	public static final Block COREROCK = new Corerock("corerock", Material.ROCK);
 	public static final Block INNERCOREROCK = new Corerock("innercorerock", Material.ROCK);
 	public static final Block BLUE_COREROCK = new Corerock("bluecorerock", Material.ROCK);
@@ -222,7 +221,9 @@ public class ModBlocks {
 	public static final Block LIMESTONE = new RockBase("limestone", Material.ROCK);
 	
 	public static final Block MANTLEGAS = new GasBase("mantlegas", Material.ROCK);
-	public static final Block HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock", Material.ROCK);
+	public static final Block HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock_0", Material.ROCK);
+	public static final Block VERY_HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock_1", Material.ROCK);
+	public static final Block SUPER_HOT_MANTLEROCK = new Hot_Mantlerock("hot_mantlerock_2", Material.ROCK);
 	
 	public static final Block HOTROCK = new BlockBase("hotrock", Material.ROCK);
 	

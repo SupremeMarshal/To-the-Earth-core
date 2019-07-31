@@ -737,7 +737,9 @@ tile.blue_corerock_coal.name=Blue Corerock Coal
 tile.blue_corerock_redstone.name=Blue Corerock Redstone
 tile.blue_corerock_sulfur.name=Blue Corerock Sulfur
 
-tile.hot_mantlerock.name=Hot Mantlerock
+tile.hot_mantlerock_0.name=Hot Mantlerock
+tile.hot_mantlerock_1.name=Very Hot Mantlerock
+tile.hot_mantlerock_2.name=Super Hot Mantlerock
 
 tile.hotrock.name=Hot rock
 tile.mantlegas.name=Pocket of gas

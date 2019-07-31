@@ -22,11 +22,11 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
-public class RenderHandler 
-{
-
-	public static void registerEntityRenders()
+public class RenderHandler
 	{
+
+		public static void registerEntityRenders()
+		{
 		//Demon
 		RenderingRegistry.registerEntityRenderingHandler(EntityDemon.class, new IRenderFactory<EntityDemon>()
 		{
@@ -66,25 +66,25 @@ public class RenderHandler
 	}
 	
 	public static void registerCustomMeshesAndStates()
-	{
-		ModelLoader.setCustomMeshDefinition(Item.getItemFromBlock(ModBlocks.HOT_LAVA_BLOCK), new ItemMeshDefinition() {
-			
-			@Override
-			public ModelResourceLocation getModelLocation(ItemStack stack) {
-				
-				return new ModelResourceLocation("totheearthcore:hot_lava", "fluid");
+		{
+			ModelLoader.setCustomMeshDefinition(Item.getItemFromBlock(ModBlocks.HOT_LAVA_BLOCK), new ItemMeshDefinition() {
 
-			}
-		});
-		
-		ModelLoader.setCustomStateMapper(ModBlocks.HOT_LAVA_BLOCK, new StateMapperBase() {
-			
-			@Override
-			protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
+				@Override
+				public ModelResourceLocation getModelLocation(ItemStack stack) {
 
-				return new ModelResourceLocation("totheearthcore:hot_lava", "fluid");
-			}
-		});
+					return new ModelResourceLocation("totheearthcore:hot_lava", "fluid");
+
+				}
+			});
+
+			ModelLoader.setCustomStateMapper(ModBlocks.HOT_LAVA_BLOCK, new StateMapperBase() {
+
+				@Override
+				protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
+
+					return new ModelResourceLocation("totheearthcore:hot_lava", "fluid");
+				}
+			});
 
 		ModelLoader.setCustomMeshDefinition(Item.getItemFromBlock(ModBlocks.CORE_LAVA_BLOCK), new ItemMeshDefinition() {
 

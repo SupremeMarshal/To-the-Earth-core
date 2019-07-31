@@ -2,7 +2,6 @@ package com.SupremeMarshal.ToTheEarthCore.blocks;
 
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
-import com.SupremeMarshal.ToTheEarthCore.util.handlers.HardnessHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -43,16 +42,7 @@ public class Corerock extends BlockBase
 		setTickRandomly(true);
 
 		}
-	
-	public void onBlockClicked(World world, BlockPos pos, EntityPlayer entity) {
-		Block block = this;
-		{
-			java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-			$_dependencies.put("block", block);
-			$_dependencies.put("entity", entity);
-			HardnessHandler.executeProcedure($_dependencies);
-		}	
-	}
+
 
 
 	@Override
@@ -156,8 +146,6 @@ public class Corerock extends BlockBase
 		{return new ItemStack(ModItems.TOPAZ, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_RUBY || block == ModBlocks.INNERCOREROCK_RUBY || block == ModBlocks.BLUE_COREROCK_RUBY)
 		{return new ItemStack(ModItems.RUBY, 1, 0).getItem();}
-		else if (block == ModBlocks.COREROCK_FLAMING_TOPAZ || block == ModBlocks.INNERCOREROCK_FLAMING_TOPAZ || block == ModBlocks.BLUE_COREROCK_FLAMING_TOPAZ)
-		{return new ItemStack(ModItems.FLAMING_TOPAZ, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_SAPHIR || block == ModBlocks.INNERCOREROCK_SAPHIR || block == ModBlocks.BLUE_COREROCK_SAPHIR)
 		{return new ItemStack(ModItems.SAPHIR, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_EMERALD || block == ModBlocks.INNERCOREROCK_EMERALD || block == ModBlocks.BLUE_COREROCK_EMERALD)
@@ -168,6 +156,8 @@ public class Corerock extends BlockBase
 		{return new ItemStack(Items.REDSTONE, 1, 0).getItem();}
 		else if (block == ModBlocks.COREROCK_COAL || block == ModBlocks.INNERCOREROCK_COAL || block == ModBlocks.BLUE_COREROCK_COAL)
 		{return new ItemStack(Items.COAL, 1, 0).getItem();}
+		else if (block == ModBlocks.COREROCK_SULFUR || block == ModBlocks.INNERCOREROCK_SULFUR || block == ModBlocks.BLUE_COREROCK_SULFUR)
+		{return new ItemStack(ModItems.SULFUR, 1, 0).getItem();}
 		else
 		{return new ItemStack(block, 1, 0).getItem();}
 	}

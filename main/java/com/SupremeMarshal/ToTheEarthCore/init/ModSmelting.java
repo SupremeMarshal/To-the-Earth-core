@@ -102,16 +102,6 @@ public class ModSmelting {
 		GameRegistry.addSmelting(ModBlocks.COREROCK_SAPHIR, new ItemStack(ModItems.SAPHIR, 1), 8.0F);
 		GameRegistry.addSmelting(ModBlocks.INNERCOREROCK_SAPHIR, new ItemStack(ModItems.SAPHIR, 1), 12.0F);
 		GameRegistry.addSmelting(ModBlocks.BLUE_COREROCK_SAPHIR, new ItemStack(ModItems.SAPHIR, 1), 16.0F);
-
-		GameRegistry.addSmelting(ModBlocks.FLAMING_TOPAZ_ORE, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 2.75F);
-		GameRegistry.addSmelting(ModBlocks.STIFFROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 3.0F);
-		GameRegistry.addSmelting(ModBlocks.HARDROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 3.25F);
-		GameRegistry.addSmelting(ModBlocks.REDROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 3.5F);
-		GameRegistry.addSmelting(ModBlocks.MANTLEROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 4.0F);
-		GameRegistry.addSmelting(ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 6.0F);
-		GameRegistry.addSmelting(ModBlocks.COREROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 8.0F);
-		GameRegistry.addSmelting(ModBlocks.INNERCOREROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 12.0F);
-		GameRegistry.addSmelting(ModBlocks.BLUE_COREROCK_FLAMING_TOPAZ, new ItemStack(ModItems.FLAMING_TOPAZ, 1), 16.0F);
 		
 		GameRegistry.addSmelting(ModBlocks.RUBY_ORE, new ItemStack(ModItems.RUBY, 1), 3.0F);
 		GameRegistry.addSmelting(ModBlocks.STIFFROCK_RUBY, new ItemStack(ModItems.RUBY, 1), 3.25F);

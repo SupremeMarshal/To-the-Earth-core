@@ -12,6 +12,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -68,7 +69,7 @@ public class RegistryHandler {
 		ModFluids.registerFluids();
 		EntityInit.registerEntities();
 		ModConfiguration.registerConfig(event);
-
+		MinecraftForge.EVENT_BUS.register(new FogHandler());
 
 
 

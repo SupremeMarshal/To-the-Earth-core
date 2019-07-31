@@ -33,6 +33,7 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel {
 		Main.proxy.registerModel(this, 0);
 	}
 
+
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)

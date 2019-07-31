@@ -2,7 +2,6 @@ package com.SupremeMarshal.ToTheEarthCore.blocks;
 
 import com.SupremeMarshal.ToTheEarthCore.init.ModBlocks;
 import com.SupremeMarshal.ToTheEarthCore.init.ModItems;
-import com.SupremeMarshal.ToTheEarthCore.util.handlers.HardnessHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -43,8 +42,6 @@ public class GemBase extends BlockBase
 	{return new ItemStack(Items.EMERALD, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.SAPHIR_ORE || block == ModBlocks.STIFFROCK_SAPHIR || block == ModBlocks.HARDROCK_SAPHIR || block == ModBlocks.REDROCK_SAPHIR || block == ModBlocks.MANTLEROCK_SAPHIR || block == ModBlocks.LOWER_MANTLEROCK_SAPHIR)
 	{return new ItemStack(ModItems.SAPHIR, (int) (1), 0).getItem();}
-	else if (block == ModBlocks.FLAMING_TOPAZ_ORE || block == ModBlocks.STIFFROCK_FLAMING_TOPAZ || block == ModBlocks.HARDROCK_FLAMING_TOPAZ || block == ModBlocks.REDROCK_FLAMING_TOPAZ || block == ModBlocks.MANTLEROCK_FLAMING_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_FLAMING_TOPAZ)
-	{return new ItemStack(ModItems.FLAMING_TOPAZ, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.RUBY_ORE || block == ModBlocks.STIFFROCK_RUBY || block == ModBlocks.HARDROCK_RUBY || block == ModBlocks.REDROCK_RUBY || block == ModBlocks.MANTLEROCK_RUBY || block == ModBlocks.LOWER_MANTLEROCK_RUBY)
 	{return new ItemStack(ModItems.RUBY, (int) (1), 0).getItem();}
 	else if (block == ModBlocks.TOPAZ_ORE || block == ModBlocks.STIFFROCK_TOPAZ || block == ModBlocks.HARDROCK_TOPAZ || block == ModBlocks.REDROCK_TOPAZ || block == ModBlocks.MANTLEROCK_TOPAZ || block == ModBlocks.LOWER_MANTLEROCK_TOPAZ)
@@ -120,15 +117,6 @@ public class GemBase extends BlockBase
 
 	}
 
-	public void onBlockClicked(World world, BlockPos pos, EntityPlayer entity) {
-		Block block = this;
-		{
-			java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-			$_dependencies.put("block", block);
-			$_dependencies.put("entity", entity);
-			HardnessHandler.executeProcedure($_dependencies);
-		}
-	}
 
 	@Override
 	public boolean canDropFromExplosion(Explosion explosionIn)
