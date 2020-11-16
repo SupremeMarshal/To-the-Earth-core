@@ -1,4 +1,9 @@
 # To-the-Earth-core
+
+https://github.com/SupremeMarshal/PlanetCore
+this is the new link for this project.
+To_the_earth_core is now closed!
+
 A modpack for Minecraft that works with Cubic Chunk. You can dig down all the way to the Earth's core!
 First, you need to install Cubic Chunks 912 and Cubic World Gen. 
 
