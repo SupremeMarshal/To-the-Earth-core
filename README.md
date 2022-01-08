@@ -1,4 +1,4 @@
-# To-the-Earth-core
+# To-the-Earth-core --- PLANETCORE is the new mod
 
 https://github.com/SupremeMarshal/PlanetCore
 this is the new link for this project.
